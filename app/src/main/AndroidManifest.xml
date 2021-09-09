@@ -10,22 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="com.example.All4Pets.Ratings"
+            android:name=".Servicess"
             android:exported="true" />
         <activity
-            android:name="com.example.All4Pets.Orders"
+            android:name=".Ratings"
             android:exported="true" />
         <activity
-            android:name="com.example.All4Pets.Category"
+            android:name=".Orders"
             android:exported="true" />
         <activity
-            android:name="com.example.All4Pets.Find_Veterinary"
+            android:name=".Category"
             android:exported="true" />
         <activity
-            android:name="com.example.All4Pets.Services"
+            android:name=".Find_Veterinary"
             android:exported="true" />
         <activity
-            android:name="com.example.All4Pets.MainActivity"
+            android:name=".Services"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
