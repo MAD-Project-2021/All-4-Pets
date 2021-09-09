@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daycare_ShowMore"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/addfav2"
+        android:layout_width="252dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/add_afv_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView27"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/addfav" />
+
+    <TextView
+        android:id="@+id/tv_daycareinfo"
+        android:layout_width="386dp"
+        android:layout_height="526dp"
+        android:background="#cabbe9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="228dp"
+        android:layout_height="167dp"
+        android:contentDescription="@string/vet_image6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193"
+        app:srcCompat="@drawable/daycare2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="23dp"
+        android:onClick="redirecttoresults2"
+        android:layout_marginEnd="352dp"
+        android:layout_marginRight="352dp"
+        android:layout_marginBottom="102dp"
+        android:contentDescription="@string/back_icon"
+        app:layout_constraintBottom_toTopOf="@+id/tv_daycareinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backarrow" />
+
+    <TextView
+        android:id="@+id/tv_daycarename"
+        android:layout_width="244dp"
+        android:layout_height="27dp"
+        android:text="@string/tv_daycarename"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_daycareinfo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_daycareinfo"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="48dp"
+        android:layout_height="28dp"
+        android:contentDescription="@string/location_point"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_daycareinfo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_daycareinfo"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/tv_daycareinfo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:layout_constraintVertical_bias="0.115"
+        app:srcCompat="@drawable/locationicon" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_address"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_daycareinfo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_daycareinfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:layout_constraintVertical_bias="0.133"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_daycareinfo2"
+        android:layout_width="364dp"
+        android:layout_height="184dp"
+        android:background="#ffcef3"
+        android:text="@string/tv_daycareinfo2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_daycareinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_daycareinfo"
+        app:layout_constraintVertical_bias="0.593"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_details"
+        android:layout_width="232dp"
+        android:layout_height="22dp"
+        android:text="@string/tv_details"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_daycareinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_daycareinfo2"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="216dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/tv_contact"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_daycareinfo2"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="108dp"
+        android:layout_height="43dp"
+        android:contentDescription="@string/call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_contact"
+        app:layout_constraintTop_toBottomOf="@+id/tv_daycareinfo2"
+        app:layout_constraintVertical_bias="0.826"
+        app:srcCompat="@drawable/call" />
+
+    <TextView
+        android:id="@+id/tv_intro3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:text="@string/tv_intro3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_daycareinfo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address"
+        app:layout_constraintVertical_bias="0.542" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

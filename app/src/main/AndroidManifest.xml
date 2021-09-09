@@ -10,6 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Daycare_ShowMore"
+            android:exported="true" />
+        <activity
+            android:name=".Fav_DaycareList"
+            android:exported="true" />
+        <activity
+            android:name=".Daycare_Results"
+            android:exported="true" />
+        <activity
+            android:name=".Confirmed_Booking"
+            android:exported="true" />
+        <activity
+            android:name=".Book_Appointment"
+            android:exported="true" />
+        <activity
+            android:name=".Fav_VetList"
+            android:exported="true" />
+        <activity
+            android:name=".Vet_ShowMore"
+            android:exported="true" />
+        <activity
+            android:name=".Vet_Results"
+            android:exported="true" />
+        <activity
+            android:name=".Find_Daycare"
+            android:exported="true" />
+        <activity
             android:name=".Servicess"
             android:exported="true" />
         <activity

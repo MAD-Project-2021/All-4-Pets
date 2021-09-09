@@ -6,21 +6,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Services extends AppCompatActivity {
+public class Daycare_Results extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_services);
+        setContentView(R.layout.activity_daycare_results);
     }
-    public void btn_vet (View view){
-        Intent intent = new Intent(Services.this, Find_Veterinary.class);
+
+    public void gotofavpage2(View view) {
+        Intent intent = new Intent(Daycare_Results.this, Fav_DaycareList.class);
         startActivity(intent);
 
+
     }
 
-    public void btn_daycare (View view){
-        Intent intent = new Intent(Services.this, Find_Daycare.class);
+    public void gotoshowmore(View view) {
+        Intent intent = new Intent(Daycare_Results.this, Daycare_ShowMore.class);
         startActivity(intent);
 
     }

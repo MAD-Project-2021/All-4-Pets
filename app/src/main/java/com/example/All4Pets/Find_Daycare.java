@@ -6,16 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Find_Veterinary extends AppCompatActivity {
+public class Find_Daycare extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find_veterinary);
+        setContentView(R.layout.activity_find_daycare);
     }
-
-    public void gotoresults (View view){
-        Intent intent = new Intent(Find_Veterinary.this, Vet_Results.class);
+    public void gotoresults2 (View view){
+        Intent intent = new Intent(Find_Daycare.this, Daycare_Results.class);
         startActivity(intent);
 
     }
