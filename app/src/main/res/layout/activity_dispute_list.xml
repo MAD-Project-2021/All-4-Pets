@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Orders">
+    android:background="#E4C1CF"
+    tools:context=".DisputeList">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomNavigationView"
         android:layout_width="415dp"
         android:layout_height="65dp"
         android:background="#CABBE9"
-        app:layout_constraintBottom_toBottomOf="@+id/ord4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/search_btn"
@@ -62,77 +61,110 @@
             android:id="@+id/updDes"
             android:layout_width="123dp"
             android:layout_height="44dp"
-            android:text="@string/order"
+            android:text="@string/disputes"
+            android:textColor="#EE000000"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.229"
+            app:layout_constraintHorizontal_bias="0.219"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.476" />
+            app:layout_constraintVertical_bias="0.761" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/ord1"
-        android:layout_width="411dp"
-        android:layout_height="128dp"
-        android:layout_marginBottom="4dp"
-        android:contentDescription="@string/order_1"
-        app:layout_constraintBottom_toTopOf="@+id/ord2"
+        android:id="@+id/imageView6"
+        android:layout_width="409dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/dogbelt"
-        android:onClick="gotoorderdetails"/>
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
+        app:srcCompat="@drawable/dogbelt" />
 
-    <ImageView
-        android:id="@+id/ord4"
-        android:layout_width="411dp"
-        android:layout_height="128dp"
-        android:layout_marginBottom="18dp"
-        android:contentDescription="@string/order_3"
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="380dp"
+        android:text="@string/btn_delete"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#7E6AA3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/dogshm" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button6" />
 
-    <ImageView
-        android:id="@+id/ord2"
-        android:layout_width="411dp"
-        android:layout_height="128dp"
-        android:contentDescription="@string/order_2"
-        app:layout_constraintBottom_toTopOf="@+id/ord3"
+    <Button
+        android:id="@+id/btn_delete2"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/btn_delete"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#7E6AA3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/catfd" />
+        app:layout_constraintStart_toEndOf="@+id/button6" />
 
-    <ImageView
-        android:id="@+id/ord3"
-        android:layout_width="411dp"
-        android:layout_height="128dp"
-        android:contentDescription="@string/order_3"
-        app:layout_constraintBottom_toTopOf="@+id/ord4"
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="380dp"
+        android:text="@string/btn_update"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#7E6AA3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/btn_update"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#7E6AA3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/foodbowl" />
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintVertical_bias="0.531" />
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="98dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="18dp"
-        android:contentDescription="@string/ordercount"
-        app:layout_constraintBottom_toTopOf="@+id/ord1"
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ordcount" />
+        app:srcCompat="@drawable/foodbowl" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,8 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.MyApplication"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity
+
             android:name=".petItemCollar"
             android:exported="true" />
         <activity
@@ -26,6 +28,54 @@
             android:exported="true" />
         <activity
             android:name=".Services"
+
+
+            android:name=".UpdateDispute"
+            android:exported="true" />
+        <activity
+            android:name=".DisputeList"
+            android:exported="true" />
+        <activity
+            android:name=".OpenDispute"
+            android:exported="true" />
+        <activity
+            android:name=".OrdersList"
+            android:exported="true" />
+
+   
+            android:name=".Servicess"
+        <activity
+
+            android:name=".Daycare_ShowMore"
+            android:exported="true" /> -->
+        <activity
+            android:name=".Fav_DaycareList"
+            android:exported="true" />
+        <activity
+            android:name=".Daycare_Results"
+            android:exported="true" />
+        <activity
+            android:name=".Confirmed_Booking"
+            android:exported="true" />
+        <activity
+            android:name=".Book_Appointment"
+            android:exported="true" />
+        <activity
+            android:name=".Fav_VetList"
+            android:exported="true" />
+        <activity
+            android:name=".Vet_ShowMore"
+            android:exported="true" />
+        <activity
+            android:name=".Vet_Results"
+            android:exported="true" />
+        <activity
+            android:name=".Find_Daycare"
+            android:exported="true" />
+        <activity
+            android:name=".Services"
+
+
             android:exported="true" />
         <activity
             android:name=".Ratings"

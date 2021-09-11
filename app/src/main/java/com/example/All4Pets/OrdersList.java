@@ -6,20 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Orders extends AppCompatActivity {
+public class OrdersList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_orders);
+        setContentView(R.layout.activity_orders_list);
     }
-    //intent
-    public void gotoorderdetails (View view){
-        Intent intent = new Intent(Orders.this, OrdersList.class);
+
+    public void gotoorderspage (View view){
+        Intent intent = new Intent(this, Orders.class);
         startActivity(intent);
 
     }
-
-
-
 }

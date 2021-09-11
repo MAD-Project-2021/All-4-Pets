@@ -6,21 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Services extends AppCompatActivity {
+public class Vet_ShowMore extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_services);
+        setContentView(R.layout.activity_vet_show_more);
     }
-    public void btn_vet (View view){
-        Intent intent = new Intent(Services.this, Find_Veterinary.class);
+    public void redirecttoresults (View view){
+        Intent intent = new Intent(Vet_ShowMore.this, Vet_Results.class);
         startActivity(intent);
 
     }
-
-    public void btn_daycare (View view){
-        Intent intent = new Intent(Services.this, Find_Daycare.class);
+    public void gotobookpage (View view){
+        Intent intent = new Intent(Vet_ShowMore.this, Book_Appointment.class);
         startActivity(intent);
 
     }
