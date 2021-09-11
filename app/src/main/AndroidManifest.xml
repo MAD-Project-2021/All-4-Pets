@@ -23,11 +23,11 @@
         <activity
             android:name=".OrdersList"
             android:exported="true" />
-        <activity
+     <!--   <activity
             android:name=".Servicess"
 
             android:name=".Daycare_ShowMore"
-            android:exported="true" />
+            android:exported="true" /> -->
         <activity
             android:name=".Fav_DaycareList"
             android:exported="true" />
