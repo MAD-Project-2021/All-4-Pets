@@ -10,7 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".Servicess"
+            android:name=".petItemCollar"
+            android:exported="true" />
+        <activity
+            android:name=".itemC"
+            android:exported="true" />
+        <activity
+            android:name=".Supliments"
+            android:exported="true" />
+        <activity
+            android:name=".petsItems"
+            android:exported="true" />
+        <activity
+            android:name=".Pets"
+            android:exported="true" />
+        <activity
+            android:name=".Services"
             android:exported="true" />
         <activity
             android:name=".Ratings"
@@ -24,9 +39,7 @@
         <activity
             android:name=".Find_Veterinary"
             android:exported="true" />
-        <activity
-            android:name=".Services"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

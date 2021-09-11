@@ -5,4 +5,71 @@
     <string name="btn_order">Orders</string>
     <string name="btn_services">Services</string>
     <string name="btn_ratings">Ratings</string>
+
+
+    <string name="cm1">Catogery</string>
+    <string name="pets_items">Pets\' Items</string>
+    <string name="side_menu_bar">side_menu_bar</string>
+    <string name="settings">Settings</string>
+    <string name="srch">search button</string>
+    <string name="pets_image_button">pets_image_button</string>
+    <string name="pets_items_button">pets_items_button</string>
+    <string name="supliments_button">supliments_button</string>
+    <string name="img">cageimage</string>
+    <string name="price1">RS. 8000/=</string>
+    <string name="item_name1">small Cage</string>
+    <string name="img1">pet_item1</string>
+    <string name="pet_item3">item3</string>
+    <string name="backnavigation">backNavigation</string>
+    <string name="item2">pet_item2</string>
+    <string name="item4">pet_item4</string>
+    <string name="new_shampoo_for_dogs">New Shampoo for dogs</string>
+    <string name="price2">Rs. 800/=</string>
+    <string name="adjestable_buckle_pet_collar">Adjestable Buckle Pet Collar</string>
+    <string name="item_image3">item_image3</string>
+    <string name="price3">Rs. 500/=</string>
+    <string name="item_image4">item_image4</string>
+    <string name="price4">Rs. 1500/=</string>
+    <string name="petsafe_easy_walk_dog_harness_collar">PetSafe Easy Walk Dog Harness collar</string>
+    <string name="item_image2">item_image2</string>
+    <string name="item_4_main_image">dog harness collar</string>
+    <string name="right_arrow">right expand arrow</string>
+    <string name="left_arrow">left expand arrow</string>
+    <string name="item_4_topic">PetSafe Easy Walk Dog Harness Collar</string>
+    <string name="item_4_location">Colombo</string>
+    <string name="item_4_description">Description</string>
+    <string name="d_price">Price : Rs. 1500/=</string>
+    <string name="buy_btn">Buy</string>
+    <string name="add_to_cart_btn">Add to Cart</string>
+    <string name="contact_number">Contact Number : 0777111753</string>
+    <string name="main_description">main_description</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="ad_line1">Ibbagamuwa</string>
+    <string name="b_name">H.C.M Silva</string>
+    <string name="ad_line2">Pangolla</string>
+    <string name="change_btn">Change Address</string>
+    <string name="add_card_details">Add Card Details</string>
+    <string name="view_more_btn">View More</string>
+    <string name="deliver_within_3_days">DELIVER WITHIN 3 DAYS</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="change_address">Change Address</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_address_line1">Enter Address Line1</string>
+    <string name="enter_address_line2">Enter Address Line2</string>
+    <string name="enter_address_line3">Enter Address Line3</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="save">Save</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="enter_card_holder_name">Enter Card Holder Name</string>
+    <string name="cvv">CVV</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="selectbtn">selectbtn</string>
+    <string name="cart">Cart</string>
+    <string name="pet_item1">pet_item1</string>
+    <string name="selected_items">Selected Items</string>
+    <string name="sub_total_cart">Sub Total</string>
+    <string name="checkout_btn">Checkout</string>
+    <string name="add_button">add_button</string>
+    <string name="delete_btn">deletebtn</string>
+
 </resources>
