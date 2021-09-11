@@ -2,9 +2,9 @@
     <string name="app_name">All-4-Pets</string>
     <string name="txt_topic">All-4-Pets</string>
     <string name="btn_category">Category</string>
-    <string name="btn_order">Orders</string>
-    <string name="btn_services">Services</string>
-    <string name="btn_ratings">Ratings</string>
+    <string name="btn_order">Daycare Centers</string>
+    <string name="btn_services">Veterinary Surgeons</string>
+    <string name="btn_ratings">Ratings and Reviews</string>
 
 
 

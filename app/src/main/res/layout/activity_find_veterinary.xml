@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/image_View3"
-        android:layout_width="218dp"
-        android:layout_height="118dp"
+        android:layout_width="259dp"
+        android:layout_height="123dp"
         android:layout_marginBottom="296dp"
         android:contentDescription="@string/btn_search"
         android:onClick="gotoresults"
