@@ -12,6 +12,24 @@
         android:fullBackupContent="@xml/backup_descriptor">
         <activity
 
+            android:name=".petItemCollar"
+            android:exported="true" />
+        <activity
+            android:name=".itemC"
+            android:exported="true" />
+        <activity
+            android:name=".Supliments"
+            android:exported="true" />
+        <activity
+            android:name=".petsItems"
+            android:exported="true" />
+        <activity
+            android:name=".Pets"
+            android:exported="true" />
+        <activity
+            android:name=".Services"
+
+
             android:name=".UpdateDispute"
             android:exported="true" />
         <activity
@@ -24,7 +42,7 @@
             android:name=".OrdersList"
             android:exported="true" />
 
-     <!--   <activity
+   
             android:name=".Servicess"
         <activity
 
@@ -56,6 +74,7 @@
             android:exported="true" />
         <activity
             android:name=".Services"
+
 
             android:exported="true" />
         <activity

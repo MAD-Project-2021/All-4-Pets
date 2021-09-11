@@ -2,8 +2,116 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sub_title"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Category">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="409dp"
+        android:layout_height="49dp"
+        android:background="#CABBE9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="37dp"
+            android:layout_height="42dp"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.454"
+            app:srcCompat="@drawable/icons8_menu_96" />
+
+        <TextView
+            android:id="@+id/cm6"
+            android:layout_width="191dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/cm1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="51dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/cm6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icons8_menu_vertical_90" />
+
+        <ImageView
+            android:id="@+id/srchimage"
+            android:layout_width="40dp"
+            android:layout_height="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.481"
+            app:srcCompat="@drawable/icons8_search_150" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btn_pets"
+        android:layout_width="378dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="92dp"
+        android:background="@null"
+        android:contentDescription="@string/pets_image_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
+        app:srcCompat="@drawable/picture7"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="btn_pets"/>
+
+    <ImageButton
+        android:id="@+id/btn_petsItems"
+        android:layout_width="378dp"
+        android:layout_height="120dp"
+        android:background="@null"
+        android:contentDescription="@string/pets_items_button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_supliments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pets"
+        app:layout_constraintVertical_bias="0.294"
+        app:srcCompat="@drawable/picture8"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="btn_petsItems"/>
+
+    <ImageButton
+        android:id="@+id/btn_supliments"
+        android:layout_width="379dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="92dp"
+        android:background="@null"
+        android:contentDescription="@string/supliments_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_petsItems"
+        app:srcCompat="@drawable/picture9"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="btn_supliments"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
