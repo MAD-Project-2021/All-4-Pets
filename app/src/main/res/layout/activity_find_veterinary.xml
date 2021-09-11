@@ -9,19 +9,16 @@
 
     <ImageView
         android:id="@+id/image_View3"
-        android:layout_width="317dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="348dp"
+        android:layout_width="218dp"
+        android:layout_height="118dp"
+        android:layout_marginBottom="296dp"
         android:contentDescription="@string/btn_search"
-        android:src="@drawable/srh"
         android:onClick="gotoresults"
+        android:src="@drawable/srh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
@@ -85,44 +82,68 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pet2" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="228dp"
-        android:layout_height="138dp"
-        android:contentDescription="@string/btn_date"
-        app:layout_constraintBottom_toTopOf="@+id/image_View3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_view"
-        app:layout_constraintVertical_bias="0.187"
-        app:srcCompat="@drawable/datebutton"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="220dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="@string/btn_time"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_view"
-        app:srcCompat="@drawable/timebutton"
-        tools:ignore="ImageContrastCheck" />
-
     <TextView
         android:id="@+id/txt_2"
         android:layout_width="120dp"
         android:layout_height="36dp"
         android:text="@string/txt2"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/image_View3"
         app:layout_constraintEnd_toEndOf="@+id/image_View3"
-        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="@+id/image_View3"
-        app:layout_constraintTop_toTopOf="@+id/image_View3" />
+        app:layout_constraintTop_toTopOf="@+id/image_View3"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toEndOf="@+id/txt_date"
+        app:layout_constraintTop_toBottomOf="@+id/et_view"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/image_View3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toEndOf="@+id/txt_time"
+        app:layout_constraintTop_toBottomOf="@+id/et_view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/txt_date"
+        app:layout_constraintBottom_toTopOf="@+id/image_View3"
+        app:layout_constraintTop_toBottomOf="@+id/et_view"
+        app:layout_constraintVertical_bias="0.087"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_time"
+        app:layout_constraintBottom_toTopOf="@+id/image_View3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_date"
+        app:layout_constraintVertical_bias="0.541"
+        tools:layout_editor_absoluteX="38dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
