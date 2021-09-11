@@ -140,4 +140,7 @@
     <string name="call">call</string>
     <string name="tv_intro3">More about the Daycare center</string>
 
+    <string name="txt_date">Date</string>
+    <string name="txt_time">Time   :-</string>
+
 </resources>
