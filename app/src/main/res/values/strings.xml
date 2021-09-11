@@ -5,6 +5,64 @@
     <string name="btn_order">Orders</string>
     <string name="btn_services">Services</string>
     <string name="btn_ratings">Ratings</string>
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_main3">MainActivity3</string>
+    <string name="order_1">order1</string>
+    <string name="order_2">order2</string>
+    <string name="order_3">order3</string>
+    <string name="orders_status">status of the order</string>
+    <string name="search_btn">search_btn_navbar</string>
+    <string name="menu_btn">menu button_nav bar</string>
+    <string name="vertMenu">vertical Menu</string>
+    <string name="note">note</string>
+    <string name="order_confirm_button">order confirm button</string>
+
+    <string name="open_dispute_button">open dispute button</string>
+    <string name="deliveryinfo_text">deliveryinfo_text</string>
+    <string name="open_dispute">Open Dispute</string>
+    <string name="dispute_reason">*Dispute Reason</string>
+    <string name="dropdwn">dropdownmenu</string>
+    <string name="messageBox">Message Type Box</string>
+    <string name="evidenceUpldDesc">upload evidence box</string>
+    <string name="submitBtn">submit button</string>
+    <string name="update_dispute">Update Dispute</string>
+    <string name="dispute_details">Dispute Details Text</string>
+    <string name="dispdetails">Dispute Details Box</string>
+    <string name="dispute_reason_txt">Dispute Reason Text</string>
+    <string name="order">Order</string>
+    <string name="uploads">Uploads</string>
+    <string name="reason">Item not as described</string>
+    <string name="photoupload">photoUpload</string>
+    <string name="savechanges">Save Changes</string>
+    <string name="dispute_details_text">Dispute Details</string>
+    <string name="dispute_reasontxt">Dispute Reason</string>
+    <string name="disputes">Disputes</string>
+    <string name="upload2">upload2</string>
+    <string name="upload1">upload1</string>
+    <string name="message_optional">Message(Optional)</string>
+    <string name="reason_txt">Please Select a Reason</string>
+    <string name="itemdescription">itemDescription</string>
+    <string name="dispute_reasonTXT">Dispute Reason</string>
+    <string name="order_details">Order Details</string>
+    <string name="delivery_information">Delivery Information</string>
+    <string name="ordercount">order count</string>
+    <string name="btn_seemore">See Details</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="btn_opendispute">OPEN DISPUTE</string>
+    <string name="btn_seedetails">SEE DETAILS</string>
+
+
+
     <string name="et_view">Near by Veterinary</string>
     <string name="btn_search">Search</string>
     <string name="toolbar1">find_vet</string>
@@ -81,6 +139,8 @@
     <string name="tv_contact">Mobile Number :  0753248855</string>
     <string name="call">call</string>
     <string name="tv_intro3">More about the Daycare center</string>
+
     <string name="txt_date">Date</string>
     <string name="txt_time">Time   :-</string>
+
 </resources>

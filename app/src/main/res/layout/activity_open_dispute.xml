@@ -4,19 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Orders">
+    tools:context=".OpenDispute">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomNavigationView"
         android:layout_width="415dp"
         android:layout_height="65dp"
         android:background="#CABBE9"
-        app:layout_constraintBottom_toBottomOf="@+id/ord4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/search_btn"
@@ -62,7 +60,7 @@
             android:id="@+id/updDes"
             android:layout_width="123dp"
             android:layout_height="44dp"
-            android:text="@string/order"
+            android:text="@string/open_dispute"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -75,64 +73,90 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/ord1"
-        android:layout_width="411dp"
-        android:layout_height="128dp"
-        android:layout_marginBottom="4dp"
-        android:contentDescription="@string/order_1"
-        app:layout_constraintBottom_toTopOf="@+id/ord2"
+        android:id="@+id/imageView5"
+        android:layout_width="413dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/itemdescription"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/dogbelt"
-        android:onClick="gotoorderdetails"/>
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
+        app:srcCompat="@drawable/dogbelt" />
 
-    <ImageView
-        android:id="@+id/ord4"
-        android:layout_width="411dp"
-        android:layout_height="128dp"
-        android:layout_marginBottom="18dp"
-        android:contentDescription="@string/order_3"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="412dp"
+        android:layout_height="41dp"
+        android:text="@string/dispute_reasonTXT"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="409dp"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/dropdown"
+        android:layout_width="404dp"
+        android:layout_height="35dp"
+        android:text="@string/reason_txt"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/msgBox"
+        android:layout_width="410dp"
+        android:layout_height="58dp"
+        android:text="@string/message_optional"
+        android:textColor="#9A9797"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/dogshm" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
 
     <ImageView
-        android:id="@+id/ord2"
+        android:id="@+id/descp"
         android:layout_width="411dp"
-        android:layout_height="128dp"
-        android:contentDescription="@string/order_2"
-        app:layout_constraintBottom_toTopOf="@+id/ord3"
+        android:layout_height="192dp"
+        android:contentDescription="@string/evidenceUpldDesc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/catfd" />
+        app:layout_constraintTop_toBottomOf="@+id/msgBox"
+        app:srcCompat="@drawable/descp" />
 
     <ImageView
-        android:id="@+id/ord3"
+        android:id="@+id/sbmtBtn"
         android:layout_width="411dp"
-        android:layout_height="128dp"
-        android:contentDescription="@string/order_3"
-        app:layout_constraintBottom_toTopOf="@+id/ord4"
+        android:layout_height="83dp"
+        android:contentDescription="@string/submitBtn"
+        android:onClick="gotodisputelistpage"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/foodbowl" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="98dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="18dp"
-        android:contentDescription="@string/ordercount"
-        app:layout_constraintBottom_toTopOf="@+id/ord1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ordcount" />
+        app:layout_constraintTop_toBottomOf="@+id/descp"
+        app:srcCompat="@drawable/submit"
+        tools:ignore="RedundantDescriptionCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
