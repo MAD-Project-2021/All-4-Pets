@@ -2,9 +2,9 @@
     <string name="app_name">All-4-Pets</string>
     <string name="txt_topic">All-4-Pets</string>
     <string name="btn_category">Category</string>
-    <string name="btn_order">Orders</string>
-    <string name="btn_services">Services</string>
-    <string name="btn_ratings">Ratings</string>
+    <string name="btn_order">Daycare Centers</string>
+    <string name="btn_services">Veterinary Surgeons</string>
+    <string name="btn_ratings">Ratings and Reviews</string>
 
 
 
@@ -139,5 +139,8 @@
     <string name="tv_contact">Mobile Number :  0753248855</string>
     <string name="call">call</string>
     <string name="tv_intro3">More about the Daycare center</string>
+
+    <string name="txt_date">Date</string>
+    <string name="txt_time">Time   :-</string>
 
 </resources>
