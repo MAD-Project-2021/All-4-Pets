@@ -4,6 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Find_Veterinary">
+    tools:context=".Find_Veterinary"
+    >
+
+    <ImageView
+        android:id="@+id/image_View3"
+        android:layout_width="317dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="348dp"
+        android:contentDescription="@string/btn_search"
+        android:src="@drawable/srh"
+        android:onClick="gotoresults"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/image_View2"
+        android:layout_width="470dp"
+        android:layout_height="67dp"
+        android:contentDescription="@string/toolbar1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/findvet1" />
+
+    <TextView
+        android:id="@+id/et_view"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:text="@string/et_view"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_View2"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="149dp"
+        android:layout_height="185dp"
+        android:layout_marginBottom="72dp"
+        android:contentDescription="@string/imgslideshow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pet4" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="151dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="92dp"
+        android:contentDescription="@string/imgslideshow2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:srcCompat="@drawable/pet3"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="227dp"
+        android:layout_height="204dp"
+        android:layout_marginBottom="72dp"
+        android:contentDescription="@string/imgslideshow3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pet2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="228dp"
+        android:layout_height="138dp"
+        android:contentDescription="@string/btn_date"
+        app:layout_constraintBottom_toTopOf="@+id/image_View3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_view"
+        app:layout_constraintVertical_bias="0.187"
+        app:srcCompat="@drawable/datebutton"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="220dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/btn_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_view"
+        app:srcCompat="@drawable/timebutton"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:text="@string/txt2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image_View3"
+        app:layout_constraintEnd_toEndOf="@+id/image_View3"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="@+id/image_View3"
+        app:layout_constraintTop_toTopOf="@+id/image_View3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Find_Daycare"
+    >
+
+    <ImageView
+        android:id="@+id/image_View6"
+        android:layout_width="412dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/Search_bar3"
+        android:src="@drawable/srh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_booking"
+        app:layout_constraintVertical_bias="0.26"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/et_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/book_daycare_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/daycarebook"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/et_neardaycare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/et_neardaycare"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/image_View6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_booking" />
+
+    <SearchView
+        android:id="@+id/search_2"
+        android:layout_width="317dp"
+        android:layout_height="45dp"
+        android:queryHint="@string/search_2"
+        app:layout_constraintBottom_toBottomOf="@+id/image_View6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/image_View6"
+        app:layout_constraintTop_toTopOf="@+id/image_View6" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/check_in_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_View6"
+        app:srcCompat="@drawable/checkin" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="202dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/check_out_date"
+        app:layout_constraintBottom_toTopOf="@+id/btn_find"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/image_View6"
+        app:layout_constraintVertical_bias="0.515"
+        app:srcCompat="@drawable/checkout" />
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/btn_find"
+        android:textColor="#000000"
+        app:backgroundTint="#a56cc1"
+        android:onClick="gotoresults2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="154dp"
+        android:layout_height="121dp"
+        android:contentDescription="@string/img_vet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_find"
+        app:layout_constraintVertical_bias="0.531"
+        app:srcCompat="@drawable/daycare3" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="203dp"
+        android:layout_height="178dp"
+        android:contentDescription="@string/img_vet2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_find"
+        app:layout_constraintVertical_bias="0.589"
+        app:srcCompat="@drawable/daycare1"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/next_arrow"
+        android:rotationX="-10"
+        android:rotationY="-179"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/backarrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
