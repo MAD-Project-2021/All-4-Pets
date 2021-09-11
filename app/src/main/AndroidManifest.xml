@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".UpdateDispute"
+            android:exported="true" />
+        <activity
+            android:name=".DisputeList"
+            android:exported="true" />
+        <activity
+            android:name=".OpenDispute"
+            android:exported="true" />
+        <activity
+            android:name=".OrdersList"
+            android:exported="true" />
+        <activity
             android:name=".Servicess"
             android:exported="true" />
         <activity
