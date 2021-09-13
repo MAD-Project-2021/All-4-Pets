@@ -27,7 +27,7 @@
             android:name=".Pets"
             android:exported="true" />
         <activity
-            android:name=".Services"
+
 
 
             android:name=".UpdateDispute"
