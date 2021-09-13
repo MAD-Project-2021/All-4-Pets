@@ -6,30 +6,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Category extends AppCompatActivity {
+public class petsItems extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
+        setContentView(R.layout.activity_pets_items);
     }
     //Intent
-    public void btn_pets (View view){
-        Intent intent = new Intent(Category.this, Pets.class);
+    public void btn_petItem1 (View view){
+        Intent intent = new Intent(petsItems.this, itemC.class);
         startActivity(intent);
 
     }
     //Intent
-    public void btn_petsItems (View view){
-        Intent intent = new Intent(Category.this, petsItems.class);
+    public void btn_petItem4 (View view){
+        Intent intent = new Intent(petsItems.this, petItemCollar.class);
         startActivity(intent);
 
     }
+
     //Intent
-    public void btn_supliments(View view){
-        Intent intent = new Intent(Category.this, petsItems.class);
+    public void btn_backword (View view){
+        Intent intent = new Intent(petsItems.this, Category.class);
         startActivity(intent);
 
     }
-
 }

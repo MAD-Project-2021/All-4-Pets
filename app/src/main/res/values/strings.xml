@@ -5,6 +5,7 @@
 
 
 
+
     <string name="cm1">Catogery</string>
     <string name="pets_items">Pets\' Items</string>
     <string name="side_menu_bar">side_menu_bar</string>
@@ -70,9 +71,11 @@
     <string name="add_button">add_button</string>
     <string name="delete_btn">deletebtn</string>
 
+
     <string name="btn_order">Daycare Centers</string>
     <string name="btn_services">Veterinary Surgeons</string>
     <string name="btn_ratings">Ratings and Reviews</string>
+
 
 
 
@@ -211,6 +214,7 @@
     <string name="txt_date">Date</string>
     <string name="txt_time">Time   :-</string>
     <string name="btn_checkin">btn_checkin</string>
+
 
 
 </resources>
