@@ -5,4 +5,24 @@
     <string name="btn_order">Orders</string>
     <string name="btn_services">Services</string>
     <string name="btn_ratings">Ratings</string>
+    <string name="tv_ratings">Ratings and Reviews</string>
+    <string name="tv_answer">Answer</string>
+    <string name="btn_question1">How to predict the quality of your products?</string>
+    <string name="btn_question2">Do you offer cash on delivery?</string>
+    <string name="tv_comment">Comments...</string>
+    <string name="tv_comments">Comments...</string>
+    <string name="tv_quality">Product Quality</string>
+    <string name="tv_login">All 4 Pets</string>
+    <string name="et_email">Email</string>
+    <string name="et_phoneno">Phone No</string>
+    <string name="et_type">Type</string>
+    <string name="btn_editprofile">EDIT PROFILE</string>
+    <string name="btn_deleteprofile">DELETE PROFILE</string>
+    <string-array name="spinner">
+        <item>Please choose an option</item>
+        <item>Add Review</item>
+        <item>View Feedback</item>
+        <item>FAQ</item>
+
+    </string-array>
 </resources>

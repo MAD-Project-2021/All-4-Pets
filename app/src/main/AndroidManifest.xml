@@ -10,7 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".Servicess"
+            android:name=".View_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".FAQ"
+            android:exported="true" />
+        <activity
+            android:name=".View_Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".Add_Review"
+            android:exported="true" />
+        <activity
+            android:name=".Services"
             android:exported="true" />
         <activity
             android:name=".Ratings"
@@ -24,9 +42,7 @@
         <activity
             android:name=".Find_Veterinary"
             android:exported="true" />
-        <activity
-            android:name=".Services"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
