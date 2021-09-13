@@ -2,7 +2,9 @@ package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Fav_DaycareList extends AppCompatActivity {
 
@@ -11,4 +13,12 @@ public class Fav_DaycareList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fav_daycare_list);
     }
+
+    public void gotodaycareresultback(View view) {
+        Intent intent = new Intent(Fav_DaycareList.this, Daycare_Results.class);
+        startActivity(intent);
+
+    }
+
+
 }

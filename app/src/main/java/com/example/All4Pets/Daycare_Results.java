@@ -21,9 +21,9 @@ public class Daycare_Results extends AppCompatActivity {
 
     }
 
+
     public void gotoshowmore(View view) {
         Intent intent = new Intent(Daycare_Results.this, Daycare_ShowMore.class);
         startActivity(intent);
-
     }
 }

@@ -3,9 +3,7 @@
     <string name="txt_topic">All-4-Pets</string>
     <string name="btn_category">Category</string>
 
-    <string name="btn_order">Orders</string>
-    <string name="btn_services">Services</string>
-    <string name="btn_ratings">Ratings</string>
+
 
 
     <string name="cm1">Catogery</string>
@@ -72,6 +70,11 @@
     <string name="checkout_btn">Checkout</string>
     <string name="add_button">add_button</string>
     <string name="delete_btn">deletebtn</string>
+
+
+    <string name="btn_order">Daycare Centers</string>
+    <string name="btn_services">Veterinary Surgeons</string>
+    <string name="btn_ratings">Ratings and Reviews</string>
 
 
 
@@ -210,6 +213,8 @@
 
     <string name="txt_date">Date</string>
     <string name="txt_time">Time   :-</string>
+    <string name="btn_checkin">btn_checkin</string>
+
 
 
 </resources>
