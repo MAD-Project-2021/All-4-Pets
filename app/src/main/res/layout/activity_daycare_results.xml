@@ -8,20 +8,6 @@
     >
 
     <ImageView
-        android:id="@+id/image_View7"
-        android:layout_width="412dp"
-        android:layout_height="96dp"
-        android:contentDescription="@string/book_search_bar2"
-        android:src="@drawable/srh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_booking2"
-        app:layout_constraintVertical_bias="0.067"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
         android:id="@+id/et_booking2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,14 +23,15 @@
         android:id="@+id/tv_search"
         android:layout_width="386dp"
         android:layout_height="55dp"
+        android:layout_marginBottom="600dp"
         android:text="@string/tv_search"
+        android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="normal|bold"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_View7"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/switch_location"
@@ -64,25 +51,26 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="428dp"
-        android:layout_height="220dp"
+        android:layout_width="411dp"
+        android:layout_height="204dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="1dp"
-        android:onClick="gotoshowmore"
         android:contentDescription="@string/pet_description1"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView19"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch_location"
-        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/petdetails1" />
 
     <ImageView
         android:id="@+id/imageView19"
-        android:layout_width="448dp"
-        android:layout_height="257dp"
+        android:layout_width="411dp"
+        android:layout_height="204dp"
         android:contentDescription="@string/pet_description2"
+        android:onClick="gotoshowmore"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
@@ -95,14 +83,14 @@
         android:id="@+id/imageView25"
         android:layout_width="295dp"
         android:layout_height="88dp"
-        android:onClick="gotofavpage2"
         android:contentDescription="@string/watch_favourite_list2"
+        android:onClick="gotofavpage2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.809"
+        app:layout_constraintVertical_bias="0.987"
         app:srcCompat="@drawable/favlist1" />
 
     <RatingBar
@@ -130,19 +118,10 @@
         android:scaleY="0.7"
         app:layout_constraintBottom_toTopOf="@+id/imageView25"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar"
-        app:layout_constraintVertical_bias="0.738"
+        app:layout_constraintVertical_bias="0.601"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <SearchView
-        android:id="@+id/et_searchbar"
-        android:layout_width="320dp"
-        android:layout_height="57dp"
-        android:queryHint="@string/et_searchbar"
-        app:layout_constraintBottom_toBottomOf="@+id/image_View7"
-        app:layout_constraintEnd_toEndOf="@+id/image_View7"
-        app:layout_constraintStart_toStartOf="@+id/image_View7"
-        app:layout_constraintTop_toTopOf="@+id/image_View7" />
 </androidx.constraintlayout.widget.ConstraintLayout>

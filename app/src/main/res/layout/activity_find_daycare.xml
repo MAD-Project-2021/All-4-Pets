@@ -4,22 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Find_Daycare"
-    >
-
-    <ImageView
-        android:id="@+id/image_View6"
-        android:layout_width="412dp"
-        android:layout_height="96dp"
-        android:contentDescription="@string/Search_bar3"
-        android:src="@drawable/srh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_booking"
-        app:layout_constraintVertical_bias="0.26"
-        tools:ignore="ImageContrastCheck" />
+    android:background="#FFFFFF"
+    tools:context=".Find_Daycare">
 
     <ImageView
         android:id="@+id/et_booking"
@@ -30,70 +16,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/daycarebook"
-        tools:layout_editor_absoluteX="1dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
 
     <TextView
         android:id="@+id/et_neardaycare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/et_neardaycare"
+        android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/image_View6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_booking" />
 
-    <SearchView
-        android:id="@+id/search_2"
-        android:layout_width="317dp"
-        android:layout_height="45dp"
-        android:queryHint="@string/search_2"
-        app:layout_constraintBottom_toBottomOf="@+id/image_View6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/image_View6"
-        app:layout_constraintTop_toTopOf="@+id/image_View6" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="196dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="36dp"
-        android:contentDescription="@string/check_in_date"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_View6"
-        app:srcCompat="@drawable/checkin" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="202dp"
-        android:layout_height="100dp"
-        android:contentDescription="@string/check_out_date"
-        app:layout_constraintBottom_toTopOf="@+id/btn_find"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/image_View6"
-        app:layout_constraintVertical_bias="0.515"
-        app:srcCompat="@drawable/checkout" />
-
     <Button
         android:id="@+id/btn_find"
-        android:layout_width="166dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="209dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="84dp"
+        android:onClick="gotoresults2"
         android:text="@string/btn_find"
         android:textColor="#000000"
         app:backgroundTint="#a56cc1"
-        android:onClick="gotoresults2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_checkout"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
@@ -128,7 +79,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:contentDescription="@string/next_arrow"
         android:rotationX="-10"
         android:rotationY="-179"
@@ -136,8 +86,55 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView21"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:layout_constraintVertical_bias="0.631"
         app:srcCompat="@drawable/backarrow" />
+
+    <TextView
+        android:id="@+id/tv_checkout"
+        android:layout_width="199dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_checkin" />
+
+    <TextView
+        android:id="@+id/tv_checkin"
+        android:layout_width="199dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_neardaycare" />
+
+    <Button
+        android:id="@+id/btn_checkin"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#CA85BB"
+        android:text="@string/btn_checkin"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_checkin"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_neardaycare" />
+
+    <Button
+        android:id="@+id/btn_checkout"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#CA85BB"
+        android:text="@string/btn_checkin"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_checkout"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_checkin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

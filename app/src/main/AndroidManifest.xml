@@ -24,12 +24,9 @@
             android:name=".OrdersList"
             android:exported="true" />
 
-     <!--   <activity
-            android:name=".Servicess"
         <activity
-
             android:name=".Daycare_ShowMore"
-            android:exported="true" /> -->
+            android:exported="true" />
         <activity
             android:name=".Fav_DaycareList"
             android:exported="true" />
@@ -56,7 +53,6 @@
             android:exported="true" />
         <activity
             android:name=".Services"
-
             android:exported="true" />
         <activity
             android:name=".Ratings"
