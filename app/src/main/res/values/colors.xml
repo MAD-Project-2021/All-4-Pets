@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="tv_ratings">#fbfff6</color>
+    <color name="tv_addreview">#fbfff6</color>
+    <color name="tv_viewfeedback">#fbfff6</color>
+    <color name="tv_faq">#fbfff6</color>
+    <color name="ratingsbar_1">#10928f</color>
+    <color name="ratings_bar">#9788a5</color>
+    <color name="tv_name">#F8E9E8</color>
+    <color name="frag_bac">#80A652CF</color>
+    <color name="ratingbar">#daa520</color>
 </resources>

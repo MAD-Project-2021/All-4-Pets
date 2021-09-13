@@ -12,6 +12,27 @@
         android:fullBackupContent="@xml/backup_descriptor">
         <activity
 
+            android:name=".View_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".FAQ"
+            android:exported="true" />
+        <activity
+            android:name=".View_Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".Add_Review"
+            android:exported="true" />
+        <activity
+            android:name=".Services"
+
+
             android:name=".petItemCollar"
             android:exported="true" />
         <activity

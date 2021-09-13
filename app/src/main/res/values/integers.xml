@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="num_stars">5</integer>
+    <integer name="max_lines">4</integer>
+    <integer name="ratingsbar_2">5</integer>
+</resources>

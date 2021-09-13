@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/font/amaranth_bold.xml" value="0.1265625" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_add_review.xml" value="0.22" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_faq.xml" value="0.22" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_ratings.xml" value="0.25" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_register.xml" value="0.19010416666666666" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_sample.xml" value="0.20416666666666666" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_view_feedback.xml" value="0.22" />
+        <entry key="..\:/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_view_profile.xml" value="0.22" />
+
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21333333333333335" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_book_appointment.xml" value="0.13072916666666667" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_category.xml" value="0.264" />
@@ -16,6 +28,7 @@
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_services.xml" value="0.234375" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21333333333333335" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.21333333333333335" />
+
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/All-4-Pets/app/src/main/res/layout/activity_find_veterinary.xml" value="0.2318840579710145" />
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/All-4-Pets/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/All-4-Pets/app/src/main/res/layout/activity_orders.xml" value="0.2318840579710145" />
