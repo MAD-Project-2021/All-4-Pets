@@ -18,4 +18,10 @@ public class Services extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void btn_daycare (View view){
+        Intent intent = new Intent(Services.this, Find_Daycare.class);
+        startActivity(intent);
+
+    }
 }

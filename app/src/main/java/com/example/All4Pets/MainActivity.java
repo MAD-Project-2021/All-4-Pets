@@ -39,9 +39,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gotofinddaycarepage(View view){
+        Intent intent = new Intent(MainActivity.this, Find_Daycare.class);
+        startActivity(intent);
+    }
 
-// testingt 1ddddddddddd
-//testing 2
 
 
 }

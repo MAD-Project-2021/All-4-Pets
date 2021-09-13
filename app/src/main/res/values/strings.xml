@@ -2,6 +2,7 @@
     <string name="app_name">All-4-Pets</string>
     <string name="txt_topic">All-4-Pets</string>
     <string name="btn_category">Category</string>
+
     <string name="btn_order">Orders</string>
     <string name="btn_services">Services</string>
     <string name="btn_ratings">Ratings</string>
@@ -25,4 +26,219 @@
         <item>FAQ</item>
 
     </string-array>
+
+
+
+
+
+    <string name="cm1">Catogery</string>
+    <string name="pets_items">Pets\' Items</string>
+    <string name="side_menu_bar">side_menu_bar</string>
+    <string name="settings">Settings</string>
+    <string name="srch">search button</string>
+    <string name="pets_image_button">pets_image_button</string>
+    <string name="pets_items_button">pets_items_button</string>
+    <string name="supliments_button">supliments_button</string>
+    <string name="img">cageimage</string>
+    <string name="price1">RS. 8000/=</string>
+    <string name="item_name1">small Cage</string>
+    <string name="img1">pet_item1</string>
+    <string name="pet_item3">item3</string>
+    <string name="backnavigation">backNavigation</string>
+    <string name="item2">pet_item2</string>
+    <string name="item4">pet_item4</string>
+    <string name="new_shampoo_for_dogs">New Shampoo for dogs</string>
+    <string name="price2">Rs. 800/=</string>
+    <string name="adjestable_buckle_pet_collar">Adjestable Buckle Pet Collar</string>
+    <string name="item_image3">item_image3</string>
+    <string name="price3">Rs. 500/=</string>
+    <string name="item_image4">item_image4</string>
+    <string name="price4">Rs. 1500/=</string>
+    <string name="petsafe_easy_walk_dog_harness_collar">PetSafe Easy Walk Dog Harness collar</string>
+    <string name="item_image2">item_image2</string>
+    <string name="item_4_main_image">dog harness collar</string>
+    <string name="right_arrow">right expand arrow</string>
+    <string name="left_arrow">left expand arrow</string>
+    <string name="item_4_topic">PetSafe Easy Walk Dog Harness Collar</string>
+    <string name="item_4_location">Colombo</string>
+    <string name="item_4_description">Description</string>
+    <string name="d_price">Price : Rs. 1500/=</string>
+    <string name="buy_btn">Buy</string>
+    <string name="add_to_cart_btn">Add to Cart</string>
+    <string name="contact_number">Contact Number : 0777111753</string>
+    <string name="main_description">main_description</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="ad_line1">Ibbagamuwa</string>
+    <string name="b_name">H.C.M Silva</string>
+    <string name="ad_line2">Pangolla</string>
+    <string name="change_btn">Change Address</string>
+    <string name="add_card_details">Add Card Details</string>
+    <string name="view_more_btn">View More</string>
+    <string name="deliver_within_3_days">DELIVER WITHIN 3 DAYS</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="change_address">Change Address</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_address_line1">Enter Address Line1</string>
+    <string name="enter_address_line2">Enter Address Line2</string>
+    <string name="enter_address_line3">Enter Address Line3</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="save">Save</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="enter_card_holder_name">Enter Card Holder Name</string>
+    <string name="cvv">CVV</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="selectbtn">selectbtn</string>
+    <string name="cart">Cart</string>
+    <string name="pet_item1">pet_item1</string>
+    <string name="selected_items">Selected Items</string>
+    <string name="sub_total_cart">Sub Total</string>
+    <string name="checkout_btn">Checkout</string>
+    <string name="add_button">add_button</string>
+    <string name="delete_btn">deletebtn</string>
+
+
+    <string name="btn_order">Daycare Centers</string>
+    <string name="btn_services">Veterinary Surgeons</string>
+    <string name="btn_ratings">Ratings and Reviews</string>
+
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_main3">MainActivity3</string>
+    <string name="order_1">order1</string>
+    <string name="order_2">order2</string>
+    <string name="order_3">order3</string>
+    <string name="orders_status">status of the order</string>
+    <string name="search_btn">search_btn_navbar</string>
+    <string name="menu_btn">menu button_nav bar</string>
+    <string name="vertMenu">vertical Menu</string>
+    <string name="note">note</string>
+    <string name="order_confirm_button">order confirm button</string>
+
+    <string name="open_dispute_button">open dispute button</string>
+    <string name="deliveryinfo_text">deliveryinfo_text</string>
+    <string name="open_dispute">Open Dispute</string>
+    <string name="dispute_reason">*Dispute Reason</string>
+    <string name="dropdwn">dropdownmenu</string>
+    <string name="messageBox">Message Type Box</string>
+    <string name="evidenceUpldDesc">upload evidence box</string>
+    <string name="submitBtn">submit button</string>
+    <string name="update_dispute">Update Dispute</string>
+    <string name="dispute_details">Dispute Details Text</string>
+    <string name="dispdetails">Dispute Details Box</string>
+    <string name="dispute_reason_txt">Dispute Reason Text</string>
+    <string name="order">Order</string>
+    <string name="uploads">Uploads</string>
+    <string name="reason">Item not as described</string>
+    <string name="photoupload">photoUpload</string>
+    <string name="savechanges">Save Changes</string>
+    <string name="dispute_details_text">Dispute Details</string>
+    <string name="dispute_reasontxt">Dispute Reason</string>
+    <string name="disputes">Disputes</string>
+    <string name="upload2">upload2</string>
+    <string name="upload1">upload1</string>
+    <string name="message_optional">Message(Optional)</string>
+    <string name="reason_txt">Please Select a Reason</string>
+    <string name="itemdescription">itemDescription</string>
+    <string name="dispute_reasonTXT">Dispute Reason</string>
+    <string name="order_details">Order Details</string>
+    <string name="delivery_information">Delivery Information</string>
+    <string name="ordercount">order count</string>
+    <string name="btn_seemore">See Details</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="btn_opendispute">OPEN DISPUTE</string>
+    <string name="btn_seedetails">SEE DETAILS</string>
+
+
+
+    <string name="et_view">Near by Veterinary</string>
+    <string name="btn_search">Search</string>
+    <string name="toolbar1">find_vet</string>
+    <string name="imgslideshow">img1</string>
+    <string name="imgslideshow2">img2</string>
+    <string name="imgslideshow3">img3</string>
+    <string name="btn_date">btn_date</string>
+    <string name="btn_time">btn_time</string>
+    <string name="txt2">Search</string>
+    <string name="et_text1">Here are the Veterinary Surgeons that we found for you..</string>
+    <string name="vet_description1">btn_1</string>
+    <string name="vet_description2">btn_2</string>
+    <string name="vet_description3">btn_3</string>
+    <string name="vet_surgeon_find">topic2</string>
+    <string name="watch_favorite_list">fav_list</string>
+    <string name="add_to_favourite_list">addtofav</string>
+    <string name="vet_image1">vet_image1</string>
+    <string name="tv_name">Dr.(Ms.).W.A.C.I.Perera</string>
+    <string name="tv_special">tv_special1</string>
+    <string name="Veterinarydermatology">Veterinary dermatology</string>
+    <string name="vet_price">vet_price</string>
+    <string name="vet_experience">vet_experience</string>
+    <string name="vet_rating">vet_rating</string>
+    <string name="tv_info">More about the Veterinarian</string>
+    <string name="tv_description2">MS.P.N.C.Fernando is Veterinary who has special interest in dermatology with 10 years experience.she has completed a Bachelor of Veterinary Science degree at an accredited university program,followed by a doctor veterinary science</string>
+    <string name="location">Location</string>
+    <string name="btn_appointment">Make an Appointment</string>
+    <string name="back_arrow_icon">back_arrow_icon</string>
+    <string name="find_vet_bar">find_vet_bar</string>
+    <string name="vet_description_6">vet_description_6</string>
+    <string name="vet_descrip4">vet_descrip4</string>
+    <string name="vet_descrip5">vet_descrip5</string>
+    <string name="bottom_arrow">bottom_arrow</string>
+    <string name="appointment_bar">appointment_bar</string>
+    <string name="back_arrow">back_arrow</string>
+    <string name="vet_image_3">vet_image_3</string>
+    <string name="tv_docname">Ms.Jeny Peris</string>
+    <string name="tv_spec3">Neurosurgery</string>
+    <string name="scheduled_date_time">scheduled_date_time</string>
+    <string name="tv_patient">Patient Details</string>
+    <string name="patient_details">patient_details</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_get">got it</string>
+    <string name="Search_bar3">image_View6</string>
+    <string name="book_daycare_bar">book_daycare_bar</string>
+    <string name="et_neardaycare">Near By Dayacre</string>
+    <string name="search_2">search_2</string>
+    <string name="check_in_date">check_in_date</string>
+    <string name="check_out_date">check_out_date</string>
+    <string name="btn_find">Search</string>
+    <string name="img_vet">img_vet</string>
+    <string name="img_vet2">img_vet2</string>
+    <string name="next_arrow">next_arrow</string>
+    <string name="book_search_bar2">book_search_bar2</string>
+    <string name="tv_search">Here are some options that we found for you</string>
+    <string name="switch_location">Sorted by location</string>
+    <string name="pet_description1">pet_description1</string>
+    <string name="pet_description2">pet_description2</string>
+    <string name="watch_favourite_list2">watch_favourite_list2</string>
+    <string name="et_searchbar">et_searchbar</string>
+    <string name="descrip3">descrip3</string>
+    <string name="decrip2">decrip2</string>
+    <string name="decrip3">decrip3</string>
+    <string name="rate1">rate1</string>
+    <string name="fav_list2">fav_list2</string>
+    <string name="add_afv_2">add_afv_2</string>
+    <string name="vet_image6">vet_image6</string>
+    <string name="back_icon">back_icon</string>
+    <string name="tv_daycarename">Dogtopia Daycare Center</string>
+    <string name="location_point">location_point</string>
+    <string name="tv_address">Otukara Yashodara Street  , 44</string>
+    <string name="tv_daycareinfo2">"Dogtopia daycare works a lot like a daycare for children. You drop your dog off in the morning on the         way to work. While you are gone, your dog will get plenty of attention. Your dog's day will be filled with activities based on the         curriculum set out by the daycare facility on your dog's specific needs and temperament.we have a Pharmacy surgery suite with         state-of-the-art technology, on-site digital x-ray capabilities laser surgery ECG. "</string>
+    <string name="tv_details">Contact Details</string>
+    <string name="tv_contact">Mobile Number :  0753248855</string>
+    <string name="call">call</string>
+    <string name="tv_intro3">More about the Daycare center</string>
+
+    <string name="txt_date">Date</string>
+    <string name="txt_time">Time   :-</string>
+    <string name="btn_checkin">btn_checkin</string>
+
+
 </resources>

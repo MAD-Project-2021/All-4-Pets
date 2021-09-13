@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826783146872",
+    "project_id": "all4pets-c9505",
+    "storage_bucket": "all4pets-c9505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826783146872:android:aafa0f791d2ef66e86de8d",
+        "android_client_info": {
+          "package_name": "com.example.All4Pets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826783146872-q7i7j5fb6ibfpjh82mp1na1l5901psk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC8r25OGEyD4IZvV6ZeoUAL-D2HxlLVe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826783146872-q7i7j5fb6ibfpjh82mp1na1l5901psk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

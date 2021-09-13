@@ -6,4 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".Orders">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="415dp"
+        android:layout_height="65dp"
+        android:background="#CABBE9"
+        app:layout_constraintBottom_toBottomOf="@+id/ord4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:background="@null"
+            android:contentDescription="@string/search_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.448"
+            app:srcCompat="@drawable/search2" />
+
+        <ImageView
+            android:id="@+id/menu_btn"
+            android:layout_width="33dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/menu_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/search_btn"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.542"
+            app:srcCompat="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/vetMenu"
+            android:layout_width="36dp"
+            android:layout_height="39dp"
+            android:contentDescription="@string/vertMenu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toEndOf="@+id/search_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.384"
+            app:srcCompat="@drawable/menuvert" />
+
+        <TextView
+            android:id="@+id/updDes"
+            android:layout_width="123dp"
+            android:layout_height="44dp"
+            android:text="@string/order"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.229"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.476" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ord1"
+        android:layout_width="411dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/order_1"
+        app:layout_constraintBottom_toTopOf="@+id/ord2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dogbelt"
+        android:onClick="gotoorderdetails"/>
+
+    <ImageView
+        android:id="@+id/ord4"
+        android:layout_width="411dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/order_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dogshm" />
+
+    <ImageView
+        android:id="@+id/ord2"
+        android:layout_width="411dp"
+        android:layout_height="128dp"
+        android:contentDescription="@string/order_2"
+        app:layout_constraintBottom_toTopOf="@+id/ord3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/catfd" />
+
+    <ImageView
+        android:id="@+id/ord3"
+        android:layout_width="411dp"
+        android:layout_height="128dp"
+        android:contentDescription="@string/order_3"
+        app:layout_constraintBottom_toTopOf="@+id/ord4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/foodbowl" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="98dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/ordercount"
+        app:layout_constraintBottom_toTopOf="@+id/ord1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ordcount" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
