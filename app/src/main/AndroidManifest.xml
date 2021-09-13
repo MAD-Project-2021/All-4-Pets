@@ -30,7 +30,7 @@
             android:name=".Add_Review"
             android:exported="true" />
         <activity
-            android:name=".Services"
+
 
 
             android:name=".petItemCollar"

@@ -3,9 +3,7 @@
     <string name="txt_topic">All-4-Pets</string>
     <string name="btn_category">Category</string>
 
-    <string name="btn_order">Orders</string>
-    <string name="btn_services">Services</string>
-    <string name="btn_ratings">Ratings</string>
+
     <string name="tv_ratings">Ratings and Reviews</string>
     <string name="tv_answer">Answer</string>
     <string name="btn_question1">How to predict the quality of your products?</string>
