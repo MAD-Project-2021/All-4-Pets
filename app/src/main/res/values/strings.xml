@@ -237,6 +237,9 @@
     <string name="txt_date">Date</string>
     <string name="txt_time">Time   :-</string>
     <string name="btn_checkin">btn_checkin</string>
+    <string name="et_date">Select the Date  and Month</string>
+    <string name="et_time">Select the Time</string>
+    <string name="et_area">Select the Area</string>
 
 
 </resources>

@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void gotoservicespage(View view){
-        Intent intent = new Intent(MainActivity.this, Services.class);
+    public void gotofindvet(View view){
+        Intent intent = new Intent(MainActivity.this, Find_Veterinary.class);
         startActivity(intent);
     }
 

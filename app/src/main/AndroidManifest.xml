@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.All4Pets">
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -93,10 +95,6 @@
             android:exported="true" />
         <activity
             android:name=".Find_Daycare"
-            android:exported="true" />
-        <activity
-            android:name=".Services"
-
             android:exported="true" />
         <activity
             android:name=".Ratings"
