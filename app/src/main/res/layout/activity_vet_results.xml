@@ -23,133 +23,43 @@
 
 
     <ImageView
-        android:id="@+id/img_vetdoc1"
-        android:layout_width="416dp"
-        android:layout_height="214dp"
-        android:onClick="gotoshowmore"
-        android:contentDescription="@string/vet_description1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_View4"
-        app:layout_constraintVertical_bias="0.165"
-        app:srcCompat="@drawable/vetdescrip1" />
-
-    <ImageView
-        android:id="@+id/img_vetcoc3"
-        android:layout_width="415dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="200dp"
-        android:contentDescription="@string/vet_description2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.642"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_vet1"
-        app:layout_constraintVertical_bias="0.772"
-        app:srcCompat="@drawable/vetdescrip2"
-        tools:ignore="UnknownId" />
-
-    <ImageView
-        android:id="@+id/img_vetdoc2"
-        android:layout_width="420dp"
-        android:layout_height="235dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="32dp"
-        android:contentDescription="@string/vet_description3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/image_View5"
-        app:layout_constraintVertical_bias="0.98"
-        app:srcCompat="@drawable/vetdescrip3" />
-
-    <RatingBar
-        android:id="@+id/vet_rb1"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="104dp"
-        android:max="5"
-        android:rating="4.5"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        app:layout_constraintBottom_toTopOf="@+id/vet_rb2"
-        app:layout_constraintEnd_toEndOf="@+id/img_vetdoc1"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="@+id/img_vetdoc1"
-        app:layout_constraintTop_toBottomOf="@+id/image_View5"
-        app:layout_constraintVertical_bias="0.437"
-        tools:ignore="SpeakableTextPresentCheck,UnknownId" />
-
-    <RatingBar
-        android:id="@+id/vet_rb2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:max="5"
-        android:rating="4"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        app:layout_constraintBottom_toTopOf="@+id/img_vetdoc2"
-        app:layout_constraintEnd_toEndOf="@+id/img_vetcoc3"
-        app:layout_constraintHorizontal_bias="0.668"
-        app:layout_constraintStart_toStartOf="@+id/img_vetcoc3"
-        app:layout_constraintTop_toTopOf="@+id/img_vetcoc3"
-        app:layout_constraintVertical_bias="0.885"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <RatingBar
-        android:id="@+id/vet_rb3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:max="5"
-        android:rating="5"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        app:layout_constraintBottom_toBottomOf="@+id/img_vetdoc2"
-        app:layout_constraintEnd_toEndOf="@+id/img_vetdoc2"
-        app:layout_constraintHorizontal_bias="0.683"
-        app:layout_constraintStart_toStartOf="@+id/img_vetdoc2"
-        app:layout_constraintTop_toBottomOf="@+id/vet_rb2"
-        app:layout_constraintVertical_bias="0.058"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
         android:id="@+id/imageView11"
         android:layout_width="295dp"
         android:layout_height="88dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="-25dp"
-        android:onClick="gotofavpage"
         android:contentDescription="@string/watch_favorite_list"
+        android:onClick="gotofavpage"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/img_vetdoc2"
-        app:layout_constraintHorizontal_bias="0.98"
-        app:layout_constraintStart_toStartOf="@+id/img_vetdoc2"
-        app:layout_constraintTop_toBottomOf="@+id/img_vetdoc2"
-        app:layout_constraintVertical_bias="0.685"
-        app:srcCompat="@drawable/favlist1" />
+        app:srcCompat="@drawable/favlist1"
+        tools:layout_editor_absoluteX="142dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/et_text1"
         android:layout_width="378dp"
         android:layout_height="47dp"
+        android:layout_marginTop="32dp"
         android:text="@string/et_text1"
         android:textColor="@color/black"
         android:textColorLink="@color/teal_700"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/img_vetcoc3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_View4"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/VetList"
+        android:layout_width="407dp"
+        android:layout_height="493dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_text1"
+        app:layout_constraintVertical_bias="0.086" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
