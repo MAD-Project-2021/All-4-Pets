@@ -1,14 +1,16 @@
-package com.example.All4Pets;
+package com.example.All4Pets.disputes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Supliments extends AppCompatActivity {
+import com.example.All4Pets.R;
+
+public class DisputeList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_supliments);
+        setContentView(R.layout.activity_dispute_list);
     }
 }

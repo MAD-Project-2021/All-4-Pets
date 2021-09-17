@@ -1,7 +1,6 @@
-package com.example.All4Pets;
+package com.example.All4Pets.Daycare;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.ButtonBarLayout;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -11,7 +10,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
-import java.util.Calendar;
+import com.example.All4Pets.R;
 
 public class Find_Daycare extends AppCompatActivity {
 

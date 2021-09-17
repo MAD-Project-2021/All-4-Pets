@@ -1,4 +1,4 @@
-package com.example.All4Pets;
+package com.example.All4Pets.disputes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,15 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Daycare_ShowMore extends AppCompatActivity {
+import com.example.All4Pets.R;
+
+public class UpdateDispute extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_daycare_show_more);
+        setContentView(R.layout.activity_update_dispute);
     }
-    public void redirecttoresults2 (View view){
-        Intent intent = new Intent(Daycare_ShowMore.this, Daycare_Results.class);
+
+    public void gotodisputelistpage (View view){
+        Intent intent = new Intent(this, DisputeList.class);
         startActivity(intent);
 
     }

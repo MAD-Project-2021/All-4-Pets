@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#E7A3F3"
-    tools:context=".Find_Veterinary">
+    tools:context=".Doctor.Find_Veterinary"
+    android:background="@drawable/find_pet1">
 
     <ImageView
         android:id="@+id/btn_imgsearch"
@@ -46,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_View2"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -105,9 +105,11 @@
         android:layout_height="54dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
+        android:background="#CC1A8B9D"
         android:ems="10"
-        android:hint="@string/et_date"
+        android:hint="@string/string_et_dateMonth"
         android:inputType="textPersonName"
+        android:textStyle="normal|bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/btn_imgsearch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.838"
@@ -118,14 +120,16 @@
     <EditText
         android:id="@+id/et_time"
         android:layout_width="360dp"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
         android:layout_marginStart="202dp"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="104dp"
+        android:background="#CC1A8B9D"
         android:ems="10"
-        android:hint="@string/et_time"
+        android:hint="@string/string_et_time"
         android:inputType="textPersonName"
+        android:textStyle="normal|bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/btn_imgsearch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -135,14 +139,16 @@
 
     <EditText
         android:id="@+id/et_area"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
+        android:layout_width="356dp"
+        android:layout_height="58dp"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="24dp"
+        android:background="#CC1A8B9D"
         android:ems="10"
-        android:hint="@string/et_area"
+        android:hint="@string/string_et_area"
         android:inputType="textPersonName"
+        android:textStyle="normal|bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

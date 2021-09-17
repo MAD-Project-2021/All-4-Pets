@@ -1,4 +1,4 @@
-package com.example.All4Pets;
+package com.example.All4Pets.Ratings;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import com.example.All4Pets.R;
 
 public class Ratings extends AppCompatActivity {
 
@@ -29,12 +31,12 @@ public class Ratings extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==1){
-                    startActivity(new Intent(Ratings.this,Add_Review.class));
+                    startActivity(new Intent(Ratings.this, Add_Review.class));
                 }
                 else if(i==2){
-                        startActivity(new Intent(Ratings.this,View_Feedback.class));
+                        startActivity(new Intent(Ratings.this, View_Feedback.class));
                 } else if(i==3){
-                        startActivity(new Intent(Ratings.this,FAQ.class));
+                        startActivity(new Intent(Ratings.this, FAQ.class));
                 }
             }
 

@@ -1,14 +1,16 @@
-package com.example.All4Pets;
+package com.example.All4Pets.Ratings;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Confirmed_Booking extends AppCompatActivity {
+import com.example.All4Pets.R;
+
+public class View_Profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_confirmed_booking);
+        setContentView(R.layout.activity_view_profile);
     }
 }

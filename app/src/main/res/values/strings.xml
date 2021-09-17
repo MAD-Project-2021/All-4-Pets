@@ -240,6 +240,10 @@
     <string name="et_date">Select the Date  and Month</string>
     <string name="et_time">Select the Time</string>
     <string name="et_area">Select the Area</string>
+    <string name="string_et_time">🕐 Select Time</string>
+    <string name="string_et_date">📅 / Select Date and Month</string>
+    <string name="string_et_area">📌 Select Area</string>
+    <string name="string_et_dateMonth">📅 Select Date and Month</string>
 
 
 </resources>

@@ -1,15 +1,16 @@
-package com.example.All4Pets;
+package com.example.All4Pets.Doctor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class itemC extends AppCompatActivity {
+import com.example.All4Pets.R;
+
+public class Fav_VetList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_c);
+        setContentView(R.layout.activity_fav_vet_list);
     }
-
 }
