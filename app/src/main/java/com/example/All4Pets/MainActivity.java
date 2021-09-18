@@ -11,6 +11,7 @@ import com.example.All4Pets.Category.Category;
 import com.example.All4Pets.Category.Orders;
 import com.example.All4Pets.Daycares.Find_Daycare;
 import com.example.All4Pets.Doctors.Find_Veterinary;
+import com.example.All4Pets.Ratings.Ratings;
 
 
 //import com.google.firebase.FirebaseApp;
