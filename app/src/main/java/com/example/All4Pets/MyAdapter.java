@@ -1,4 +1,4 @@
-package com.example.All4Pets.Doctor;
+package com.example.All4Pets;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.All4Pets.R;
 import com.google.firebase.database.annotations.NotNull;
 
 import java.util.ArrayList;

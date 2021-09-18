@@ -1,4 +1,4 @@
-package com.example.All4Pets.Ratings;
+package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
 

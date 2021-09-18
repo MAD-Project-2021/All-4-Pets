@@ -1,4 +1,4 @@
-package com.example.All4Pets.Daycare;
+package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
-import com.example.All4Pets.R;
 
 public class Book_Daycare extends AppCompatActivity {
 

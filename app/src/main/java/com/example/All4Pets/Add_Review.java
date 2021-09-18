@@ -1,4 +1,4 @@
-package com.example.All4Pets.Ratings;
+package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,32 +7,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.All4Pets.R;
+public class Add_Review extends AppCompatActivity {
 
-public class View_Feedback extends AppCompatActivity {
-
-    private ImageView button2;
+    private ImageView button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_feedback);
+        setContentView(R.layout.activity_add_review);
 
-        button2 = (ImageView) findViewById(R.id.btn_back);
+        button1 = (ImageView) findViewById(R.id.btn_back1);
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openActivityRatings();
             }
         });
 
+
     }
+
 
     public void openActivityRatings(){
         Intent intent = new Intent(this , Ratings.class);
         startActivity(intent);
     }
-
-
 }
