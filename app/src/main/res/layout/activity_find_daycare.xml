@@ -101,10 +101,15 @@
         android:id="@+id/tv_checkin"
         android:layout_width="199dp"
         android:layout_height="45dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_checkin"
         app:layout_constraintTop_toBottomOf="@+id/et_neardaycare" />
 
     <Button
@@ -112,13 +117,13 @@
         android:layout_width="167dp"
         android:layout_height="51dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#CA85BB"
         android:text="@string/btn_checkin"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tv_checkin"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_neardaycare" />
 
@@ -129,7 +134,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#CA85BB"
-        android:text="@string/btn_checkin"
+        android:text="@string/btn_checkout"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tv_checkout"

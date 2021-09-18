@@ -4,8 +4,6 @@
     <string name="btn_category">Category</string>
 
 
-
-
     <string name="cm1">Catogery</string>
     <string name="pets_items">Pets\' Items</string>
     <string name="side_menu_bar">side_menu_bar</string>
@@ -77,8 +75,6 @@
     <string name="btn_ratings">Ratings and Reviews</string>
 
 
-
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -131,7 +127,6 @@
     <string name="btn_delete">DELETE</string>
     <string name="btn_opendispute">OPEN DISPUTE</string>
     <string name="btn_seedetails">SEE DETAILS</string>
-
 
 
     <string name="et_view">Near by Veterinary</string>
@@ -213,8 +208,15 @@
 
     <string name="txt_date">Date</string>
     <string name="txt_time">Time   :-</string>
-    <string name="btn_checkin">btn_checkin</string>
+    <string name="btn_checkin">CHECK-IN DATE</string>
+    <string name="btn_checkout">CHECK-OUT DATE</string>
+    <string name="btn_booking">Booking</string>
 
+    <string name="btn_bookingconfirm">CONFIRM BOOKING</string>
+    <string name="tv_dcname">Dogtopia DayCare Center</string>
+    <string name="tv_custdetails">Customer\'s Infomation</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_change">CHANGE BOOKING</string>
 
 
 </resources>

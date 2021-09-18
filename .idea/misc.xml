@@ -26,7 +26,6 @@
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/MyApplication/app/src/main/res/layout/activity_btn1.xml" value="0.2246376811594203" />
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.2246376811594203" />
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/MyApplication/app/src/main/res/layout/app_bar_main.xml" value="0.25416666666666665" />
-
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_book_appointment.xml" value="0.20104166666666667" />
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_book_daycare.xml" value="0.21510416666666668" />
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_confirmed_booking.xml" value="0.22135416666666666" />
@@ -40,19 +39,22 @@
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_services.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_vet_results.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_vet_show_more.xml" value="0.25" />
+        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_book_appointment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_book_daycare.xml" value="0.25" />
+        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_confirmed_booking.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_confirmed_daycare_booking.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_daycare_results.xml" value="0.25" />
-        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_daycare_show_more.xml" value="0.264" />
+        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_daycare_show_more.xml" value="0.25" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_fav_daycare_list.xml" value="0.264" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_find_daycare.xml" value="0.25" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/layout_custom_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_dispute_list.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_open_dispute.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_orders.xml" value="0.25" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_orders_list.xml" value="0.25" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_update_dispute.xml" value="0.23369565217391305" />
-
-
       </map>
     </option>
   </component>
