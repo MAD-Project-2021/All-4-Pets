@@ -26,6 +26,7 @@
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/MyApplication/app/src/main/res/layout/activity_btn1.xml" value="0.2246376811594203" />
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.2246376811594203" />
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/MyApplication/app/src/main/res/layout/app_bar_main.xml" value="0.25416666666666665" />
+
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_book_appointment.xml" value="0.20104166666666667" />
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_book_daycare.xml" value="0.21510416666666668" />
         <entry key="..\:/Users/ASUS/Desktop/MADPROJECT/All-4-Pets/app/src/main/res/layout/activity_confirmed_booking.xml" value="0.22135416666666666" />
@@ -55,6 +56,14 @@
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_orders.xml" value="0.25" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_orders_list.xml" value="0.25" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/Desktop/MADNEW/app/src/main/res/layout/activity_update_dispute.xml" value="0.23369565217391305" />
+
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_find_veterinary.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_login.xml" value="0.175" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_main.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_vet_results.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/item.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/vet_cards.xml" value="0.25271739130434784" />
+
       </map>
     </option>
   </component>

@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.All4Pets.R;
+
 public class DisputeList extends AppCompatActivity {
 
     @Override

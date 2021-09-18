@@ -1,7 +1,6 @@
 package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.ButtonBarLayout;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -12,9 +11,13 @@ import android.widget.DatePicker;
 import android.widget.TextView;
 import java.util.Calendar;
 
+
 import java.util.Calendar;
 
 public class Find_Daycare extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
+
+public class Find_Daycare extends AppCompatActivity {
+
 
     Button btn_checkin;
     TextView tv_checkin;
