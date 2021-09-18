@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class Daycare_ShowMore extends AppCompatActivity {
 
@@ -18,4 +19,11 @@ public class Daycare_ShowMore extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void gotobookdaycarepg (View view){
+        Intent intent = new Intent(Daycare_ShowMore.this, Book_Daycare.class);
+        startActivity(intent);
+
+    }
+
 }

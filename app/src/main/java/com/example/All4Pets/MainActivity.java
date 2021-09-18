@@ -6,7 +6,9 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 //import com.google.firebase.FirebaseApp;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void gotoservicespage(View view){
-        Intent intent = new Intent(MainActivity.this, Services.class);
+    public void gotofindvet(View view){
+        Intent intent = new Intent(MainActivity.this, Find_Veterinary.class);
         startActivity(intent);
     }
 

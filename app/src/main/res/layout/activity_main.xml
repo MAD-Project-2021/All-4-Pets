@@ -40,7 +40,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginBottom="43dp"
         android:text="@string/btn_services"
-        android:onClick="gotoservicespage"
+        android:onClick="gotofindvet"
         app:layout_constraintBottom_toTopOf="@+id/btn_ratings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.386"
