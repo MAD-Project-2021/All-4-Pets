@@ -248,6 +248,10 @@
     <string name="btn_change">CHANGE BOOKING</string>
 
 
+   
+
+
+
     <string name="et_date">Select the Date  and Month</string>
     <string name="et_time">Select the Time</string>
     <string name="et_area">Select the Area</string>
