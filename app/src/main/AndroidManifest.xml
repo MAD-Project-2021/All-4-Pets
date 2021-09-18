@@ -80,19 +80,19 @@
             android:name=".Daycares.Daycare_Results"
             android:exported="true" />
         <activity
-            android:name=".Confirmed_Booking"
+            android:name=".Doctors.Confirmed_Booking"
             android:exported="true" />
         <activity
-            android:name=".Book_Appointment"
+            android:name=".Doctors.Book_Appointment"
             android:exported="true" />
         <activity
-            android:name=".Fav_VetList"
+            android:name=".Doctors.Fav_VetList"
             android:exported="true" />
         <activity
-            android:name=".Vet_ShowMore"
+            android:name=".Doctors.Vet_ShowMore"
             android:exported="true" />
         <activity
-            android:name=".Vet_Results"
+            android:name=".Doctors.Vet_Results"
             android:exported="true" />
         <activity
             android:name=".Daycares.Find_Daycare"
@@ -113,7 +113,7 @@
             android:name=".Category.Category"
             android:exported="true" />
         <activity
-            android:name=".Find_Veterinary"
+            android:name=".Doctors.Find_Veterinary"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
