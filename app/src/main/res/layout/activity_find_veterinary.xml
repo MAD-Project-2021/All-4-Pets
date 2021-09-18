@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Doctor.Find_Veterinary"
+    tools:context=".Find_Veterinary"
     android:background="@drawable/find_pet1">
 
     <ImageView

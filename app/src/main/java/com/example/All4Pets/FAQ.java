@@ -1,4 +1,4 @@
-package com.example.All4Pets.Ratings;
+package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.example.All4Pets.R;
 
 public class FAQ extends AppCompatActivity implements View.OnClickListener {
 

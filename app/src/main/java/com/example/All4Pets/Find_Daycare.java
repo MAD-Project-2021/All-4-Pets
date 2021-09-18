@@ -1,4 +1,4 @@
-package com.example.All4Pets.Daycare;
+package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
-
-import com.example.All4Pets.R;
 
 public class Find_Daycare extends AppCompatActivity {
 
