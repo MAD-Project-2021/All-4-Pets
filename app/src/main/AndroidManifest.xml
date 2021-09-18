@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".Confirmed_DaycareBooking"
+            android:name=".Daycares.Confirmed_DaycareBooking"
             android:exported="true" />
         <activity
-            android:name=".Book_Daycare"
+            android:name=".Daycares.Book_Daycare"
             android:exported="true" />
         <activity
 
@@ -71,13 +71,13 @@
             android:name=".Category.OrdersList"
             android:exported="true" />
         <activity
-            android:name=".Daycare_ShowMore"
+            android:name=".Daycares.Daycare_ShowMore"
             android:exported="true" />
         <activity
-            android:name=".Fav_DaycareList"
+            android:name=".Daycares.Fav_DaycareList"
             android:exported="true" />
         <activity
-            android:name=".Daycare_Results"
+            android:name=".Daycares.Daycare_Results"
             android:exported="true" />
         <activity
             android:name=".Confirmed_Booking"
@@ -95,7 +95,7 @@
             android:name=".Vet_Results"
             android:exported="true" />
         <activity
-            android:name=".Find_Daycare"
+            android:name=".Daycares.Find_Daycare"
             android:exported="true" />
         <activity
 

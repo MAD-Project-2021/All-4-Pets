@@ -1,4 +1,4 @@
-package com.example.All4Pets;
+package com.example.All4Pets.Daycares;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+
+import com.example.All4Pets.R;
 
 import java.util.Calendar;
 
