@@ -13,16 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".Confirmed_DaycareBooking"
+            android:name=".Daycare.Confirmed_DaycareBooking"
             android:exported="true" />
         <activity
-            android:name=".Book_Daycare"
+            android:name=".Daycare.Book_Daycare"
             android:exported="true" />
         <activity
 
 
 
-            android:name=".View_Profile"
+            android:name=".Ratings.View_Profile"
             android:exported="true" />
         <activity
             android:name=".Register"
@@ -31,71 +31,71 @@
             android:name=".Login"
             android:exported="true" />
         <activity
-            android:name=".FAQ"
+            android:name=".Ratings.FAQ"
             android:exported="true" />
         <activity
-            android:name=".View_Feedback"
+            android:name=".Ratings.View_Feedback"
             android:exported="true" />
         <activity
-            android:name=".Add_Review"
+            android:name=".Ratings.Add_Review"
             android:exported="true" />
         <activity
 
 
 
 
-            android:name=".petItemCollar"
+            android:name=".Category.petItemCollar"
             android:exported="true" />
         <activity
-            android:name=".itemC"
+            android:name=".Category.itemC"
             android:exported="true" />
         <activity
-            android:name=".Supliments"
+            android:name=".Category.Supliments"
             android:exported="true" />
         <activity
-            android:name=".petsItems"
+            android:name=".Category.petsItems"
             android:exported="true" />
         <activity
-            android:name=".Pets"
+            android:name=".Category.Pets"
             android:exported="true" />
         <activity
-            android:name=".UpdateDispute"
+            android:name=".Category.UpdateDispute"
             android:exported="true" />
         <activity
-            android:name=".DisputeList"
+            android:name=".Category.DisputeList"
             android:exported="true" />
         <activity
-            android:name=".OpenDispute"
+            android:name=".Category.OpenDispute"
             android:exported="true" />
         <activity
-            android:name=".OrdersList"
+            android:name=".Category.OrdersList"
             android:exported="true" />
         <activity
-            android:name=".Daycare_ShowMore"
+            android:name=".Daycare.Daycare_ShowMore"
             android:exported="true" />
         <activity
-            android:name=".Fav_DaycareList"
+            android:name=".Daycare.Fav_DaycareList"
             android:exported="true" />
         <activity
-            android:name=".Daycare_Results"
+            android:name=".Daycare.Daycare_Results"
             android:exported="true" />
         <activity
-            android:name=".Confirmed_Booking"
+            android:name=".Doctor.Confirmed_Booking"
             android:exported="true" />
         <activity
-            android:name=".Book_Appointment"
+            android:name=".Doctor.Book_Appointment"
             android:exported="true" />
         <activity
-            android:name=".Fav_VetList"
+            android:name=".Doctor.Fav_VetList"
             android:exported="true" />
         <activity
-            android:name=".Vet_ShowMore"
+            android:name=".Doctor.Vet_ShowMore"
             android:exported="true" />
         <activity
-            android:name=".Vet_Results"
+            android:name=".Doctor.Vet_Results"
             android:exported="true" />
         <activity
-            android:name=".Find_Daycare"
+            android:name=".Daycare.Find_Daycare"
             android:exported="true" />
         <activity
 
@@ -104,16 +104,16 @@
         <activity
 
 
-            android:name=".Ratings"
+            android:name=".Ratings.Ratings"
             android:exported="true" />
         <activity
-            android:name=".Orders"
+            android:name=".Category.Orders"
             android:exported="true" />
         <activity
-            android:name=".Category"
+            android:name=".Category.Category"
             android:exported="true" />
         <activity
-            android:name=".Find_Veterinary"
+            android:name=".Doctor.Find_Veterinary"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

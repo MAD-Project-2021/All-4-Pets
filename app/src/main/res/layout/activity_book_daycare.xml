@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#C1BDC8"
     android:backgroundTint="#FFFFFF"
-    tools:context=".Book_Daycare">
+    tools:context=".Daycare.Book_Daycare">
 
     <ImageView
         android:id="@+id/imageView38"
