@@ -6,8 +6,14 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import com.example.All4Pets.Category.Category;
 import com.example.All4Pets.Category.Orders;
+
+
+//import com.google.firebase.FirebaseApp;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
