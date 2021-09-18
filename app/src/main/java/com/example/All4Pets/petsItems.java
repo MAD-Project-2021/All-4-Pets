@@ -1,12 +1,10 @@
-package com.example.All4Pets.Category;
+package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import com.example.All4Pets.R;
 
 public class petsItems extends AppCompatActivity {
 

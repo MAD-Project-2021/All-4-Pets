@@ -1,4 +1,4 @@
-package com.example.All4Pets.Category;
+package com.example.All4Pets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,19 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.All4Pets.R;
-
-public class OrdersList extends AppCompatActivity {
+public class Fav_DaycareList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_orders_list);
+        setContentView(R.layout.activity_fav_daycare_list);
     }
 
-    public void gotoorderspage (View view){
-        Intent intent = new Intent(this, Orders.class);
+    public void gotodaycareresultback(View view) {
+        Intent intent = new Intent(Fav_DaycareList.this, Daycare_Results.class);
         startActivity(intent);
 
     }
+
+
 }
