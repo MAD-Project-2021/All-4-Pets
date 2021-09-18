@@ -22,7 +22,12 @@
 
     </style>
 
-    <style name="datePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <style name="datePickerDialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">@color/purple_200</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">88%</item>
+        <item name="android:windowMinWidthMinor">88%</item>
     </style>
 </resources>
