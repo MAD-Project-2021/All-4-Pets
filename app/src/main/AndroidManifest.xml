@@ -22,7 +22,7 @@
 
 
 
-            android:name=".View_Profile"
+            android:name=".Ratings.View_Profile"
             android:exported="true" />
         <activity
             android:name=".Register"
@@ -31,13 +31,13 @@
             android:name=".Login"
             android:exported="true" />
         <activity
-            android:name=".FAQ"
+            android:name=".Ratings.FAQ"
             android:exported="true" />
         <activity
-            android:name=".View_Feedback"
+            android:name=".Ratings.View_Feedback"
             android:exported="true" />
         <activity
-            android:name=".Add_Review"
+            android:name=".Ratings.Add_Review"
             android:exported="true" />
         <activity
 
@@ -104,7 +104,7 @@
         <activity
 
 
-            android:name=".Ratings"
+            android:name=".Ratings.Ratings"
             android:exported="true" />
         <activity
             android:name=".Category.Orders"

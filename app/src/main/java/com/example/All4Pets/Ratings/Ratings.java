@@ -1,4 +1,4 @@
-package com.example.All4Pets;
+package com.example.All4Pets.Ratings;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.All4Pets.R;
 
 import java.util.ArrayList;
 
