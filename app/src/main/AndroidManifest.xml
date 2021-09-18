@@ -44,31 +44,31 @@
 
 
 
-            android:name=".petItemCollar"
+            android:name=".Category.petItemCollar"
             android:exported="true" />
         <activity
-            android:name=".itemC"
+            android:name=".Category.itemC"
             android:exported="true" />
         <activity
-            android:name=".Supliments"
+            android:name=".Category.Supliments"
             android:exported="true" />
         <activity
-            android:name=".petsItems"
+            android:name=".Category.petsItems"
             android:exported="true" />
         <activity
-            android:name=".Pets"
+            android:name=".Category.Pets"
             android:exported="true" />
         <activity
-            android:name=".UpdateDispute"
+            android:name=".Category.UpdateDispute"
             android:exported="true" />
         <activity
-            android:name=".DisputeList"
+            android:name=".Category.DisputeList"
             android:exported="true" />
         <activity
-            android:name=".OpenDispute"
+            android:name=".Category.OpenDispute"
             android:exported="true" />
         <activity
-            android:name=".OrdersList"
+            android:name=".Category.OrdersList"
             android:exported="true" />
         <activity
             android:name=".Daycare_ShowMore"
@@ -107,10 +107,10 @@
             android:name=".Ratings"
             android:exported="true" />
         <activity
-            android:name=".Orders"
+            android:name=".Category.Orders"
             android:exported="true" />
         <activity
-            android:name=".Category"
+            android:name=".Category.Category"
             android:exported="true" />
         <activity
             android:name=".Find_Veterinary"
