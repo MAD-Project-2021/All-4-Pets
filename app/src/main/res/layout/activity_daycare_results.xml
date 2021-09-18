@@ -8,6 +8,22 @@
     >
 
     <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="37dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="@string/back_icon"
+        android:onClick="gotodaycareresultback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView25"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/backarrow"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
         android:id="@+id/et_booking2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +33,8 @@
         app:srcCompat="@drawable/daycarebook"
         tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
+        android:contentDescription="TODO"
+        android:onClick="gotofinddaycarepage"/>
 
     <TextView
         android:id="@+id/tv_search"

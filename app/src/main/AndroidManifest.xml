@@ -6,13 +6,21 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication"
-        android:fullBackupContent="@xml/backup_descriptor">
+        android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Confirmed_DaycareBooking"
+            android:exported="true" />
+        <activity
+            android:name=".Book_Daycare"
+            android:exported="true" />
+        <activity
+
+
 
             android:name=".View_Profile"
             android:exported="true" />
@@ -35,6 +43,7 @@
 
 
 
+
             android:name=".petItemCollar"
             android:exported="true" />
         <activity
@@ -50,9 +59,6 @@
             android:name=".Pets"
             android:exported="true" />
         <activity
-
-
-
             android:name=".UpdateDispute"
             android:exported="true" />
         <activity
@@ -64,11 +70,6 @@
         <activity
             android:name=".OrdersList"
             android:exported="true" />
-
-
-   
-            
-
         <activity
             android:name=".Daycare_ShowMore"
             android:exported="true" />
@@ -97,6 +98,12 @@
             android:name=".Find_Daycare"
             android:exported="true" />
         <activity
+
+            android:name=".Services"
+            android:exported="true" />
+        <activity
+
+
             android:name=".Ratings"
             android:exported="true" />
         <activity
@@ -108,7 +115,6 @@
         <activity
             android:name=".Find_Veterinary"
             android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

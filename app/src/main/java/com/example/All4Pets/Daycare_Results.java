@@ -26,4 +26,9 @@ public class Daycare_Results extends AppCompatActivity {
         Intent intent = new Intent(Daycare_Results.this, Daycare_ShowMore.class);
         startActivity(intent);
     }
+
+    public void gotofinddaycarepage(View view) {
+        Intent intent = new Intent(Daycare_Results.this, Find_Daycare.class);
+        startActivity(intent);
+    }
 }
