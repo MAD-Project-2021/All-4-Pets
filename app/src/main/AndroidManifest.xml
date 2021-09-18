@@ -27,7 +27,7 @@
             android:name=".Pets"
             android:exported="true" />
         <activity
-            android:name=".Services"
+
 
 
             android:name=".UpdateDispute"
@@ -43,11 +43,11 @@
             android:exported="true" />
 
    
-            android:name=".Servicess"
+
         <activity
 
             android:name=".Daycare_ShowMore"
-            android:exported="true" /> -->
+            android:exported="true" />
         <activity
             android:name=".Fav_DaycareList"
             android:exported="true" />
@@ -74,8 +74,6 @@
             android:exported="true" />
         <activity
             android:name=".Services"
-
-
             android:exported="true" />
         <activity
             android:name=".Ratings"
