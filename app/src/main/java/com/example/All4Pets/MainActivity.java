@@ -1,10 +1,22 @@
 package com.example.All4Pets;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+
+import com.example.All4Pets.Category.Category;
+import com.example.All4Pets.Category.Orders;
+import com.example.All4Pets.Daycares.Find_Daycare;
+import com.example.All4Pets.Doctors.Find_Veterinary;
+import com.example.All4Pets.Ratings.Ratings;
+
+
+//import com.google.firebase.FirebaseApp;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
     public void gotofirstpage (View view){
         Intent intent = new Intent(MainActivity.this, Category.class);
@@ -25,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void gotoservicespage(View view){
-        Intent intent = new Intent(MainActivity.this, Services.class);
+    public void gotofindvet(View view){
+        Intent intent = new Intent(MainActivity.this, Find_Veterinary.class);
         startActivity(intent);
     }
 
@@ -35,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gotofinddaycarepage(View view){
+        Intent intent = new Intent(MainActivity.this, Find_Daycare.class);
+        startActivity(intent);
+    }
 
 
 

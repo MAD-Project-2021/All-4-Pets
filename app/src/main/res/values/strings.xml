@@ -6,6 +6,34 @@
 
 
 
+
+    <string name="tv_ratings">Ratings and Reviews</string>
+    <string name="tv_answer">Answer</string>
+    <string name="btn_question1">How to predict the quality of your products?</string>
+    <string name="btn_question2">Do you offer cash on delivery?</string>
+    <string name="tv_comment">Comments...</string>
+    <string name="tv_comments">Comments...</string>
+    <string name="tv_quality">Product Quality</string>
+    <string name="tv_login">All 4 Pets</string>
+    <string name="et_email">Email</string>
+    <string name="et_phoneno">Phone No</string>
+    <string name="et_type">Type</string>
+    <string name="btn_editprofile">EDIT PROFILE</string>
+    <string name="btn_deleteprofile">DELETE PROFILE</string>
+    <string-array name="spinner">
+        <item>Please choose an option</item>
+        <item>Add Review</item>
+        <item>View Feedback</item>
+        <item>FAQ</item>
+
+    </string-array>
+
+
+
+
+
+
+
     <string name="cm1">Catogery</string>
     <string name="pets_items">Pets\' Items</string>
     <string name="side_menu_bar">side_menu_bar</string>
@@ -71,10 +99,10 @@
     <string name="add_button">add_button</string>
     <string name="delete_btn">deletebtn</string>
 
+
     <string name="btn_order">Daycare Centers</string>
     <string name="btn_services">Veterinary Surgeons</string>
     <string name="btn_ratings">Ratings and Reviews</string>
-
 
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -129,7 +157,6 @@
     <string name="btn_delete">DELETE</string>
     <string name="btn_opendispute">OPEN DISPUTE</string>
     <string name="btn_seedetails">SEE DETAILS</string>
-
 
 
     <string name="et_view">Near by Veterinary</string>
@@ -211,6 +238,30 @@
 
     <string name="txt_date">Date</string>
     <string name="txt_time">Time   :-</string>
+
+    <string name="btn_checkin">CHECK-IN DATE</string>
+    <string name="btn_checkout">CHECK-OUT DATE</string>
+    <string name="btn_booking">Booking</string>
+
+    <string name="btn_bookingconfirm">CONFIRM BOOKING</string>
+    <string name="tv_dcname">Dogtopia DayCare Center</string>
+    <string name="tv_custdetails">Customer\'s Infomation</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_change">CHANGE BOOKING</string>
+
+
+   
+
+
+
+    <string name="et_date">Select the Date  and Month</string>
+    <string name="et_time">Select the Time</string>
+    <string name="et_area">Select the Area</string>
+    <string name="string_et_time">🕐 Select Time</string>
+    <string name="string_et_date">📅 / Select Date and Month</string>
+    <string name="string_et_area">📌 Select Area</string>
+    <string name="string_et_dateMonth">📅 Select Date and Month</string>
+
 
 
 </resources>

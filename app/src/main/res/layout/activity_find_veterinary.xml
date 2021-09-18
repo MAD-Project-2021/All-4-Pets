@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Find_Veterinary"
-    >
+    tools:context=".Doctors.Find_Veterinary"
+    android:background="@drawable/find_pet1">
 
     <ImageView
-        android:id="@+id/image_View3"
-        android:layout_width="259dp"
+        android:id="@+id/btn_imgsearch"
+        android:layout_width="360dp"
         android:layout_height="123dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginBottom="232dp"
         android:contentDescription="@string/btn_search"
         android:onClick="gotoresults"
         android:src="@drawable/srh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_view"
+        app:layout_constraintVertical_bias="0.964"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
@@ -38,18 +40,19 @@
         android:layout_height="45dp"
         android:text="@string/et_view"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_View2"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="149dp"
         android:layout_height="185dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="28dp"
         android:contentDescription="@string/imgslideshow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,11 +64,11 @@
         android:id="@+id/imageView6"
         android:layout_width="151dp"
         android:layout_height="144dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="36dp"
         android:contentDescription="@string/imgslideshow2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:srcCompat="@drawable/pet3"
         tools:ignore="ImageContrastCheck" />
@@ -74,11 +77,11 @@
         android:id="@+id/imageView7"
         android:layout_width="227dp"
         android:layout_height="204dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="28dp"
         android:contentDescription="@string/imgslideshow3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pet2" />
 
@@ -87,63 +90,68 @@
         android:layout_width="120dp"
         android:layout_height="36dp"
         android:text="@string/txt2"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/image_View3"
-        app:layout_constraintEnd_toEndOf="@+id/image_View3"
-        app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toStartOf="@+id/image_View3"
-        app:layout_constraintTop_toTopOf="@+id/image_View3"
-        app:layout_constraintVertical_bias="0.487" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_imgsearch"
+        app:layout_constraintEnd_toEndOf="@+id/btn_imgsearch"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/btn_imgsearch"
+        app:layout_constraintTop_toTopOf="@+id/btn_imgsearch"
+        app:layout_constraintVertical_bias="0.505" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/et_date"
+        android:layout_width="356dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:background="#CC1A8B9D"
         android:ems="10"
+        android:hint="@string/string_et_dateMonth"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_imgsearch"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toEndOf="@+id/txt_date"
-        app:layout_constraintTop_toBottomOf="@+id/et_view"
-        app:layout_constraintVertical_bias="0.477" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/image_View3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
-        app:layout_constraintStart_toEndOf="@+id/txt_time"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_view"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/txt_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/txt_date"
-        app:layout_constraintBottom_toTopOf="@+id/image_View3"
-        app:layout_constraintTop_toBottomOf="@+id/et_view"
-        app:layout_constraintVertical_bias="0.087"
-        tools:layout_editor_absoluteX="38dp" />
+    <EditText
+        android:id="@+id/et_time"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="104dp"
+        android:background="#CC1A8B9D"
+        android:ems="10"
+        android:hint="@string/string_et_time"
+        android:inputType="textPersonName"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_imgsearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_date"
+        app:layout_constraintVertical_bias="0.428" />
 
-    <TextView
-        android:id="@+id/txt_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_time"
-        app:layout_constraintBottom_toTopOf="@+id/image_View3"
-        app:layout_constraintTop_toBottomOf="@+id/txt_date"
-        app:layout_constraintVertical_bias="0.541"
-        tools:layout_editor_absoluteX="38dp" />
+    <EditText
+        android:id="@+id/et_area"
+        android:layout_width="356dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:background="#CC1A8B9D"
+        android:ems="10"
+        android:hint="@string/string_et_area"
+        android:inputType="textPersonName"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_time" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
