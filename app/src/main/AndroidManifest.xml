@@ -37,9 +37,12 @@
             android:name=".Ratings.View_Feedback"
             android:exported="true" />
         <activity
+
+
             android:name=".Ratings.Add_Review"
             android:exported="true" />
         <activity
+
 
 
 
@@ -55,8 +58,16 @@
         <activity
             android:name=".Category.petsItems"
             android:exported="true" />
+
+
+   
+
+
+
+
         <activity
             android:name=".Category.Pets"
+
             android:exported="true" />
         <activity
             android:name=".Category.UpdateDispute"
@@ -83,10 +94,14 @@
             android:name=".Doctors.Confirmed_Booking"
             android:exported="true" />
         <activity
+
+            android:name=".Services"
+
             android:name=".Doctors.Book_Appointment"
             android:exported="true" />
         <activity
             android:name=".Doctors.Fav_VetList"
+
             android:exported="true" />
         <activity
             android:name=".Doctors.Vet_ShowMore"

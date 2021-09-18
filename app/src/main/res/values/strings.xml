@@ -6,6 +6,7 @@
 
 
 
+
     <string name="tv_ratings">Ratings and Reviews</string>
     <string name="tv_answer">Answer</string>
     <string name="btn_question1">How to predict the quality of your products?</string>
@@ -26,6 +27,7 @@
         <item>FAQ</item>
 
     </string-array>
+
 
 
 
