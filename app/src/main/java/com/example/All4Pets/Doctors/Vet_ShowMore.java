@@ -15,11 +15,11 @@ public class Vet_ShowMore extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vet_show_more);
     }
-    public void redirecttoresults (View view){
-        Intent intent = new Intent(Vet_ShowMore.this, Vet_Results.class);
-        startActivity(intent);
-
-    }
+//    public void redirecttoresults (View view){
+//        Intent intent = new Intent(Vet_ShowMore.this, Vet_Results.class);
+//        startActivity(intent);
+//
+//    }
     public void gotobookpage (View view){
         Intent intent = new Intent(Vet_ShowMore.this, Book_Appointment.class);
         startActivity(intent);

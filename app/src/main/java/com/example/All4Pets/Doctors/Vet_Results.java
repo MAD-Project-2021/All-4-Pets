@@ -1,79 +1,83 @@
 package com.example.All4Pets.Doctors;
 
+import android.content.Intent;
+import android.os.Bundle;
+
+import android.view.View;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 
+import com.example.All4Pets.Doctors.models.MainModel;
 import com.example.All4Pets.R;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
 
 import java.util.ArrayList;
+import java.util.List;
+
 
 public class Vet_Results extends AppCompatActivity {
 
-
+    FirebaseFirestore db;
     RecyclerView recyclerView;
-    DatabaseReference database;
+    List<MainModel> categoryModelList;
     MyAdapter myAdapter;
-    ArrayList<Vets> list;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vet_results);
+        setContentView(R.layout.vet_results);
+        //View root = inflater.inflate(R.layout.vet_results,container,false);
 
+        db = FirebaseFirestore.getInstance();
 
-        recyclerView = findViewById(R.id.VetList);
-        database = FirebaseDatabase.getInstance().getReference("Vets");
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView = findViewById(R.id.rv);
 
-        list = new ArrayList<>();
-        myAdapter = new MyAdapter(this,list);
+        //popular items
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),RecyclerView.VERTICAL,false));
+        categoryModelList = new ArrayList<>();
+        myAdapter = new MyAdapter(getApplicationContext(),categoryModelList);
         recyclerView.setAdapter(myAdapter);
 
-        //attached callback method to database
+        db.collection("Doctors")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
 
-        database.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if(task.isSuccessful()){
+                            for(QueryDocumentSnapshot document : task.getResult()){
+                                MainModel mainModel = document.toObject(MainModel.class);
+                                categoryModelList.add(mainModel);
+                                myAdapter.notifyDataSetChanged();
+                            }
+                        }else{
+                            Toast.makeText(getApplicationContext(), "Error"+task.getException(), Toast.LENGTH_SHORT).show();
+                        }
 
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    }
+
+                });
 
 
-                    Vets vet = dataSnapshot.getValue(Vets.class);
-                    list.add(vet);
+        
 
-                }
+        }
 
-                myAdapter.notifyDataSetChanged();
-
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
-
-    public void gotoshowmore (View view){
+    public void gotovetshowmore(View view) {
         Intent intent = new Intent(Vet_Results.this, Vet_ShowMore.class);
         startActivity(intent);
-
     }
 
-    public void gotofavpage (View view){
-        Intent intent = new Intent(Vet_Results.this, Fav_VetList.class);
-        startActivity(intent);
-
-    }
 }
+
+

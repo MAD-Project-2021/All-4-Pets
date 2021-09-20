@@ -256,6 +256,12 @@
     <string name="string_et_area">📌 Select Area</string>
     <string name="string_et_dateMonth">📅 Select Date and Month</string>
 
+<!--    <String-array name="timeSlots">-->
+<!--        <item>06.00 AM - 10.00 AM </item>-->
+<!--        <item>10.00 AM - 2.00 PM </item>-->
+<!--        <item>2.00 PM - 06.00 PM </item>-->
+<!--        <item>06.00 PM - 10.00 PM </item>-->
+<!--    </String-array>-->
 
 
 </resources>

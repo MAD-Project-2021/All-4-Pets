@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.All4Pets">
 
-
+<uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -89,18 +89,15 @@
             android:name=".Doctors.Fav_VetList"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Vet_ShowMore"
+            android:name=".Doctors.Vet_Results"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Vet_Results"
+            android:name=".Doctors.Vet_ShowMore"
             android:exported="true" />
         <activity
             android:name=".Daycares.Find_Daycare"
             android:exported="true" />
-        <activity
 
-            android:name=".Services"
-            android:exported="true" />
         <activity
 
 
@@ -124,6 +121,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
