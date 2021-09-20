@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#0FFFFFFF"
     tools:context=".Daycares.Find_Daycare">
 
     <ImageView
@@ -35,14 +35,15 @@
 
     <Button
         android:id="@+id/btn_find"
-        android:layout_width="209dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="84dp"
+        android:layout_width="186dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="120dp"
         android:onClick="gotoresults2"
         android:text="@string/btn_find"
         android:textColor="#000000"
         app:backgroundTint="#a56cc1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_checkout"
         tools:ignore="TextContrastCheck" />
@@ -141,5 +142,19 @@
         app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_checkin" />
+
+    <EditText
+        android:id="@+id/et_location"
+        android:layout_width="276dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:hint="@string/et_location"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btn_find"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_checkout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
