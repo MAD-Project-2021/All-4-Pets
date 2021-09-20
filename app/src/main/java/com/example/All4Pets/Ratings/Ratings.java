@@ -88,7 +88,7 @@ public class Ratings extends AppCompatActivity {
         //initialize mainadapter
         mainAdapter = new MainAdapter(Ratings.this,mainModels);
 
-        //set MainAdapter to RecyclerView
+        //set MainAdapter to MyAdapter
         recyclerView.setAdapter(mainAdapter);
     }
 }
