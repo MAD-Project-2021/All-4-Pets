@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.All4Pets">
+    package="com.example.All4Pets" >
 
-
+    <uses-permission android:name="Android,permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.MyApplication" >
+        <activity
+            android:name=".Ratings.EditProfile"
+            android:exported="true" />
         <activity
             android:name=".Daycares.Confirmed_DaycareBooking"
             android:exported="true" />
@@ -19,9 +22,6 @@
             android:name=".Daycares.Book_Daycare"
             android:exported="true" />
         <activity
-
-
-
             android:name=".Ratings.View_Profile"
             android:exported="true" />
         <activity
@@ -42,6 +42,9 @@
             android:name=".Ratings.Add_Review"
             android:exported="true" />
         <activity
+
+
+
 
 
 
@@ -113,12 +116,9 @@
             android:name=".Daycares.Find_Daycare"
             android:exported="true" />
         <activity
-
             android:name=".Services"
             android:exported="true" />
         <activity
-
-
             android:name=".Ratings.Ratings"
             android:exported="true" />
         <activity
@@ -132,7 +132,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
