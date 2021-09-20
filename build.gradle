@@ -13,18 +13,16 @@ buildscript {
     }
 
 
-    }
-
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.2"
         classpath 'com.google.gms:google-services:4.3.10'
-
+        classpath('com.android.support:multidex:1.0.3')
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
-}
 
+}
 
 allprojects {
 
@@ -34,24 +32,25 @@ allprojects {
         maven { url 'https://repo1.maven.org/maven2' }
 
 
-
-    dependencies {
-        classpath 'com.google.gms:google-services:4.3.10'
-        classpath 'com.android.tools.build:gradle:7.0.2'
-        classpath('com.android.support:multidex:1.0.3')
-
+//        dependencies {
+//            classpath 'com.google.gms:google-services:4.3.10'
+//            classpath 'com.android.tools.build:gradle:7.0.2'
+//
+//
+//        }
     }
 }
-    allprojects {
+//    allprojects {
 
-        repositories {
-            // Check that you have the following line (if not, add it):
-            google()  // Google's Maven repository
-            maven { url 'https://repo1.maven.org/maven2' }
-
-        }
-    }
+//        repositories {
+//            // Check that you have the following line (if not, add it):
+//            google()  // Google's Maven repository
+//
+//
+//        }
+//    }
 
     task clean(type: Delete) {
         delete rootProject.buildDir
     }
+//}
