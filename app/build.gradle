@@ -53,7 +53,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:20.0.1'
     implementation 'com.google.firebase:firebase-storage:20.0.0'
     implementation platform('com.google.firebase:firebase-bom:28.4.0')
+
     implementation 'com.google.firebase:firebase-firestore:23.0.3'
+
+    //implementation 'com.google.firebase:firebase-firestore:23.0.3'
+
 
 
     testImplementation 'junit:junit:4.13.2'
@@ -62,7 +66,7 @@ dependencies {
 
 
     //recycler view
-    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    //implementation "androidx.recyclerview:recyclerview:1.2.1"
 
     //glide
     //implementation 'com.github.bumptech.glide:glide:4.11.0'

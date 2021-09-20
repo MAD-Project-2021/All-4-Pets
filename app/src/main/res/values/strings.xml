@@ -6,6 +6,7 @@
 
 
 
+
     <string name="tv_ratings">Ratings and Reviews</string>
     <string name="tv_answer">Answer</string>
     <string name="btn_question1">How to predict the quality of your products?</string>
@@ -26,6 +27,7 @@
         <item>FAQ</item>
 
     </string-array>
+
 
 
 
@@ -259,6 +261,7 @@
     <string name="string_et_date">📅 / Select Date and Month</string>
     <string name="string_et_area">📌 Select Area</string>
     <string name="string_et_dateMonth">📅 Select Date and Month</string>
+    <string name="et_location">Enter Location</string>
 
 
 
