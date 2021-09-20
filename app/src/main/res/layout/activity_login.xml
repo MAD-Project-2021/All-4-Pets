@@ -84,6 +84,7 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#88bef5"
         android:text="Login"
+
         android:textColor="#FFFFFF"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,6 +96,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:onClick="onRegisterClick"
         android:text="New Here ?  Create Account"
         android:textColor="#020202"
         android:textSize="20sp"
@@ -112,9 +116,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createText"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.518" />
 
     <TextView
         android:id="@+id/forgotPassword"

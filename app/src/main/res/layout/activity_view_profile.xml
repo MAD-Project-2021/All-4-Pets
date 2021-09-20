@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/frag_bac"
+    android:background="@drawable/profile_bac2"
     tools:context=".Ratings.View_Profile">
 
     <androidx.appcompat.widget.Toolbar
@@ -53,38 +53,21 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="573dp"
-        android:background="@drawable/profile_bac"
+        android:background="@drawable/profile_background"
         tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="115dp"
-            android:layout_height="91dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="11dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.175"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_profile"
-            app:layout_constraintVertical_bias="0.092"
-            app:srcCompat="@drawable/profile"
-            tools:ignore="NotSibling" />
 
         <TextView
             android:id="@+id/tv_profilename"
-            android:layout_width="78dp"
-            android:layout_height="wrap_content"
+            android:layout_width="263dp"
+            android:layout_height="54dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="162dp"
-            android:layout_marginTop="63dp"
-            android:layout_marginEnd="171dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="87dp"
             android:gravity="center_horizontal"
-            android:text="John"
+            android:text="YOUR PROFILE"
             android:textColor="@color/tv_name"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -94,13 +77,15 @@
 
     <EditText
         android:id="@+id/et_fullname"
-        android:layout_width="340dp"
+        android:layout_width="255dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="190dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="19dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -108,15 +93,15 @@
 
     <EditText
         android:id="@+id/et_email"
-        android:layout_width="340dp"
+        android:layout_width="255dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_fullname"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="19dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
@@ -124,56 +109,119 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="340dp"
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/et_time"
         android:layout_below="@+id/et_email"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="83dp"
         android:ems="10"
         android:inputType="phone"
         android:minHeight="48dp"
         android:text="@string/et_phoneno"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/et_time"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/btn_editprofile"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginBottom="257dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/et_type" />
-
-    <Button
-        android:id="@+id/btn_editprofile"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="107dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="115dp"
+        android:width="315dp"
+        android:backgroundTint="#4A0C3B"
+        android:gravity="center_horizontal|center_vertical"
         android:text="@string/btn_editprofile" />
 
     <Button
-        android:id="@+id/btn_deleteprofile"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_resetpassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginEnd="26dp"
-        android:layout_marginBottom="104dp"
-        android:text="@string/btn_deleteprofile" />
+        android:layout_marginBottom="64dp"
+        android:width="315dp"
+        android:backgroundTint="#4A0C3B"
+        android:text="Reset Password" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:width="315dp"
+        android:backgroundTint="#4A0C3B"
+        android:onClick="profileBack"
+        android:text="Logout" />
+
+    <ImageView
+        android:id="@+id/profile_back"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="21dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="profileBack"
+        app:srcCompat="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="104dp"
+        android:layout_height="107dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="188dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="316dp"
+        app:srcCompat="@drawable/name" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="202dp"
+        app:srcCompat="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="261dp"
+        app:srcCompat="@drawable/mail" />
 
 </RelativeLayout>

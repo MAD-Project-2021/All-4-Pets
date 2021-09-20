@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_bac2"
+    tools:context=".Ratings.EditProfile">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar4"
+      android:layout_width="409dp"
+      android:layout_height="wrap_content"
+      android:background="?attr/colorPrimary"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="?attr/actionBarTheme"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+
+
+  <TextView
+      android:id="@+id/tv_profile"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginStart="66dp"
+      android:layout_marginTop="19dp"
+      android:text="Profile"
+      android:textColor="@color/material_on_primary_emphasis_high_type"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
+      app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+      app:layout_constraintHorizontal_bias="0.105"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.432" />
+
+  <RelativeLayout
+      android:layout_width="411dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="-2dp"
+      android:layout_marginTop="56dp"
+      android:layout_marginEnd="2dp"
+      android:layout_marginBottom="573dp"
+      android:background="@drawable/profile_background"
+      tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/tv_profilename"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="87dp"
+        android:gravity="center_horizontal"
+        android:text="YOUR PROFILE"
+        android:textColor="@color/tv_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+  </RelativeLayout>
+
+  <EditText
+      android:id="@+id/et_fullname"
+      android:layout_width="255dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_centerInParent="true"
+      android:layout_marginStart="138dp"
+      android:layout_marginTop="350dp"
+      android:layout_marginEnd="19dp"
+      android:ems="10"
+      android:hint="Enter your full name"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+  <EditText
+      android:id="@+id/et_email"
+      android:layout_width="255dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/et_fullname"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="136dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginEnd="19dp"
+      android:ems="10"
+      android:hint="Enter your email address"
+      android:inputType="textEmailAddress"
+      android:minHeight="48dp"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+  <EditText
+      android:id="@+id/et_phone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/et_email"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_centerInParent="true"
+      android:layout_marginStart="136dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="27dp"
+      android:layout_marginBottom="83dp"
+      android:ems="10"
+      android:hint="Enter a valid phone number"
+      android:inputType="phone"
+      android:minHeight="48dp"
+      tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+  <Button
+      android:id="@+id/btn_save"
+      android:layout_width="378dp"
+      android:layout_height="61dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="17dp"
+      android:layout_marginEnd="15dp"
+      android:layout_marginBottom="99dp"
+      android:backgroundTint="#4A0C3B"
+      android:text="Save" />
+
+  <ImageView
+      android:id="@+id/profile_back"
+      android:layout_width="wrap_content"
+      android:layout_height="27dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginStart="11dp"
+      android:layout_marginTop="21dp"
+      android:minWidth="48dp"
+      android:minHeight="48dp"
+      app:srcCompat="@drawable/back"
+      tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+  <ImageView
+      android:id="@+id/profile_photo"
+      android:layout_width="104dp"
+      android:layout_height="107dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="145dp"
+      android:layout_marginTop="188dp"
+      tools:srcCompat="@tools:sample/avatars" />
+
+  <ImageView
+      android:id="@+id/imageView41"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="38dp"
+      android:layout_marginBottom="316dp"
+      app:srcCompat="@drawable/name" />
+
+  <ImageView
+      android:id="@+id/imageView42"
+      android:layout_width="38dp"
+      android:layout_height="33dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="45dp"
+      android:layout_marginBottom="202dp"
+      app:srcCompat="@drawable/phone" />
+
+  <ImageView
+      android:id="@+id/imageView43"
+      android:layout_width="wrap_content"
+      android:layout_height="33dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="37dp"
+      android:layout_marginBottom="261dp"
+      app:srcCompat="@drawable/mail" />
+
+</RelativeLayout>
