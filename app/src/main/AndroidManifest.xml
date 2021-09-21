@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.All4Pets">
 
-
-
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
@@ -13,15 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Category.ui.DetailedPets"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.DetailedItems"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.petShop"
+            android:exported="true" />
+        <activity
             android:name=".Daycares.Confirmed_DaycareBooking"
             android:exported="true" />
         <activity
             android:name=".Daycares.Book_Daycare"
             android:exported="true" />
         <activity
-
-
-
             android:name=".Ratings.View_Profile"
             android:exported="true" />
         <activity
@@ -37,49 +41,19 @@
             android:name=".Ratings.View_Feedback"
             android:exported="true" />
         <activity
-
-
             android:name=".Ratings.Add_Review"
             android:exported="true" />
         <activity
-
-
-
-
-
-            android:name=".Category.petItemCollar"
+            android:name=".Category.ui.UpdateDispute"
             android:exported="true" />
         <activity
-            android:name=".Category.itemC"
+            android:name=".Category.ui.DisputeList"
             android:exported="true" />
         <activity
-            android:name=".Category.Supliments"
+            android:name=".Category.ui.OpenDispute"
             android:exported="true" />
         <activity
-            android:name=".Category.petsItems"
-            android:exported="true" />
-
-
-   
-
-
-
-
-        <activity
-            android:name=".Category.Pets"
-
-            android:exported="true" />
-        <activity
-            android:name=".Category.UpdateDispute"
-            android:exported="true" />
-        <activity
-            android:name=".Category.DisputeList"
-            android:exported="true" />
-        <activity
-            android:name=".Category.OpenDispute"
-            android:exported="true" />
-        <activity
-            android:name=".Category.OrdersList"
+            android:name=".Category.ui.OrdersList"
             android:exported="true" />
         <activity
             android:name=".Daycares.Daycare_ShowMore"
@@ -94,14 +68,10 @@
             android:name=".Doctors.Confirmed_Booking"
             android:exported="true" />
         <activity
-
-            android:name=".Services"
-
             android:name=".Doctors.Book_Appointment"
             android:exported="true" />
         <activity
             android:name=".Doctors.Fav_VetList"
-
             android:exported="true" />
         <activity
             android:name=".Doctors.Vet_ShowMore"
@@ -113,19 +83,10 @@
             android:name=".Daycares.Find_Daycare"
             android:exported="true" />
         <activity
-
-            android:name=".Services"
-            android:exported="true" />
-        <activity
-
-
             android:name=".Ratings.Ratings"
             android:exported="true" />
         <activity
-            android:name=".Category.Orders"
-            android:exported="true" />
-        <activity
-            android:name=".Category.Category"
+            android:name=".Category.ui.Orders"
             android:exported="true" />
         <activity
             android:name=".Doctors.Find_Veterinary"
@@ -139,6 +100,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

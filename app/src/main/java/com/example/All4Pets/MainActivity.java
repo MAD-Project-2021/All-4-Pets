@@ -7,8 +7,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import com.example.All4Pets.Category.Category;
-import com.example.All4Pets.Category.Orders;
+import com.example.All4Pets.Category.ui.Orders;
+import com.example.All4Pets.Category.ui.petShop;
 import com.example.All4Pets.Daycares.Find_Daycare;
 import com.example.All4Pets.Doctors.Find_Veterinary;
 import com.example.All4Pets.Ratings.Ratings;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void gotofirstpage (View view){
-        Intent intent = new Intent(MainActivity.this, Category.class);
+        Intent intent = new Intent(MainActivity.this, petShop.class);
         startActivity(intent);
 
     }

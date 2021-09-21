@@ -4,9 +4,6 @@
     <string name="btn_category">Category</string>
 
 
-
-
-
     <string name="tv_ratings">Ratings and Reviews</string>
     <string name="tv_answer">Answer</string>
     <string name="btn_question1">How to predict the quality of your products?</string>
@@ -27,11 +24,6 @@
         <item>FAQ</item>
 
     </string-array>
-
-
-
-
-
 
 
     <string name="cm1">Catogery</string>
@@ -250,10 +242,6 @@
     <string name="btn_change">CHANGE BOOKING</string>
 
 
-   
-
-
-
     <string name="et_date">Select the Date  and Month</string>
     <string name="et_time">Select the Time</string>
     <string name="et_area">Select the Area</string>
@@ -261,7 +249,14 @@
     <string name="string_et_date">📅 / Select Date and Month</string>
     <string name="string_et_area">📌 Select Area</string>
     <string name="string_et_dateMonth">📅 Select Date and Month</string>
+    <string name="search_your_items_here">Search your items here</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="view_all">View All</string>
+    <string name="petsitems">Pets Items</string>
+    <string name="price">price</string>
 
+    <string name="description">description</string>
+    <string name="pets">Pets</string>
 
 
 </resources>
