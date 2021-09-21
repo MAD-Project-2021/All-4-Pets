@@ -99,7 +99,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="16dp"
         android:background="#99000000"
         android:ems="10"
@@ -111,6 +111,7 @@
         android:textColorHint="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
@@ -136,6 +137,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Already Registered ? Login Here"
+        android:clickable="true"
+        android:onClick="onLoginClick"
         android:textColor="#050505"
         android:textSize="16sp"
         android:textStyle="bold"

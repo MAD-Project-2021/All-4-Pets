@@ -65,10 +65,13 @@ public class Ratings extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
 
         //create an integer array
-        Integer[] gallery ={R.drawable.pvet1,R.drawable.pdaycare1,R.drawable.petitem1,R.drawable.pvet2,R.drawable.pdaycare2,R.drawable.pitem2};
+        Integer[] gallery ={R.drawable.puvet1,R.drawable.pudaycare1,R.drawable.puitem1};
 
         //create string array
-        String[] description={"PetVet1" , "PetDayCare1" , "PetItem1" , "PetVet2" , "PetDayCare2" , "PetItem2" };
+        String[] description={
+                              "BEST VETERINARY SURGEONS\n\n\nAll4Pet was among the first \nveterinary practices to offer 24 hour\n emergency services, initiated 20 \nyears ago." ,
+                              "BEST DAYCARE FACILITIES\n\n\nBringing the best pet care to you \nthe comfort of your own home.\n\nWe are passionate about animals \nand want to ensure that pets are\nhealthy and stress free." ,
+                              "BEST PET PRODUCTS\n\n\nRealistically, there are multiple \nfactors that contribute to a happy,\nhealthy life for your dog. \n\nYou start by meeting your dog’s\nbasic needs and practicing\nresponsible dog ownership. " };
 
         //initialize arrayList
         mainModels = new ArrayList<>();
@@ -88,7 +91,7 @@ public class Ratings extends AppCompatActivity {
         //initialize mainadapter
         mainAdapter = new MainAdapter(Ratings.this,mainModels);
 
-        //set MainAdapter to RecyclerView
+        //set MainAdapter to MyAdapter
         recyclerView.setAdapter(mainAdapter);
     }
 }
