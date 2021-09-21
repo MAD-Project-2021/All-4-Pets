@@ -55,29 +55,7 @@
         <activity
             android:name=".Ratings.Add_Review"
             android:exported="true" />
-        <activity
 
-            android:name=".Category.ui.UpdateDispute"
-
-
-
-
-
-
-
-
-
-            android:name=".Category.petItemCollar"
-            android:exported="true" />
-        <activity
-            android:name=".Category.itemC"
-            android:exported="true" />
-        <activity
-            android:name=".Category.Supliments"
-            android:exported="true" />
-        <activity
-            android:name=".Category.petsItems"
-            android:exported="true" />
 
 
    
@@ -85,14 +63,7 @@
 
 
 
-        <activity
-            android:name=".Category.Pets"
 
-            android:exported="true" />
-        <activity
-            android:name=".Category.UpdateDispute"
-
-            android:exported="true" />
         <activity
             android:name=".Category.ui.DisputeList"
             android:exported="true" />

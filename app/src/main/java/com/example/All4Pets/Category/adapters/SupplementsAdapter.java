@@ -1,5 +1,6 @@
 package com.example.All4Pets.Category.adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -37,7 +38,7 @@ public class SupplementsAdapter extends RecyclerView.Adapter<SupplementsAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
         Glide.with(context).load(supplementsModelList.get(position).getImg_url()).into(holder.supimageView);
         holder.name.setText(supplementsModelList.get(position).getName());
@@ -49,7 +50,7 @@ public class SupplementsAdapter extends RecyclerView.Adapter<SupplementsAdapter.
             @Override
             public void onClick(View vie) {
                 Intent intent = new Intent(vie.getContext(), DetailedItems.class);
-                intent.putExtra("detailed" , supplementsModelList.get(holder.getBindingAdapterPosition()));
+                intent.putExtra("detailed" , supplementsModelList.get(position));
                 vie.getContext().startActivity(intent);
 
             }

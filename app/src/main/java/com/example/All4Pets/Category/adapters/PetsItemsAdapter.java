@@ -36,7 +36,7 @@ public class PetsItemsAdapter extends RecyclerView.Adapter<PetsItemsAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
         Glide.with(context).load(petItemsModelList.get(position).getImg_url()).into(holder.imageView);
         holder.name.setText(petItemsModelList.get(position).getName());
@@ -48,7 +48,7 @@ public class PetsItemsAdapter extends RecyclerView.Adapter<PetsItemsAdapter.View
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), DetailedItems.class);
-                intent.putExtra("detailed" , petItemsModelList.get(holder.getBindingAdapterPosition()));
+                intent.putExtra("detailed" , petItemsModelList.get(position));
                 v.getContext().startActivity(intent);
 
             }
