@@ -76,4 +76,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/favlist1" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_daycare_items"
+        android:layout_width="385dp"
+        android:layout_height="449dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_location" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

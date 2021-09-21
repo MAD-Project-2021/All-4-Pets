@@ -59,11 +59,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            ImageView = itemView.findViewById((R.id.img1));
-            name = itemView.findViewById(R.id.name);
-            speciality = itemView.findViewById(R.id.speciality);
-            price = itemView.findViewById(R.id.price);
-            rate = itemView.findViewById(R.id.rate);
+            ImageView = itemView.findViewById((R.id.iv_dayc));
+            name = itemView.findViewById(R.id.tv_dname);
+            speciality = itemView.findViewById(R.id.tv_dlocation);
+            price = itemView.findViewById(R.id.tv_price);
+            rate = itemView.findViewById(R.id.tv_rate);
 
 
         }
