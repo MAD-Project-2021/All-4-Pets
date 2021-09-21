@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="160dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,14 +17,14 @@
         android:layout_height="144dp"
         android:layout_gravity="end"
         android:layout_marginLeft="16dp"
-        android:background="#a696c8"
+        android:background="#E49EB6"
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_dayc"
-            android:layout_width="115dp"
-            android:layout_height="96dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="104dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="10dp"
             android:src="@mipmap/ic_launcher"
             app:civ_border_color="#FF000000"
@@ -31,11 +32,12 @@
 
         <ImageView
             android:id="@+id/tv_arrow"
-            android:layout_width="242dp"
+            android:layout_width="238dp"
             android:layout_height="27dp"
             android:layout_marginLeft="200dp"
-            app:srcCompat="@drawable/icons8_circled_right_100"
-            android:onClick="gotovetshowmore"/>
+            android:onClick="gotoshowmore"
+            app:srcCompat="@drawable/forwardarrow"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
         <!--        <com.google.android.material.imageview.ShapeableImageView-->
@@ -55,12 +57,12 @@
 
     <TextView
         android:id="@+id/tv_dname"
-        android:layout_width="238dp"
+        android:layout_width="236dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginTop="3dp"
         android:fontFamily="@font/averia_gruesa_libre"
-        android:text="Name"
+        android:text="Daycare Name"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -72,7 +74,7 @@
         android:layout_gravity="end"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/averia_gruesa_libre"
-        android:text="speciality"
+        android:text="Location"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold" />
