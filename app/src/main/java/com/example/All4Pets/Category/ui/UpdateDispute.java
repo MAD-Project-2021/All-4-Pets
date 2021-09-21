@@ -1,4 +1,4 @@
-package com.example.All4Pets.Category;
+package com.example.All4Pets.Category.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 

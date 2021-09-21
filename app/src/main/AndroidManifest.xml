@@ -3,7 +3,10 @@
 
     package="com.example.All4Pets">
 
+
+
 <uses-permission android:name="android.permission.INTERNET"/>
+
 
 
 
@@ -18,6 +21,15 @@
         android:theme="@style/Theme.MyApplication" >
         <activity
             android:name=".Ratings.EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.DetailedPets"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.DetailedItems"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.petShop"
             android:exported="true" />
         <activity
             android:name=".Daycares.Confirmed_DaycareBooking"
@@ -41,11 +53,12 @@
             android:name=".Ratings.View_Feedback"
             android:exported="true" />
         <activity
-
-
             android:name=".Ratings.Add_Review"
             android:exported="true" />
         <activity
+
+            android:name=".Category.ui.UpdateDispute"
+
 
 
 
@@ -78,15 +91,16 @@
             android:exported="true" />
         <activity
             android:name=".Category.UpdateDispute"
+
             android:exported="true" />
         <activity
-            android:name=".Category.DisputeList"
+            android:name=".Category.ui.DisputeList"
             android:exported="true" />
         <activity
-            android:name=".Category.OpenDispute"
+            android:name=".Category.ui.OpenDispute"
             android:exported="true" />
         <activity
-            android:name=".Category.OrdersList"
+            android:name=".Category.ui.OrdersList"
             android:exported="true" />
         <activity
             android:name=".Daycares.Daycare_ShowMore"
@@ -104,11 +118,13 @@
 
 
 
+
+
+
             android:name=".Doctors.Book_Appointment"
             android:exported="true" />
         <activity
             android:name=".Doctors.Fav_VetList"
-
             android:exported="true" />
         <activity
             android:name=".Doctors.Vet_Results"
@@ -123,14 +139,14 @@
 
 
 
+
+
+
         <activity
             android:name=".Ratings.Ratings"
             android:exported="true" />
         <activity
-            android:name=".Category.Orders"
-            android:exported="true" />
-        <activity
-            android:name=".Category.Category"
+            android:name=".Category.ui.Orders"
             android:exported="true" />
         <activity
             android:name=".Doctors.Find_Veterinary"
