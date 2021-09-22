@@ -21,11 +21,11 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
         android:layout_marginTop="12dp"
-        android:onClick="redirecttoshowmore"
         android:contentDescription="@string/back_arrow"
+        android:onClick="redirecttoshowmore"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +34,8 @@
 
     <TextView
         android:id="@+id/tv_background"
-        android:layout_width="394dp"
-        android:layout_height="450dp"
+        android:layout_width="390dp"
+        android:layout_height="440dp"
         android:background="#cabbe9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,22 +46,22 @@
 
     <ImageView
         android:id="@+id/img_vet8"
-        android:layout_width="180dp"
-        android:layout_height="182dp"
+        android:layout_width="188dp"
+        android:layout_height="143dp"
         android:contentDescription="@string/vet_image_3"
         app:layout_constraintBottom_toBottomOf="@+id/tv_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.073"
-        app:srcCompat="@drawable/vet7" />
+        app:layout_constraintVertical_bias="0.133"
+        app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
-        android:id="@+id/tv_docname"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tv_docname"
+        android:text="name of doc"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_spec3"
@@ -75,70 +75,114 @@
         android:id="@+id/tv_spec3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:text="@string/tv_spec3"
+        android:layout_marginTop="140dp"
+        android:text="speciality"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintHorizontal_bias="0.289"
         app:layout_constraintStart_toEndOf="@+id/img_vet8"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="482dp"
-        android:layout_height="175dp"
-        android:contentDescription="@string/scheduled_date_time"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
-        app:layout_constraintEnd_toEndOf="@+id/tv_background"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_spec3"
-        app:layout_constraintVertical_bias="0.13"
-        app:srcCompat="@drawable/datetime"
-        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tv_patient"
         android:layout_width="291dp"
         android:layout_height="42dp"
+        android:layout_marginBottom="408dp"
         android:text="@string/tv_patient"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView15"
-        app:layout_constraintVertical_bias="0.36"
         tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="427dp"
-        android:layout_height="184dp"
-        android:layout_marginBottom="84dp"
-        android:contentDescription="@string/patient_details"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/patientdetails"
-        tools:ignore="ImageContrastCheck" />
-
     <Button
-        android:id="@+id/btn_confirm"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
+        android:id="@+id/confirm"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
         android:text="@string/btn_confirm"
-        android:onClick="gotoconfirmed"
         app:backgroundTint="#9e579d"
         app:layout_constraintBottom_toBottomOf="@+id/tv_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_patient"
-        app:layout_constraintVertical_bias="0.822"
+        app:layout_constraintVertical_bias="0.948"
         tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="139dp"
+        android:layout_height="51dp"
+        android:text="Edit"
+        android:onClick="gotodetailed"
+        app:backgroundTint="#9e579d"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
+        app:layout_constraintVertical_bias="0.797"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="151dp"
+        android:layout_height="52dp"
+        android:text="Delete"
+        app:backgroundTint="#9e579d"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
+        app:layout_constraintVertical_bias="0.797"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+
+        android:layout_width="322dp"
+        android:layout_height="239dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_background"
+        app:layout_constraintVertical_bias="0.322">
+
+        <TextView
+            android:id="@+id/cus_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Name of the customer" />
+
+        <TextView
+            android:id="@+id/cus_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Address of the customer" />
+
+        <TextView
+            android:id="@+id/cus_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Email of the customer" />
+
+        <TextView
+            android:id="@+id/cus_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Date of the customer" />
+
+        <TextView
+            android:id="@+id/cus_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Time of the customer" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

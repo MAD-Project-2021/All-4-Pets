@@ -4,9 +4,6 @@
     <string name="btn_category">Category</string>
 
 
-
-
-
     <string name="tv_ratings">Ratings and Reviews</string>
     <string name="tv_answer">Answer</string>
     <string name="btn_question1">How to predict the quality of your products?</string>
@@ -27,11 +24,6 @@
         <item>FAQ</item>
 
     </string-array>
-
-
-
-
-
 
 
     <string name="cm1">Catogery</string>
@@ -250,10 +242,6 @@
     <string name="btn_change">CHANGE BOOKING</string>
 
 
-
-
-
-
     <string name="et_date">Select the Date  and Month</string>
     <string name="et_time">Select the Time</string>
     <string name="et_area">Select the Area</string>
@@ -262,13 +250,15 @@
     <string name="string_et_area">📌 Select Area</string>
     <string name="string_et_dateMonth">📅 Select Date and Month</string>
     <string name="et_location">Enter Location</string>
+    <string name="et_name">Enter the Name</string>
+    <string name="et_address">Enter the Address</string>
 
-<!--    <String-array name="timeSlots">-->
-<!--        <item>06.00 AM - 10.00 AM </item>-->
-<!--        <item>10.00 AM - 2.00 PM </item>-->
-<!--        <item>2.00 PM - 06.00 PM </item>-->
-<!--        <item>06.00 PM - 10.00 PM </item>-->
-<!--    </String-array>-->
+    <!--    <String-array name="timeSlots">-->
+    <!--        <item>06.00 AM - 10.00 AM </item>-->
+    <!--        <item>10.00 AM - 2.00 PM </item>-->
+    <!--        <item>2.00 PM - 06.00 PM </item>-->
+    <!--        <item>06.00 PM - 10.00 PM </item>-->
+    <!--    </String-array>-->
 
 
 </resources>

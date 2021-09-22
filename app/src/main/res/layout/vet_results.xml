@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#68D59DC5"
+    android:background="#80CCABF4"
     tools:context=".Doctors.Vet_Results">
 
 
-    <ImageView
-        android:id="@+id/image_View4"
-        android:layout_width="421dp"
-        android:layout_height="59dp"
-        android:contentDescription="@string/vet_surgeon_find"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/findvet1" />
+<!--    <ImageView-->
+<!--        android:id="@+id/image_View4"-->
+<!--        android:layout_width="421dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:contentDescription="@string/vet_surgeon_find"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="@drawable/findvet1" />-->
 
 
     <ImageView
@@ -31,18 +31,18 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.708"
         app:srcCompat="@drawable/favlist1"
         tools:ignore="MissingConstraints,OnClick" />
 
     <TextView
         android:id="@+id/et_text1"
-        android:layout_width="378dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="402dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="596dp"
         android:fontFamily="@font/averia_serif_libre"
         android:text="@string/et_text1"
         android:textColor="@color/black"
@@ -50,10 +50,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_View4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
@@ -61,11 +59,10 @@
         android:layout_height="493dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginBottom="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_text1"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

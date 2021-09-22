@@ -49,43 +49,6 @@
         app:layout_constraintTop_toBottomOf="@+id/image_View2"
         app:layout_constraintVertical_bias="0.043" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="149dp"
-        android:layout_height="185dp"
-        android:layout_marginBottom="28dp"
-        android:contentDescription="@string/imgslideshow"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/pet4" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="151dp"
-        android:layout_height="144dp"
-        android:layout_marginBottom="36dp"
-        android:contentDescription="@string/imgslideshow2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:srcCompat="@drawable/pet3"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="227dp"
-        android:layout_height="204dp"
-        android:layout_marginBottom="28dp"
-        android:contentDescription="@string/imgslideshow3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/pet2" />
-
     <TextView
         android:id="@+id/txt_2"
         android:layout_width="120dp"
