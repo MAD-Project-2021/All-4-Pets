@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".Doctors.DetailedCustomer"
+            android:name=".Doctors.Adapters.DetailedAdapter2"
+            android:exported="true" />
+        <activity
+            android:name=".Doctors.Activities.DetailedCustomer"
             android:exported="true" />
         <activity
             android:name=".Ratings.EditProfile"
@@ -79,16 +82,16 @@
             android:name=".Daycares.Daycare_Results"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Book_Appointment"
+            android:name=".Doctors.Activities.Book_Appointment"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Fav_VetList"
+            android:name=".Doctors.Activities.Fav_VetList"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Vet_Results"
+            android:name=".Doctors.Activities.Vet_Results"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Vet_ShowMore"
+            android:name=".Doctors.Activities.Vet_ShowMore"
             android:exported="true" />
         <activity
             android:name=".Daycares.Find_Daycare"
@@ -103,7 +106,7 @@
             android:name=".Category.Category"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Find_Veterinary"
+            android:name=".Doctors.Activities.Find_Veterinary"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
