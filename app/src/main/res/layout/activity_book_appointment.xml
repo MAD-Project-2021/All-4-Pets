@@ -113,20 +113,6 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/confirm"
-        android:layout_width="300dp"
-        android:layout_height="53dp"
-        android:text="@string/btn_confirm"
-        app:backgroundTint="#9e579d"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
-        app:layout_constraintVertical_bias="0.991"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
         android:id="@+id/edit"
         android:layout_width="150dp"
         android:layout_height="51dp"
@@ -139,6 +125,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_patient"
         app:layout_constraintVertical_bias="0.797"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:onClick="gotodetailed"
+        android:text="Edit"
+        app:backgroundTint="#9e579d"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
+        app:layout_constraintVertical_bias="0.746"
         tools:ignore="TextContrastCheck" />
 
     <Button
@@ -160,12 +161,10 @@
         android:layout_width="322dp"
         android:layout_height="239dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_background"
-        app:layout_constraintVertical_bias="0.322">
+        app:layout_constraintTop_toTopOf="@+id/tv_background">
 
         <TextView
             android:id="@+id/cus_name"
