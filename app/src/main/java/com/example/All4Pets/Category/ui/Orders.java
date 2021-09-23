@@ -1,4 +1,4 @@
-package com.example.All4Pets.Category;
+package com.example.All4Pets.Category.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,17 +8,20 @@ import android.view.View;
 
 import com.example.All4Pets.R;
 
-public class OrdersList extends AppCompatActivity {
+public class Orders extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_orders_list);
+        setContentView(R.layout.activity_orders);
     }
-
-    public void gotoorderspage (View view){
-        Intent intent = new Intent(this, Orders.class);
+    //intent
+    public void gotoorderdetails (View view){
+        Intent intent = new Intent(Orders.this, OrdersList.class);
         startActivity(intent);
 
     }
+
+
+
 }
