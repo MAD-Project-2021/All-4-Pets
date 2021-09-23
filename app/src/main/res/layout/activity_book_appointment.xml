@@ -113,6 +113,20 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
+        android:id="@+id/confirm"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:text="@string/btn_confirm"
+        app:backgroundTint="#9e579d"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
+        app:layout_constraintVertical_bias="0.991"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
         android:id="@+id/edit"
         android:layout_width="150dp"
         android:layout_height="51dp"
@@ -141,19 +155,6 @@
         app:layout_constraintVertical_bias="0.797"
         tools:ignore="TextContrastCheck" />
 
-    <Button
-        android:id="@+id/delete"
-        android:layout_width="151dp"
-        android:layout_height="52dp"
-        android:text="Delete"
-        app:backgroundTint="#9e579d"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
-        app:layout_constraintVertical_bias="0.797"
-        tools:ignore="TextContrastCheck" />
     <LinearLayout
 
         android:layout_width="322dp"
