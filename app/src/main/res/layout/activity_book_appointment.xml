@@ -114,7 +114,7 @@
 
     <Button
         android:id="@+id/edit"
-        android:layout_width="139dp"
+        android:layout_width="150dp"
         android:layout_height="51dp"
         android:text="Edit"
         android:onClick="gotodetailed"
