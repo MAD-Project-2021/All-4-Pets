@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#80CCABF4"
-    tools:context=".Doctors.Activities.Vet_Results">
+    tools:context=".Doctors.Vet_Results">
 
 
 <!--    <ImageView-->

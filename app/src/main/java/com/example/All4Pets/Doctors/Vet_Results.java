@@ -1,4 +1,4 @@
-package com.example.All4Pets.Doctors.Activities;
+package com.example.All4Pets.Doctors;
 
 import android.content.Intent;
 import android.os.Bundle;
