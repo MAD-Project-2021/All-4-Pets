@@ -13,20 +13,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.All4Pets.Category.models.PetItemsModel;
 import com.example.All4Pets.Category.models.SupplementsModel;
 import com.example.All4Pets.Category.ui.DetailedItems;
 import com.example.All4Pets.R;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class SupplementsAdapter extends RecyclerView.Adapter<SupplementsAdapter.ViewHolder> {
+public class ShowAllSupAdepter extends RecyclerView.Adapter<ShowAllSupAdepter.ViewHolder> {
+
 
     Context context;
-    List<SupplementsModel>  supplementsModelList;
+    List<SupplementsModel> supplementsModelList;
 
-    public SupplementsAdapter(Context context, List<SupplementsModel> supplementsModelList) {
+    public ShowAllSupAdepter(Context context, List<SupplementsModel> supplementsModelList) {
         this.context = context;
         this.supplementsModelList = supplementsModelList;
     }
@@ -34,16 +33,14 @@ public class SupplementsAdapter extends RecyclerView.Adapter<SupplementsAdapter.
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.supplements, parent, false));
+        return new ShowAllSupAdepter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.show_all_item, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
-
-        Glide.with(context).load(supplementsModelList.get(position).getImg_url()).into(holder.supimageView);
+        Glide.with(context).load(supplementsModelList.get(position).getImg_url()).into(holder.supimageV);
         holder.name.setText(supplementsModelList.get(position).getName());
         holder.price.setText(String.valueOf(supplementsModelList.get(position).getPrice()));
-        holder.description.setText(supplementsModelList.get(position).getDescription());
 
         holder.itemView.setOnClickListener(new View.OnClickListener(){
 
@@ -55,6 +52,8 @@ public class SupplementsAdapter extends RecyclerView.Adapter<SupplementsAdapter.
 
             }
         });
+
+
     }
 
     @Override
@@ -63,15 +62,14 @@ public class SupplementsAdapter extends RecyclerView.Adapter<SupplementsAdapter.
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-
-        ImageView supimageView;
-        TextView name,description,price;
+        ImageView supimageV;
+        TextView name, price;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            supimageView = itemView.findViewById(R.id.sup_img);
-            name = itemView.findViewById(R.id.sup_name);
-            price = itemView.findViewById(R.id.sup_price);
-            description = itemView.findViewById(R.id.sup_des);
+            supimageV = itemView.findViewById(R.id.item_image);
+            name = itemView.findViewById(R.id.item_nam);
+            price = itemView.findViewById(R.id.item_cost);
+
         }
     }
 }

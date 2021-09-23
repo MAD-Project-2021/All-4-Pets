@@ -19,12 +19,12 @@ import com.example.All4Pets.R;
 
 import java.util.List;
 
-public class PetsItemsAdapter extends RecyclerView.Adapter<PetsItemsAdapter.ViewHolder> {
+public class ShowAllItemsAdapter extends RecyclerView.Adapter<ShowAllItemsAdapter.ViewHolder> {
 
     Context context;
     List<PetItemsModel> petItemsModelList;
 
-    public PetsItemsAdapter(Context context, List<PetItemsModel> petItemsModelList) {
+    public ShowAllItemsAdapter(Context context, List<PetItemsModel> petItemsModelList) {
         this.context = context;
         this.petItemsModelList = petItemsModelList;
     }
@@ -32,27 +32,26 @@ public class PetsItemsAdapter extends RecyclerView.Adapter<PetsItemsAdapter.View
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.pets_items, parent, false));
+        return new ShowAllItemsAdapter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.show_all_item, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
-
         Glide.with(context).load(petItemsModelList.get(position).getImg_url()).into(holder.imageView);
         holder.name.setText(petItemsModelList.get(position).getName());
         holder.price.setText(String.valueOf(petItemsModelList.get(position).getPrice()));
-        holder.description.setText(petItemsModelList.get(position).getDescription());
 
         holder.itemView.setOnClickListener(new View.OnClickListener(){
-
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
                 Intent intent = new Intent(v.getContext(), DetailedItems.class);
-                intent.putExtra("detailed" , petItemsModelList.get(position));
+                intent.putExtra("detailed", petItemsModelList.get(position));
                 v.getContext().startActivity(intent);
-
             }
         });
+
+
+
 
     }
 
@@ -62,15 +61,14 @@ public class PetsItemsAdapter extends RecyclerView.Adapter<PetsItemsAdapter.View
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-
         ImageView imageView;
-        TextView name,description,price;
+        TextView name, price;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.petitem_img);
-            name = itemView.findViewById(R.id.petitem_name);
-            price = itemView.findViewById(R.id.petitem_price);
-            description = itemView.findViewById(R.id.petitem_des);
+            imageView = itemView.findViewById(R.id.item_image);
+            name = itemView.findViewById(R.id.item_nam);
+            price = itemView.findViewById(R.id.item_cost);
+
         }
     }
 }

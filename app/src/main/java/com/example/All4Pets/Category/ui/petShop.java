@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.All4Pets.Category.adapters.PetsItemsAdapter;
@@ -15,6 +18,7 @@ import com.example.All4Pets.Category.adapters.petsAdapters;
 import com.example.All4Pets.Category.models.PetItemsModel;
 import com.example.All4Pets.Category.models.PetsModel;
 import com.example.All4Pets.Category.models.SupplementsModel;
+import com.example.All4Pets.MainActivity;
 import com.example.All4Pets.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -26,6 +30,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class petShop extends AppCompatActivity {
+
+    TextView petsShowAll, PetItemsShowAll, SuplimentsShowAll;
 
     RecyclerView petsRec, petItemsRec, supplementsRec;
     FirebaseFirestore db;
@@ -48,10 +54,54 @@ public class petShop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pet_shop);
 
+
+
         db = FirebaseFirestore.getInstance();
         petsRec = findViewById(R.id.pets_rec);
         petItemsRec = findViewById(R.id.petItems_rec);
         supplementsRec = findViewById(R.id.supplements_rec);
+        petsShowAll = findViewById(R.id.view_all_pets);
+        PetItemsShowAll = findViewById(R.id.view_all_petItems);
+        SuplimentsShowAll= findViewById(R.id.view_all_supliments);
+
+        petsShowAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ShowAllPets.class);
+                startActivity(intent);
+            }
+        });
+        PetItemsShowAll .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ShowAllItems.class);
+                startActivity(intent);
+            }
+        });
+
+        petsShowAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ShowAllPets.class);
+                startActivity(intent);
+            }
+        });
+
+        SuplimentsShowAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ShowSup.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
+
+
+
 
         //pets
         petsRec.setLayoutManager(new LinearLayoutManager(getApplicationContext(),RecyclerView.HORIZONTAL,false));
@@ -133,5 +183,11 @@ public class petShop extends AppCompatActivity {
 
                     }
                 });
+    }
+
+    public void gotoCart(View view){
+        Intent intent = new Intent(petShop.this, Cart.class);
+        startActivity(intent);
+
     }
 }
