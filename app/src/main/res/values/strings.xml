@@ -267,8 +267,10 @@
     <string name="pets">Pets</string>
 
     <string name="et_location">Enter Location</string>
+    <string name="search_hint">searchHint</string>
+    <string name="et_search">Enter Location</string>
 
-<!--    <String-array name="timeSlots">-->
+    <!--    <String-array name="timeSlots">-->
 <!--        <item>06.00 AM - 10.00 AM </item>-->
 <!--        <item>10.00 AM - 2.00 PM </item>-->
 <!--        <item>2.00 PM - 06.00 PM </item>-->
