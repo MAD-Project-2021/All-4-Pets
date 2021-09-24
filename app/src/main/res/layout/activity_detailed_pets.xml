@@ -176,7 +176,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardview"
         app:layout_constraintVertical_bias="0.784"
-        app:layout_constraintWidth="0.8" />
+        app:layout_constraintWidth="0.8"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

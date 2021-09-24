@@ -46,7 +46,7 @@ public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder,  int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.name.setText(mycartModellist.get(position).getProductName());
         holder.price.setText(mycartModellist.get(position).getProductPrice());
         holder.time.setText(mycartModellist.get(position).getCurrentTime());
@@ -54,29 +54,29 @@ public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.ViewHolder
         holder.quantity.setText(mycartModellist.get(position).getTotalQuantity());
         holder.totalPrice.setText(String.valueOf(mycartModellist.get(position).getTotalPrice()));
 
-//
-//         holder.deleteItem.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                firestore.collection("AddToCart").document("9XAfykklEvZAMsYDn392rPaqtgv2")
-//                        .collection("User")
-//                        .document(mycartModellist.get(position).getDocumentId())
-//                        .delete()
-//                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-//                            @Override
-//                            public void onComplete(@NonNull Task<Void> task) {
-//                                if(task.isSuccessful()){
-//                                    mycartModellist.remove(mycartModellist.get(position));
-//                                    notifyDataSetChanged();
-//                                    Toast.makeText(context, "Item Deleted", Toast.LENGTH_SHORT).show();
-//                                }
-//                                else{
-//                                    Toast.makeText(context, "Error"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-//                                }
-//                            }
-//                        });
-//            }
-//        });
+
+        holder.deleteItem.setOnClickListener(new View.OnClickListener() {
+           @Override
+            public void onClick(View view) {
+                firestore.collection("AddToCart").document("9XAfykklEvZAMsYDn392rPaqtgv2")
+                        .collection("User")
+                        .document(mycartModellist.get(position).getDocumentId())
+                        .delete()
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if(task.isSuccessful()){
+                                    mycartModellist.remove(mycartModellist.get(position));
+                                    notifyDataSetChanged();
+                                    Toast.makeText(context, "Item Deleted", Toast.LENGTH_SHORT).show();
+                                }
+                                else{
+                                    Toast.makeText(context, "Error"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+            }
+        });
 
 
         totalAmount = totalAmount + mycartModellist.get(position).getTotalPrice();

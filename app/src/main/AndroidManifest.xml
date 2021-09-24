@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Category.ui.CAddress"
+            android:exported="true" />
+        <activity
             android:name=".Category.ui.Cart"
             android:exported="true" />
         <activity
