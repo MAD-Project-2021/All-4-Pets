@@ -5,7 +5,13 @@
       <map>
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21333333333333335" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_book_appointment.xml" value="0.13072916666666667" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_caddress.xml" value="0.25" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_cart.xml" value="0.264" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_category.xml" value="0.264" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_detailed_items.xml" value="0.25" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_detailed_pets.xml" value="0.264" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_detailed_supplements.xml" value="0.234375" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_dispute_list.xml" value="0.234375" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_find_veterinary.xml" value="0.12708333333333333" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_item1.xml" value="0.25" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_item_c.xml" value="0.234375" />
@@ -14,6 +20,19 @@
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_pets.xml" value="0.25" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_pets_items.xml" value="0.2" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_services.xml" value="0.234375" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_show_all.xml" value="0.264" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_show_all_items.xml" value="0.21145833333333333" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_show_sup.xml" value="0.19791666666666666" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/activity_supliments.xml" value="0.20729166666666668" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/add_address.xml" value="0.25" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/cart_all.xml" value="0.264" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/pets.xml" value="0.234375" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/pets_items.xml" value="0.25" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/row_item.xml" value="0.234375" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/show_all_item.xml" value="0.20989583333333334" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/show_items.xml" value="0.21145833333333333" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/show_sup.xml" value="0.21145833333333333" />
+        <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/layout/supplements.xml" value="0.25" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21333333333333335" />
         <entry key="..\:/NEWMADPROJECT/All4Pets/All-4-Pets/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.21333333333333335" />
         <entry key="..\:/SLIIT/2_nd_year/2_nd_semester/MAD/All-4-Pets/app/src/main/res/layout/activity_find_veterinary.xml" value="0.2318840579710145" />
@@ -60,16 +79,14 @@
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/menu/search.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/menu/search_menu.xml" value="0.1921875" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/vet_results.xml" value="0.25" />
-        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_daycare_results.xml" value="0.2125984251968504" />
-        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_daycare_show_more.xml" value="0.25" />
+        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_daycare_results.xml" value="0.25" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/activity_find_daycare.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/daycare_item.xml" value="0.25" />
+        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/daycare_item.xml" value="0.1" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/dcitem.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/layout_custom_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/row_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/layout/vet_results.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/KAVINDI KARIYAWASAM/AndroidStudioProjects/MAD project/app/src/main/res/menu/search.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
