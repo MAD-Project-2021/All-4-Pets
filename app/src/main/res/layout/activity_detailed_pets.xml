@@ -34,7 +34,7 @@
             android:id="@+id/cm6"
             android:layout_width="191dp"
             android:layout_height="27dp"
-            android:text="@string/pets"
+            android:text="pets"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"

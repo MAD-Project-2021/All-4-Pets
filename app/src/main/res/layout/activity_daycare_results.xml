@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/backarrow"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="OnClick,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/et_booking2"
@@ -68,31 +68,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/et_search"
-        android:layout_width="388dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:hint="@string/et_search"
-        android:inputType="textPersonName"
-        android:text=""
-
-        app:layout_constraintBottom_toTopOf="@+id/rv_daycare_items"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_search"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <ImageView
-        android:id="@+id/icon_search"
-        android:layout_width="33dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/et_search"
-        app:layout_constraintHorizontal_bias="0.259"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_search"
-        app:srcCompat="@android:drawable/ic_menu_search" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

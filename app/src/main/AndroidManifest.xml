@@ -30,15 +30,11 @@
         <activity
             android:name=".Ratings.EditProfile"
             android:exported="true" />
-        <activity
-            android:name=".Doctors.Adapters.DetailedAdapter2"
-            android:exported="true" />
+
         <activity
             android:name=".Doctors.Activities.DetailedCustomer"
             android:exported="true" />
-        <activity
-            android:name=".Ratings.EditProfile"
-            android:exported="true" />
+
         <activity
             android:name=".Daycares.Confirmed_DaycareBooking"
             android:exported="true" />
@@ -67,13 +63,13 @@
             android:name=".Category.ui.UpdateDispute"
             android:exported="true" />
         <activity
-            android:name=".Category.DisputeList"
+            android:name=".Category.ui.DisputeList"
             android:exported="true" />
         <activity
-            android:name=".Category.OpenDispute"
+            android:name=".Category.ui.OpenDispute"
             android:exported="true" />
         <activity
-            android:name=".Category.OrdersList"
+            android:name=".Category.ui.OrdersList"
             android:exported="true" />
         <activity
             android:name=".Daycares.Daycare_ShowMore"
@@ -103,13 +99,14 @@
             android:name=".Ratings.Ratings"
             android:exported="true" />
         <activity
-            android:name=".Category.Orders"
+            android:name=".Category.ui.Orders"
             android:exported="true" />
-        <activity
-            android:name=".Category.Category"
-            android:exported="true" />
+
         <activity
             android:name=".Doctors.Activities.Find_Veterinary"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.petShop"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
