@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.All4Pets.Daycares.models.MainModel;
 import com.example.All4Pets.R;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 
 import java.util.List;
 
@@ -42,7 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.name.setText(list.get(position).getName());
         holder.location.setText(list.get(position).getLocation());
         holder.price.setText(list.get(position).getPrice());
-        holder.rate.setText(list.get(position).getRate());
+        holder.rate.setRating(list.get(position).getRate());
 
     }
 
@@ -51,11 +53,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return list.size();
     }
 
+    public void startListening() {
+    }
+
+    public void stopListening() {
+    }
+
+
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private final Object ImageView;
         ImageView imageView;
-        TextView name, location, price, rate;
+        TextView name, location, price;
+        RatingBar rate;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

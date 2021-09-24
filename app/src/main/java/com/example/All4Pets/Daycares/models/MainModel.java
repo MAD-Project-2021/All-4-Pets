@@ -6,14 +6,14 @@ public class MainModel {
         String name;
         String location;
         String price;
-        String rate;
+        float rate;
         String img_url;
 
         public MainModel() {
 
         }
 
-        public MainModel(String name, String location, String price, String rate, String img_url) {
+        public MainModel(String name, String location, String price, float rate, String img_url) {
             this.name = name;
             this.location = location;
             this.price = price;
@@ -45,11 +45,11 @@ public class MainModel {
             this.price = price;
         }
 
-        public String getRate() {
+        public float getRate() {
             return rate;
         }
 
-        public void setRate(String rate) {
+        public void setRate(float rate) {
             this.rate = rate;
         }
 
