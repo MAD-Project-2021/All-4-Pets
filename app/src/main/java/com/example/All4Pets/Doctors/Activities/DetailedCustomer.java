@@ -1,4 +1,4 @@
-package com.example.All4Pets.Doctors;
+package com.example.All4Pets.Doctors.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 

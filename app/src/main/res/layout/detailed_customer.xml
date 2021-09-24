@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#80B870C5"
-    tools:context=".Doctors.DetailedCustomer">
+    tools:context=".Doctors.Activities.DetailedCustomer">
 
 
     <ImageView
