@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+//import com.example.All4Pets.Doctors.Adapters.MyAdapter;
 import com.example.All4Pets.Doctors.Adapters.MyAdapter;
 import com.example.All4Pets.Doctors.models.MainModel;
 import com.example.All4Pets.R;
@@ -30,7 +31,7 @@ public class Vet_Results extends AppCompatActivity {
 
     FirebaseFirestore db;
     RecyclerView recyclerView;
-    List<MainModel> categoryModelList;
+    List<MainModel> mainModels;
     MyAdapter myAdapter;
 //    DatabaseReference databaseReference,fvrtref,fvrt_listRef;
 //    Boolean fvrtChechker = false;
@@ -50,8 +51,8 @@ public class Vet_Results extends AppCompatActivity {
 
         //popular items
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false));
-        categoryModelList = new ArrayList<>();
-        myAdapter = new MyAdapter(getApplicationContext(), categoryModelList);
+        mainModels = new ArrayList<>();
+       myAdapter = new MyAdapter(getApplicationContext(), mainModels);
         recyclerView.setAdapter(myAdapter);
 
         db.collection("Doctors")
@@ -64,7 +65,7 @@ public class Vet_Results extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 MainModel mainModel = document.toObject(MainModel.class);
                                 mainModel.id = document.getId();
-                                categoryModelList.add(mainModel);
+                                mainModels.add(mainModel);
                                 myAdapter.notifyDataSetChanged();
                             }
                         } else {
