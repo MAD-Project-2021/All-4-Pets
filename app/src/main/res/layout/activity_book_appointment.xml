@@ -127,20 +127,6 @@
         app:layout_constraintVertical_bias="0.797"
         tools:ignore="TextContrastCheck" />
 
-    <Button
-        android:id="@+id/edit"
-        android:layout_width="150dp"
-        android:layout_height="51dp"
-        android:onClick="gotodetailed"
-        android:text="Edit"
-        app:backgroundTint="#9e579d"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
-        app:layout_constraintVertical_bias="0.746"
-        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/delete"
