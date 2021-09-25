@@ -27,6 +27,7 @@ public class Add_Review extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_review);
 
+        //initializing variables
         feedback = findViewById(R.id.et_feedback);
         rating = findViewById(R.id.rb_rating);
         send = findViewById(R.id.btn_send);
