@@ -52,14 +52,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public int getItemCount() {
         return list.size();
     }
-
+/*
     public void startListening() {
     }
 
     public void stopListening() {
     }
 
-
+*/
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private final Object ImageView;
