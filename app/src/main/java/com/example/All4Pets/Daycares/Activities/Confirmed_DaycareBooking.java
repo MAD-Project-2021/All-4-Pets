@@ -1,4 +1,4 @@
-package com.example.All4Pets.Daycares;
+package com.example.All4Pets.Daycares.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
