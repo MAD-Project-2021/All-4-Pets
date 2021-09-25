@@ -14,37 +14,32 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.All4Pets.Category.models.PetsModel;
-import com.example.All4Pets.Category.ui.DetailedItems;
 import com.example.All4Pets.Category.ui.DetailedPets;
 import com.example.All4Pets.R;
 
 import java.util.List;
 
-public class petsAdapters extends RecyclerView.Adapter<petsAdapters.ViewHolder> {
-
+public class ShowAllPetsAdapter extends RecyclerView.Adapter<ShowAllPetsAdapter.ViewHolder> {
 
     private Context context;
     private List<PetsModel> petsModelList;
 
-    public petsAdapters(Context context, List<PetsModel> petsModelList) {
+    public ShowAllPetsAdapter(Context context, List<PetsModel> petsModelList) {
         this.context = context;
         this.petsModelList = petsModelList;
     }
 
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.pets, parent, false));
+        return new ShowAllPetsAdapter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.show_all_item, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
-
-        Glide.with(context).load(petsModelList.get(position).getImg_url()).into(holder.petsImage);
+        Glide.with(context).load(petsModelList.get(position).getImg_url()).into(holder.petImage);
         holder.name.setText(petsModelList.get(position).getName());
         holder.price.setText(String.valueOf(petsModelList.get(position).getPrice()));
-        holder.description.setText(petsModelList.get(position).getDescription());
 
         holder.itemView.setOnClickListener(new View.OnClickListener(){
 
@@ -58,26 +53,22 @@ public class petsAdapters extends RecyclerView.Adapter<petsAdapters.ViewHolder> 
             }
         });
 
+
     }
 
     @Override
     public int getItemCount() {
-        return petsModelList.size();
+        return  petsModelList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView petsImage;
-        TextView name, price, description;
-
+        ImageView petImage;
+        TextView name, price;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            petsImage = itemView.findViewById(R.id.pet_img);
-            name = itemView.findViewById(R.id.pet_name);
-            price = itemView.findViewById(R.id.pet_price);
-            description = itemView.findViewById(R.id.pet_des);
+            petImage = itemView.findViewById(R.id.item_image);
+            name = itemView.findViewById(R.id.item_nam);
+            price = itemView.findViewById(R.id.item_cost);
         }
     }
-
-
 }

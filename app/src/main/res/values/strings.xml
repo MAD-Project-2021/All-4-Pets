@@ -242,13 +242,6 @@
     <string name="btn_change">CHANGE BOOKING</string>
 
 
-
-
-
-
-
-
-
     <string name="et_date">Select the Date  and Month</string>
     <string name="et_time">Select the Time</string>
     <string name="et_area">Select the Area</string>
@@ -256,27 +249,22 @@
     <string name="string_et_date">📅 / Select Date and Month</string>
     <string name="string_et_area">📌 Select Area</string>
     <string name="string_et_dateMonth">📅 Select Date and Month</string>
-
-    <string name="search_your_items_here">Search your items here</string>
-    <string name="popular_products">Popular Products</string>
-    <string name="view_all">View All</string>
-    <string name="petsitems">Pets Items</string>
-    <string name="price">price</string>
-
-    <string name="description">description</string>
-    <string name="pets">Pets</string>
-
     <string name="et_location">Enter Location</string>
-    <string name="search_hint">searchHint</string>
-    <string name="et_search">Enter Location</string>
+    <string name="et_name">Enter the Name</string>
+    <string name="et_address">Enter the Address</string>
+    <string name="view_all">View All</string>
+    <string name="search_your_items_here">Search Your Items Here</string>
+    <string name="pets">Pets</string>
+    <string name="description">Description</string>
+    <string name="et_search">Search Your Location</string>
+    <string name="petsitems">Pet Items</string>
 
     <!--    <String-array name="timeSlots">-->
-<!--        <item>06.00 AM - 10.00 AM </item>-->
-<!--        <item>10.00 AM - 2.00 PM </item>-->
-<!--        <item>2.00 PM - 06.00 PM </item>-->
-<!--        <item>06.00 PM - 10.00 PM </item>-->
-<!--    </String-array>-->
-
+    <!--        <item>06.00 AM - 10.00 AM </item>-->
+    <!--        <item>10.00 AM - 2.00 PM </item>-->
+    <!--        <item>2.00 PM - 06.00 PM </item>-->
+    <!--        <item>06.00 PM - 10.00 PM </item>-->
+    <!--    </String-array>-->
 
 
 </resources>

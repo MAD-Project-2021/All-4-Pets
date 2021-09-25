@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.example.All4Pets">
 
-
-
-<uses-permission android:name="android.permission.INTERNET"/>
-
-
-
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,18 +11,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication" >
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".Category.ui.CAddress"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.Cart"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.ShowSup"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.ShowAllItems"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.ShowAllPets"
+            android:exported="true" />
         <activity
             android:name=".Ratings.EditProfile"
             android:exported="true" />
         <activity
-            android:name=".Category.ui.DetailedPets"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.DetailedItems"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.petShop"
+            android:name=".Doctors.Activities.DetailedCustomer"
             android:exported="true" />
         <activity
             android:name=".Daycares.Confirmed_DaycareBooking"
@@ -55,15 +57,9 @@
         <activity
             android:name=".Ratings.Add_Review"
             android:exported="true" />
-
-
-
-   
-
-
-
-
-
+        <activity
+            android:name=".Category.ui.UpdateDispute"
+            android:exported="true" />
         <activity
             android:name=".Category.ui.DisputeList"
             android:exported="true" />
@@ -83,36 +79,20 @@
             android:name=".Daycares.Daycare_Results"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Confirmed_Booking"
+            android:name=".Doctors.Activities.Book_Appointment"
             android:exported="true" />
         <activity
-
-
-
-
-
-
-            android:name=".Doctors.Book_Appointment"
+            android:name=".Doctors.Activities.Fav_VetList"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Fav_VetList"
+            android:name=".Doctors.Activities.Vet_Results"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Vet_Results"
-            android:exported="true" />
-        <activity
-            android:name=".Doctors.Vet_ShowMore"
+            android:name=".Doctors.Activities.Vet_ShowMore"
             android:exported="true" />
         <activity
             android:name=".Daycares.Find_Daycare"
             android:exported="true" />
-
-
-
-
-
-
-
         <activity
             android:name=".Ratings.Ratings"
             android:exported="true" />
@@ -120,11 +100,21 @@
             android:name=".Category.ui.Orders"
             android:exported="true" />
         <activity
-            android:name=".Doctors.Find_Veterinary"
+            android:name=".Doctors.Activities.Find_Veterinary"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.petShop"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.DetailedItems"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.DetailedPets"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

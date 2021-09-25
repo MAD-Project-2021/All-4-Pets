@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
+    android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="6dp"
     app:cardCornerRadius="6dp"
@@ -13,14 +13,14 @@
 
 
         android:layout_width="379dp"
-        android:layout_height="144dp"
+        android:layout_height="200dp"
         android:layout_gravity="end"
         android:layout_marginLeft="16dp"
         android:background="#a696c8"
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/iv_dayc"
+            android:id="@+id/img1"
             android:layout_width="115dp"
             android:layout_height="96dp"
             android:layout_marginLeft="20dp"
@@ -30,31 +30,28 @@
             app:civ_border_width="2dp" />
 
         <ImageView
-            android:id="@+id/tv_arrow"
-            android:layout_width="242dp"
-            android:layout_height="27dp"
-            android:layout_marginLeft="200dp"
-            app:srcCompat="@drawable/icons8_circled_right_100"
-            android:onClick="gotovetshowmore"/>
+            android:id="@+id/arrow"
+            android:layout_width="62dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="290dp"
+            app:srcCompat="@drawable/icons8_circled_right_100" />
+
+        <ImageButton
+            android:id="@+id/fvrt_f2_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="250dp"
+            android:background="@android:color/transparent"
+            android:padding="2dp"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
 
 
-        <!--        <com.google.android.material.imageview.ShapeableImageView-->
-        <!--            android:id="@+id/img1"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="88dp"-->
-        <!--            android:layout_centerVertical="true"-->
-        <!--            android:layout_marginTop="6dp"-->
-        <!--            android:layout_marginLeft="19dp"-->
-        <!--            android:adjustViewBounds="true"-->
-        <!--            android:scaleType="center"-->
-        <!--            android:src="@mipmap/ic_launcher"-->
-
-        <!--            />-->
     </LinearLayout>
 
 
     <TextView
-        android:id="@+id/tv_dname"
+        android:id="@+id/name"
         android:layout_width="238dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
@@ -66,7 +63,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tv_dlocation"
+        android:id="@+id/speciality"
         android:layout_width="238dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
@@ -78,7 +75,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tv_price"
+        android:id="@+id/price"
         android:layout_width="238dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
@@ -90,7 +87,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tv_rate"
+        android:id="@+id/rate"
         android:layout_width="238dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"

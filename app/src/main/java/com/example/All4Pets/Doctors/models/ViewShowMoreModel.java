@@ -1,23 +1,32 @@
 package com.example.All4Pets.Doctors.models;
 
-public class MainModel {
+import java.io.Serializable;
+
+public class ViewShowMoreModel implements Serializable {
+
     String name;
     String speciality;
     String price;
     String rate;
     String img_url;
+    String description;
+    String exp;
+    String location;
     public String id;
 
-    public MainModel() {
+    public ViewShowMoreModel() {
 
     }
 
-    public MainModel(String name, String speciality, String price, String rate, String img_url) {
+    public ViewShowMoreModel(String name, String speciality, String price, String rate, String img_url, String description, String exp, String location) {
         this.name = name;
         this.speciality = speciality;
         this.price = price;
         this.rate = rate;
         this.img_url = img_url;
+        this.description = description;
+        this.exp = exp;
+        this.location = location;
     }
 
     public String getName() {
@@ -58,5 +67,29 @@ public class MainModel {
 
     public void setImg_url(String img_url) {
         this.img_url = img_url;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getExp() {
+        return exp;
+    }
+
+    public void setExp(String exp) {
+        this.exp = exp;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }
