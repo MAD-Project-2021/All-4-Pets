@@ -1,4 +1,4 @@
-package com.example.All4Pets.Daycares;
+package com.example.All4Pets.Daycares.Adapters;
 
 
 import android.content.Context;
@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.All4Pets.Daycares.models.MainModel;
 import com.example.All4Pets.R;
-import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 
 import java.util.List;
 
@@ -52,14 +51,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public int getItemCount() {
         return list.size();
     }
-
+/*
     public void startListening() {
     }
 
     public void stopListening() {
     }
 
-
+*/
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private final Object ImageView;

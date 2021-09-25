@@ -4,7 +4,7 @@ public class MainModel {
     String name;
     String speciality;
     String price;
-    String rate;
+    long rate;
     String img_url;
     public String id;
 
@@ -12,7 +12,7 @@ public class MainModel {
 
     }
 
-    public MainModel(String name, String speciality, String price, String rate, String img_url) {
+    public MainModel(String name, String speciality, String price, long rate, String img_url) {
         this.name = name;
         this.speciality = speciality;
         this.price = price;
@@ -44,11 +44,11 @@ public class MainModel {
         this.price = price;
     }
 
-    public String getRate() {
+    public long getRate() {
         return rate;
     }
 
-    public void setRate(String rate) {
+    public void setRate(long rate) {
         this.rate = rate;
     }
 

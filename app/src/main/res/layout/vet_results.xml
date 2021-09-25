@@ -27,16 +27,13 @@
         android:layout_height="92dp"
         android:layout_marginStart="117dp"
         android:contentDescription="@string/watch_favorite_list"
-        android:onClick="gotofavpage"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv"
         app:layout_constraintVertical_bias="0.708"
-        app:srcCompat="@drawable/favlist1"
-        tools:ignore="MissingConstraints,OnClick" />
+        app:srcCompat="@drawable/favlist1"/>
 
     <TextView
         android:id="@+id/et_text1"

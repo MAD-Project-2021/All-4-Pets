@@ -30,16 +30,14 @@
         <activity
             android:name=".Ratings.EditProfile"
             android:exported="true" />
-
         <activity
             android:name=".Doctors.Activities.DetailedCustomer"
             android:exported="true" />
-
         <activity
-            android:name=".Daycares.Confirmed_DaycareBooking"
+            android:name=".Daycares.Activities.Confirmed_DaycareBooking"
             android:exported="true" />
         <activity
-            android:name=".Daycares.Book_Daycare"
+            android:name=".Daycares.Activities.Book_Daycare"
             android:exported="true" />
         <activity
             android:name=".Ratings.View_Profile"
@@ -72,13 +70,13 @@
             android:name=".Category.ui.OrdersList"
             android:exported="true" />
         <activity
-            android:name=".Daycares.Daycare_ShowMore"
+            android:name=".Daycares.Activities.Daycare_ShowMore"
             android:exported="true" />
         <activity
-            android:name=".Daycares.Fav_DaycareList"
+            android:name=".Daycares.Activities.Fav_DaycareList"
             android:exported="true" />
         <activity
-            android:name=".Daycares.Daycare_Results"
+            android:name=".Daycares.Activities.Daycare_Results"
             android:exported="true" />
         <activity
             android:name=".Doctors.Activities.Book_Appointment"
@@ -93,7 +91,7 @@
             android:name=".Doctors.Activities.Vet_ShowMore"
             android:exported="true" />
         <activity
-            android:name=".Daycares.Find_Daycare"
+            android:name=".Daycares.Activities.Find_Daycare"
             android:exported="true" />
         <activity
             android:name=".Ratings.Ratings"
@@ -101,7 +99,6 @@
         <activity
             android:name=".Category.ui.Orders"
             android:exported="true" />
-
         <activity
             android:name=".Doctors.Activities.Find_Veterinary"
             android:exported="true" />
@@ -109,8 +106,15 @@
             android:name=".Category.ui.petShop"
             android:exported="true" />
         <activity
+            android:name=".Category.ui.DetailedItems"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.DetailedPets"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

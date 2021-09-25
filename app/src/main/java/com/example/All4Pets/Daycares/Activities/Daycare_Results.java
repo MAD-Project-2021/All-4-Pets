@@ -1,14 +1,8 @@
-package com.example.All4Pets.Daycares;
+package com.example.All4Pets.Daycares.Activities;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
-import android.view.Menu;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -16,13 +10,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.All4Pets.Daycares.Adapters.MyAdapter;
 import com.example.All4Pets.Daycares.models.MainModel;
 import com.example.All4Pets.R;
-import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
@@ -56,6 +49,8 @@ public class Daycare_Results extends AppCompatActivity {
         myAdapter = new MyAdapter(getApplicationContext(),categoryModelList);
         recyclerView.setAdapter(myAdapter);
 //search
+
+        /*
         EditText et_search=findViewById(R.id.et_search);
         et_search.addTextChangedListener(new TextWatcher() {
             @Override
@@ -80,13 +75,23 @@ public class Daycare_Results extends AppCompatActivity {
                 FirestoreRecyclerOptions<MainModel> options = new FirestoreRecyclerOptions.Builder<MainModel>()
                         .setQuery(query, MainModel.class)
                         .build();
-               // myAdapter.updateOptions(options);
+
+                query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        for (DocumentSnapshot doc: task.getResult().getDocuments()) {
+                           // categoryModelList.add(doc.)
+                        }
+                    }
+                });
+
+              // myAdapter.updateOptions(options);
 
 
 
             }
         });
-
+*/
         db.collection("Day Cares")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -110,7 +115,7 @@ public class Daycare_Results extends AppCompatActivity {
 
 
     }
-
+/*
     @Override
     protected void onStart() {
         super.onStart();
@@ -122,7 +127,7 @@ public class Daycare_Results extends AppCompatActivity {
         super.onStop();
         myAdapter.stopListening();
     }
-
+*/
     public void gotofavpage2(View view) {
         Intent intent = new Intent(Daycare_Results.this, Fav_DaycareList.class);
         startActivity(intent);

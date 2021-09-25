@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0FFFFFFF"
-    tools:context=".Daycares.Find_Daycare">
+    tools:context=".Daycares.Activities.Find_Daycare">
 
     <ImageView
         android:id="@+id/et_booking"

@@ -4,22 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Daycares.Confirmed_DaycareBooking">
+    tools:context=".Daycares.Activities.Confirmed_DaycareBooking">
 
     <ImageView
         android:id="@+id/et_booking4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:contentDescription="@string/book_daycare_bar"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/daycarebook"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="410dp"
-        android:layout_height="57dp"
+        android:id="@+id/textView5"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,59 +28,66 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="410dp"
-        android:layout_height="59dp"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/et_booking4" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="409dp"
-        android:layout_height="54dp"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/et_booking4" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="409dp"
-        android:layout_height="54dp"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="180dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/et_booking4" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="411dp"
-        android:layout_height="75dp"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="240dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/et_booking4" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="125dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="48dp"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
-        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:text="Button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
