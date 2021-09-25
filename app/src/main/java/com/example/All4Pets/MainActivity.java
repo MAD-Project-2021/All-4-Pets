@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.All4Pets.Category.ui.Orders;
 import com.example.All4Pets.Category.ui.petShop;
-import com.example.All4Pets.Daycares.Find_Daycare;
+import com.example.All4Pets.Daycares.Activities.Find_Daycare;
 import com.example.All4Pets.Doctors.Activities.Find_Veterinary;
 import com.example.All4Pets.Ratings.Ratings;
 
