@@ -16,12 +16,12 @@
             android:id="@+id/tv_ratings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ratings"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:layout_gravity="top"
             android:background="?attr/colorPrimary"
             android:minHeight="?attr/actionBarSize"
+            android:text="Ratings"
+            android:textColor="@color/white"
+            android:textSize="20sp"
             android:theme="?attr/actionBarTheme" />
 
 
@@ -34,37 +34,35 @@
 
         <Spinner
             android:id="@+id/spinner_ratings"
-            android:layout_width="401dp"
+            android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_margin="10dp"
-            android:background="@android:color/system_accent3_700"
-            android:backgroundTint="#9949238C"
+            android:background="#B340034A"
+            android:backgroundTint="#664B0557"
             android:contextClickable="true"
-            android:popupBackground="@color/purple_200"
+            android:popupBackground="@drawable/gradient_background"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
             app:layout_constraintVertical_bias="0.012"
             tools:ignore="SpeakableTextPresentCheck"
             tools:targetApi="s" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="36dp"
-            android:layout_height="29dp"
-            app:layout_constraintBottom_toBottomOf="@+id/spinner_ratings"
-            app:layout_constraintEnd_toEndOf="@+id/spinner_ratings"
-            app:layout_constraintHorizontal_bias="0.98"
-            app:layout_constraintStart_toStartOf="@+id/spinner_ratings"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:layout_constraintVertical_bias="0.6"
-            app:srcCompat="@drawable/ic_down" />
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView2"-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="29dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/spinner_ratings"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/spinner_ratings"-->
+        <!--            app:layout_constraintHorizontal_bias="0.98"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/spinner_ratings"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/toolbar"-->
+        <!--            app:layout_constraintVertical_bias="0.6"-->
+        <!--            app:srcCompat="@drawable/ic_down" />-->
 
     </LinearLayout>
-
 
 
     <LinearLayout
@@ -75,8 +73,8 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:visibility="invisible"/>
+            android:layout_height="250dp"
+            android:visibility="invisible" />
 
     </LinearLayout>
 
@@ -84,7 +82,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="227dp"
+        android:layout_height="300dp"
         android:layout_gravity="bottom|end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

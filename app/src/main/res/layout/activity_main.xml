@@ -17,7 +17,7 @@
         android:text="@string/btn_category"
         app:layout_constraintBottom_toTopOf="@+id/btn_order"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +29,7 @@
         android:text="@string/btn_order"
         app:layout_constraintBottom_toTopOf="@+id/btn_services"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_category" />
 
@@ -52,14 +52,16 @@
         android:layout_width="289dp"
         android:layout_height="70dp"
         android:layout_marginBottom="136dp"
-        android:text="@string/btn_ratings"
         android:onClick="gotoratingspage"
+        android:text="@string/btn_ratings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_services"
         app:layout_constraintVertical_bias="1.0" />
+
+
 
     <TextView
         android:id="@+id/txt_topic"

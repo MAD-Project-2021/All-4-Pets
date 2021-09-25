@@ -98,7 +98,7 @@
             android:exported="true" />
         <activity
 
-            android:name=".Services"
+
 
             android:name=".Doctors.Book_Appointment"
             android:exported="true" />
@@ -115,9 +115,7 @@
         <activity
             android:name=".Daycares.Find_Daycare"
             android:exported="true" />
-        <activity
-            android:name=".Services"
-            android:exported="true" />
+
         <activity
             android:name=".Ratings.Ratings"
             android:exported="true" />
