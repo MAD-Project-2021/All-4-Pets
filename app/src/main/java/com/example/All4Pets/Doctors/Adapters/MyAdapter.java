@@ -58,7 +58,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.name.setText(list.get(position).getName());
         holder.speciality.setText(list.get(position).getSpeciality());
         holder.price.setText(list.get(position).getPrice());
-        holder.rate.setText(list.get(position).getRate());
+        holder.rate.setText(String.valueOf(list.get(position).getRate()));
 
 
 

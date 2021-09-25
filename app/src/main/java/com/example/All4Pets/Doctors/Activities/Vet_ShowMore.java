@@ -79,7 +79,7 @@ public class Vet_ShowMore extends AppCompatActivity {
                     DocumentSnapshot doc = task.getResult();
 
             Glide.with(getApplicationContext()).load(doc.get("img_url")).into(img);
-            ratings.setText((String)doc.get("rate"));
+            ratings.setText(doc.get("rate").toString());
             description.setText((String)doc.get("description"));
             price.setText((String)doc.get("price"));
             exp.setText((String)doc.get("exp"));
