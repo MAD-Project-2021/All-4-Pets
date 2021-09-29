@@ -260,6 +260,7 @@
     <string name="pets">Pets</string>
 
     <string name="et_location">Enter Location</string>
+    <string name="add_your_address">Add Your Address</string>
 
     <!--    <String-array name="timeSlots">-->
     <!--        <item>06.00 AM - 10.00 AM </item>-->

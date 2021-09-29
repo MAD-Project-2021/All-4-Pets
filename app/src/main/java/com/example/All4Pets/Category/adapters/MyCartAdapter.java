@@ -29,13 +29,13 @@ public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.ViewHolder
     List<MyCartModel> mycartModellist;
     int totalAmount = 0;
     FirebaseFirestore firestore;
-    FirebaseAuth Auth;
+    FirebaseAuth auth;
 
     public MyCartAdapter(Context context, List<MyCartModel> mycartModelslist) {
         this.context = context;
         this.mycartModellist = mycartModelslist;
         firestore = FirebaseFirestore.getInstance();
-        Auth = FirebaseAuth.getInstance();
+        auth = FirebaseAuth.getInstance();
 
     }
 
@@ -58,7 +58,9 @@ public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.ViewHolder
         holder.deleteItem.setOnClickListener(new View.OnClickListener() {
            @Override
             public void onClick(View view) {
-                firestore.collection("AddToCart").document("9XAfykklEvZAMsYDn392rPaqtgv2")
+               //auth.getCurrentUser().getUid()
+
+                firestore.collection("AddToCart").document(auth.getCurrentUser().getUid())
                         .collection("User")
                         .document(mycartModellist.get(position).getDocumentId())
                         .delete()

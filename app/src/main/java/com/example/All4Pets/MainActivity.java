@@ -7,7 +7,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import com.example.All4Pets.Category.ui.Orders;
 import com.example.All4Pets.Category.ui.petShop;
 import com.example.All4Pets.Daycares.Find_Daycare;
 import com.example.All4Pets.Doctors.Find_Veterinary;
@@ -33,11 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void gotoorderspage (View view){
-        Intent intent = new Intent(MainActivity.this, Orders.class);
-        startActivity(intent);
 
-    }
 
     public void gotofindvet(View view){
         Intent intent = new Intent(MainActivity.this, Find_Veterinary.class);
