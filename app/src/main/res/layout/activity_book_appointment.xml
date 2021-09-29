@@ -55,7 +55,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
         app:layout_constraintVertical_bias="0.133"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        android:src="@drawable/vet6"/>
+        //app:srcCompat="@drawable/ic_launcher_background"
 
     <TextView
         android:id="@+id/name"
@@ -125,7 +126,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_patient"
         app:layout_constraintVertical_bias="0.797"
-        tools:ignore="TextContrastCheck" />
+       />
 
 
     <Button
@@ -146,9 +147,10 @@
 
         android:layout_width="322dp"
         android:layout_height="239dp"
+        android:layout_marginTop="44dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_background">
 

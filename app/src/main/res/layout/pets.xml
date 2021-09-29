@@ -23,7 +23,7 @@
             android:id="@+id/pet_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pets"
+            android:text="pets"
             android:textSize="19sp"
             android:textStyle="bold" />
 

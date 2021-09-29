@@ -258,6 +258,8 @@
     <string name="description">Description</string>
     <string name="et_search">Search Your Location</string>
     <string name="petsitems">Pet Items</string>
+    <string name="et_search2">"Enter the Veterinary name "</string>
+    <string name="searchbar">Search</string>
 
     <!--    <String-array name="timeSlots">-->
     <!--        <item>06.00 AM - 10.00 AM </item>-->

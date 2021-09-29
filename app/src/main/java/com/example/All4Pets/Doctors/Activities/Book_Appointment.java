@@ -57,9 +57,9 @@ public class Book_Appointment extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-        cusID = fAuth.getCurrentUser().getUid();
+        //cusID = fAuth.getCurrentUser().getUid();
 
-        DocumentReference documentReference = db.collection("Customers").document(cusID);
+        DocumentReference documentReference = db.collection( "customer").document(cusID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
@@ -73,43 +73,8 @@ public class Book_Appointment extends AppCompatActivity {
             }
         });
 
-//        changeProfileImage.setOnClickListener((v)->{
-//
-//            //open gallery
-//            //Intent openGalleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-//            //startActivityForResult(openGalleryIntent,1000);
-//
-//            Intent i = new Intent(v.getContext(), EditProfile.class);
-//            i.putExtra("email", email.getText().toString());
-//            i.putExtra("fullName", fullName.getText().toString());
-//            i.putExtra("phone",phone.getText().toString());
-//            startActivity(i);
-//
-//        });
-
-
     }
 
-//    protected void onActivityResult(int requestCode, int resultCode, @androidx.annotation.Nullable Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        //gallery is invoking onActivity result
-//        if(requestCode ==1000){
-//            if(resultCode== Activity.RESULT_OK){
-//                //get the uri of image from gallery
-//                Uri imageUri = data.getData();
-//                profileImage.setImageURI(imageUri);
-//            }
-//        }
-//    }
-
-//    public void profileBack(View view){
-//        //log out from application
-//        FirebaseAuth.getInstance().signOut();
-//
-//        //once log out they are sent to Login page
-//        startActivity(new Intent(getApplicationContext(), Login.class));
-//        finish();
-//    }
 
     private void showDialog(){
         Dialog dialog = new Dialog(this,R.style.DialogStyle);

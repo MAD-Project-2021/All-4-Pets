@@ -14,9 +14,11 @@
 //
 //import androidx.annotation.NonNull;
 //import androidx.appcompat.app.AlertDialog;
+//import androidx.recyclerview.widget.RecyclerView;
 //
 //import com.bumptech.glide.Glide;
 //import com.example.All4Pets.Doctors.Activities.Vet_ShowMore;
+//
 //import com.example.All4Pets.Doctors.models.DetailedModel;
 //import com.example.All4Pets.Doctors.models.MainModel;
 //import com.example.All4Pets.R;
@@ -24,12 +26,13 @@
 //import com.google.android.gms.tasks.OnSuccessListener;
 //import com.google.firebase.database.FirebaseDatabase;
 //import com.orhanobut.dialogplus.DialogPlus;
+//import com.orhanobut.dialogplus.Holder;
 //
 //import java.util.HashMap;
 //import java.util.List;
 //import java.util.Map;
 //
-//public class DetailedAdapter extends FirebaseRecyclerAdapter<DetailedModel,DetailedAdapter.ViewHolder>{
+//public class DetailedAdapter extends RecyclerView.Adapter<DetailedModel,DetailedAdapter.ViewHolder>{
 //
 //    Context context;
 //    List<MainModel> list;
@@ -43,18 +46,21 @@
 //
 //    @NonNull
 //    @Override
-//    public DetailedAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+//    public DetailedModel onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 //        return new DetailedAdapter.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.doctors, parent, false));
 //    }
 //
 //    @Override
-//    public void onBindViewHolder(@NonNull MyAdapter.ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
+//    public void onBindViewHolder(@NonNull DetailedModel holder, @SuppressLint("RecyclerView") int position) {
+//
+//
 //
 //        Glide.with(context).load(list.get(position).getImg_url()).into(holder.img);
-//        holder.name.setText(list.get(position).getName());
-//        holder.speciality.setText(list.get(position).getSpeciality());
-//        holder.price.setText(list.get(position).getPrice());
-//        holder.rate.setText(list.get(position).getRate());
+//        holder.setEt_name((list.get(position).getName()));
+//        holder.setEt_address(list.get(position).getSpeciality());
+//        holder.setEt_email(list.get(position).getPrice());
+//        holder.setEt_date(String.valueOf(list.get(position)));
+//        holder.setEt_time(String.valueOf(list.get(position)));
 //
 //
 //        holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -68,11 +74,13 @@
 //        });
 //
 //
+//
+//
 //        holder.edit.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
 //                final DialogPlus dialogPlus = DialogPlus.newDialog(holder.img.getContext())
-//                        .setContentHolder(new ViewHolder(R.layout.detailed_customer))
+//                        .setContentHolder((Holder) new ViewHolder(R.layout.detailed_customer))
 //                        .setExpanded(true, 1200)
 //                        .create();
 //
@@ -98,6 +106,9 @@
 //
 //                dialogPlus.show();
 //
+//
+//                //update / Edit the details of the customers
+//
 //                btn_save.setOnClickListener(new View.OnClickListener() {
 //                    @Override
 //                    public void onClick(View view) {
@@ -113,14 +124,14 @@
 //                                .addOnSuccessListener(new OnSuccessListener<Void>() {
 //                                    @Override
 //                                    public void onSuccess(Void unused) {
-//                                        Toast.makeText(holder.name.getContext(), "Data updated Successfully.", Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(holder.setEt_name().getContext(), "Data updated Successfully.", Toast.LENGTH_SHORT).show();
 //                                        dialogPlus.dismiss();
 //                                    }
 //                                })
 //                                .addOnFailureListener(new OnFailureListener() {
 //                                    @Override
 //                                    public void onFailure(@NonNull Exception e) {
-//                                        Toast.makeText(holder.name.getContext(), "Error While Updating", Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(holder.edit.getContext(), "Error While Updating", Toast.LENGTH_SHORT).show();
 //                                        dialogPlus.dismiss();
 //                                    }
 //                                });
@@ -132,11 +143,13 @@
 //        });
 //
 //
-//        // Delete the customers
+//
+//        // Customer can Delete the customer details
+//
 //        holder.delete.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                AlertDialog.Builder builder = new AlertDialog.Builder(holder.name.getContext());
+//                AlertDialog.Builder builder = new AlertDialog.Builder(holder.delete.getContext());
 //                builder.setTitle("Are you sure?");
 //                builder.setMessage("Delete data can't be undo .");
 //
@@ -144,23 +157,35 @@
 //                    @Override
 //                    public void onClick(DialogInterface dialogInterface, int i) {
 //                        FirebaseDatabase.getInstance().getReference().child("Customers")
-//                                .child(getRef(position).getKey()).removeValue();
+//                                .child(getRef(position)).removeValue();
 //
 //                    }
 //                });
 //                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
 //                    @Override
 //                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        Toast.makeText(holder.name.getContext(), "Canceled", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(holder.delete.getContext(), "Canceled", Toast.LENGTH_SHORT).show();
 //                    }
 //                });
 //                builder.show();
 //            }
 //        });
-//
 //    }
 //
-//    public static class ViewHolder {
+//    private String getRef(int position) {
+//        return null;
+//    }
+//
+//    @Override
+//    public int getItemCount() {
+//        return 0;
+//    }
+//
+//
+//    public class ViewHolder extends DetailedModel {
+//        public ViewHolder(int inflate) {
+//        }
+//
 //        public ViewHolder(View inflate) {
 //        }
 //    }

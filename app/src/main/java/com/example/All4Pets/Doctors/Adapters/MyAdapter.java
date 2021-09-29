@@ -1,5 +1,3 @@
-//My Adapter
-
 
 
 package com.example.All4Pets.Doctors.Adapters;
@@ -32,9 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     Context context;
     List<MainModel> list;
-//    ImageButton fvrt_btn;
-//    DatabaseReference favouriteref;
-//    FirebaseDatabase database = FirebaseDatabase.getInstance();
+
 
 
 

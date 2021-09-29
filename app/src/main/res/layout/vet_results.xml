@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#80CCABF4"
+    android:background="#43DAA2B5"
     tools:context=".Doctors.Activities.Vet_Results">
 
 
-<!--    <ImageView-->
-<!--        android:id="@+id/image_View4"-->
-<!--        android:layout_width="421dp"-->
-<!--        android:layout_height="59dp"-->
-<!--        android:contentDescription="@string/vet_surgeon_find"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.0"-->
-<!--        app:srcCompat="@drawable/findvet1" />-->
+    <ImageView
+        android:id="@+id/image_View2"
+        android:layout_width="470dp"
+        android:layout_height="67dp"
+        android:contentDescription="@string/toolbar1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/findvet1" />
 
 
     <ImageView
@@ -33,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv"
         app:layout_constraintVertical_bias="0.708"
-        app:srcCompat="@drawable/favlist1"/>
+        app:srcCompat="@drawable/favlist1" />
 
     <TextView
         android:id="@+id/et_text1"
