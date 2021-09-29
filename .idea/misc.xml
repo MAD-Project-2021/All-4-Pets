@@ -32,7 +32,7 @@
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/drawable/search_icon.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_add_review.xml" value="0.2109375" />
-        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_book_appointment.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_book_appointment.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_confirmed_booking.xml" value="0.24230072463768115" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_daycare_results.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/activity_detailed_adapter2.xml" value="0.25416666666666665" />
@@ -54,7 +54,7 @@
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/category.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/confirm_dialog.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/daycare_item.xml" value="0.19322916666666667" />
-        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/detailed_customer.xml" value="0.2109375" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/detailed_customer.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/doctors.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/item.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/layout_custom_dialog.xml" value="0.1816123188405797" />
@@ -65,8 +65,8 @@
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/supplements.xml" value="0.1359375" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/toolbar.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/vet_cards.xml" value="0.25271739130434784" />
-        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/vet_results.xml" value="0.2" />
-        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/vet_show_more.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/vet_results.xml" value="0.16" />
+        <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/layout/vet_show_more.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/menu/search.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/Desktop/NEW-MAD/All-4-Pets/All-4-Pets/app/src/main/res/menu/search_menu.xml" value="0.1921875" />
       </map>

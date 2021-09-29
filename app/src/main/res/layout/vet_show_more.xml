@@ -7,21 +7,6 @@
     tools:context=".Doctors.Activities.Vet_ShowMore"
     android:background="@drawable/gradient_background">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="258dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="5dp"
-        android:contentDescription="@string/add_to_favourite_list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/addfav" />
-
     <TextView
         android:id="@+id/tv_descrip2"
         android:layout_width="411dp"
@@ -70,30 +55,33 @@
         android:layout_width="311dp"
         android:layout_height="36dp"
         android:layout_marginTop="268dp"
+        android:fontFamily="@font/averia_serif_libre"
         android:text="name of the doctor"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_description"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/speciality"
         android:layout_width="321dp"
         android:layout_height="42dp"
+        android:layout_marginBottom="384dp"
+        android:fontFamily="@font/averia_serif_libre"
         android:text="Speciality of the doc.."
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.362" />
+        app:layout_constraintTop_toTopOf="@+id/name"
+        app:layout_constraintVertical_bias="0.675" />
 
     <TextView
         android:id="@+id/tv_description"
@@ -161,55 +149,69 @@
         android:contentDescription="@string/back_arrow_icon"
         android:onClick="redirecttoresults"
         app:layout_constraintBottom_toTopOf="@+id/tv_descrip2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188"
+        app:layout_constraintVertical_bias="0.198"
         app:srcCompat="@drawable/backarrow"
         tools:ignore="OnClick" />
 
+
     <TextView
         android:id="@+id/ratings"
-        android:layout_width="85dp"
-        android:layout_height="34dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="123dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="12dp"
         android:layout_marginBottom="52dp"
-        android:background="#806CBD0D"
+        android:fontFamily="@font/averia_serif_libre"
         android:text="Ratings"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/description"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/exp"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <RatingBar
+        android:layout_width="239dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:progressBackgroundTint="@color/ratingbar"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintStart_toEndOf="@+id/price"
         app:layout_constraintTop_toBottomOf="@+id/speciality"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.407" />
 
     <TextView
         android:id="@+id/exp"
-        android:layout_width="145dp"
-        android:layout_height="36dp"
-        android:background="#806CBD0D"
+        android:layout_width="156dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/averia_serif_libre"
         android:text="Experience"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/description"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toEndOf="@+id/price"
         app:layout_constraintTop_toBottomOf="@+id/img1"
-        app:layout_constraintVertical_bias="0.687"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.567" />
 
     <TextView
         android:id="@+id/price"
-        android:layout_width="93dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="80dp"
-        android:background="#806CBD0D"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/averia_serif_libre"
         android:text="Price"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 

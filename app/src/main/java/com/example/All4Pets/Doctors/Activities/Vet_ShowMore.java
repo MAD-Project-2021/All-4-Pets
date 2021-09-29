@@ -52,17 +52,7 @@ public class Vet_ShowMore extends AppCompatActivity {
 
 
         if(viewShowMoreModel != null){
-//            Glide.with(getApplicationContext()).load(viewShowMoreModel.getImg_url()).into(img);
-//            ratings.setText(viewShowMoreModel.getRate());
-//            description.setText(viewShowMoreModel.getDescription());
-//            price.setText("Price : "+viewShowMoreModel.getPrice());
-//            exp.setText(viewShowMoreModel.getExp());
-//            location.setText(viewShowMoreModel.getLocation());
-//            name.setText(viewShowMoreModel.getName());
-//            speciality.setText(viewShowMoreModel.getSpeciality());
-
             setValues(viewShowMoreModel.id);
-
         }
 
 
@@ -102,11 +92,11 @@ public class Vet_ShowMore extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void gotodetailedpage (View view){
-        Intent intent = new Intent(Vet_ShowMore.this, DetailedCustomer.class);
-        startActivity(intent);
-
-    }
+//    public void gotodetailedpage (View view){
+//        Intent intent = new Intent(Vet_ShowMore.this, DetailedCustomer.class);
+//        startActivity(intent);
+//
+//    }
 
 
 }

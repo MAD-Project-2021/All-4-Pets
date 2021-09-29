@@ -29,6 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Register extends AppCompatActivity {
+
     //variables
     EditText et_fullName , et_Email, et_password, et_phone;
     Button btn_registerBtn;
