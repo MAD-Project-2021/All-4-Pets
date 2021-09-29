@@ -155,17 +155,6 @@
       tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <ImageView
-      android:id="@+id/profile_photo"
-      android:layout_width="104dp"
-      android:layout_height="107dp"
-      android:layout_alignParentStart="true"
-      android:layout_alignParentTop="true"
-      android:layout_centerHorizontal="true"
-      android:layout_marginStart="145dp"
-      android:layout_marginTop="188dp"
-      tools:srcCompat="@tools:sample/avatars" />
-
-  <ImageView
       android:id="@+id/imageView41"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -194,5 +183,18 @@
       android:layout_marginStart="37dp"
       android:layout_marginBottom="261dp"
       app:srcCompat="@drawable/mail" />
+
+  <ImageView
+      android:id="@+id/profile_photo"
+      android:layout_width="113dp"
+      android:layout_height="116dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="149dp"
+      android:layout_marginTop="169dp"
+      android:layout_marginEnd="149dp"
+      app:srcCompat="@drawable/profile2" />
 
 </RelativeLayout>

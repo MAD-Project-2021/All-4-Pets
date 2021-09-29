@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/tv_otherreviews"
-        android:layout_width="119dp"
-        android:layout_height="31dp"
+        android:layout_width="143dp"
+        android:layout_height="37dp"
         android:layout_marginTop="100dp"
         android:text="Other Reviews"
         android:textSize="16sp"
@@ -143,7 +143,8 @@
         android:id="@+id/tv_mycomment"
         android:layout_width="237dp"
         android:layout_height="46dp"
-        android:text="Comments"
+        android:text="We value your comments..."
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/tv_otherreviews"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.908"
@@ -179,7 +180,7 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_comment1"
         android:layout_width="240dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -187,13 +188,13 @@
         android:text="I like the product"
         app:layout_constraintBottom_toTopOf="@+id/ratingbar_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toEndOf="@+id/iv_profile1"
         app:layout_constraintTop_toBottomOf="@+id/ratingbar_1"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/et_comment2"
         android:layout_width="239dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -207,7 +208,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/et_comment3"
         android:layout_width="238dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -219,5 +220,77 @@
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/ratingbar_4"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView44"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_comment1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506"
+        app:srcCompat="@drawable/thumbsup" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView47"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_comment3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927"
+        app:srcCompat="@drawable/thumbsup" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView48"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_comment2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725"
+        app:srcCompat="@drawable/thumbsup" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="36dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507"
+        app:srcCompat="@drawable/thumbsdown" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928"
+        app:srcCompat="@drawable/thumbsdown" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/imageView37"
+        app:layout_constraintTop_toBottomOf="@+id/imageView44"
+        app:srcCompat="@drawable/thumbsdown" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
