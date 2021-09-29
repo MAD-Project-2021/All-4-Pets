@@ -83,9 +83,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="311dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -99,9 +99,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="128dp"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="25dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
@@ -117,7 +117,7 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="134dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="41dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="83dp"
         android:ems="10"
@@ -128,7 +128,7 @@
 
     <Button
         android:id="@+id/btn_editprofile"
-        android:layout_width="346dp"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
@@ -209,8 +209,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="128dp"
         android:layout_marginTop="309dp"
+        android:text="Full Name"
+        android:textSize="16sp"
         android:textColor="@color/black"
-        android:text="Full Name" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_email"
@@ -221,7 +223,9 @@
         android:layout_marginStart="132dp"
         android:layout_marginBottom="300dp"
         android:text="E mail"
-        android:textColor="@color/black" />
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_phone"
@@ -230,9 +234,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="137dp"
-        android:layout_marginBottom="207dp"
+        android:layout_marginBottom="208dp"
+        android:text="Phone"
+        android:textSize="16sp"
         android:textColor="@color/black"
-        android:text="Phone" />
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/skeleton"

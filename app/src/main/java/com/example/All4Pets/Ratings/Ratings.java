@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,8 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.Spinner;
-import android.widget.Toast;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -26,6 +26,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.All4Pets.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
@@ -52,11 +58,6 @@ public class Ratings extends AppCompatActivity {
         setContentView(R.layout.activity_ratings);
 
 
-        feedback = findViewById(R.id.et_feedback);
-        rating = findViewById(R.id.rb_rating);
-        send = findViewById(R.id.btn_send);
-        no = findViewById(R.id.btn_no);
-
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
@@ -77,39 +78,77 @@ public class Ratings extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==1){
 
-//                    startActivity(new Intent(Ratings.this, Add_Review.class));
-                    AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Ratings.this);
-
-                    View view1 = LayoutInflater.from(Ratings.this).inflate(R.layout.activity_add_review,null);
-                    dialogBuilder.setView(view1);
-
-
-                    final AlertDialog alertDialog = dialogBuilder.create();
-
-                    EditText feedback = view1.findViewById(R.id.et_feedback);
-                    Button btnNo = view1.findViewById(R.id.btn_no);
-                    Button btnSend = view1.findViewById(R.id.btn_send);
-
-                    btnNo.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            alertDialog.dismiss();
-                        }
-                    });
-
-                    btnSend.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v){
-                            Toast.makeText(Ratings.this,"Send feedback" , Toast.LENGTH_LONG).show();
-                            alertDialog.dismiss();
-                        }
-                    });
-
-                    alertDialog.show();
+                    startActivity(new Intent(Ratings.this, Add_Review.class));
+//                    AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Ratings.this);
+//
+//                    View view1 = LayoutInflater.from(Ratings.this).inflate(R.layout.activity_add_review,null);
+//                    dialogBuilder.setView(view1);
+//
+//
+//                    final AlertDialog alertDialog = dialogBuilder.create();
+//
+//                    EditText feedback = view1.findViewById(R.id.et_feedback);
+//                    Button btnNo = view1.findViewById(R.id.btn_no);
+//                    Button btnSend = view1.findViewById(R.id.btn_send);
+//
+//                    btnNo.setOnClickListener(new View.OnClickListener(){
+//                        public void onClick(View v) {
+//                            alertDialog.dismiss();
+//                        }
+//                    });
+//
+//                    btnSend.setOnClickListener(new View.OnClickListener(){
+//                        public void onClick(View v){
+//                            Toast.makeText(Ratings.this,"Send feedback" , Toast.LENGTH_LONG).show();
+//                            alertDialog.dismiss();
+//                        }
+//                    });
+//
+//                    alertDialog.show();
 
                 }
 
                 else if(i==2){
 
-                    startActivity(new Intent(Ratings.this, View_Feedback.class));
+//                    startActivity(new Intent(Ratings.this, View_Feedback.class));
+                    AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Ratings.this);
+                    View view1 = getLayoutInflater().inflate(R.layout.privious_ratings, null);
+                    dialogBuilder.setView(view1);
+
+                    final TextView textView1 = (TextView) view1.findViewById(R.id.showRating);
+                    final TextView textView2 = (TextView) view1.findViewById(R.id.Comment);
+                    Button button = (Button)view1.findViewById(R.id.ok);
+
+                    final AlertDialog alertDialog = dialogBuilder.create();
+                    alertDialog.show();
+
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    final String userid = user.getUid();
+
+                    DatabaseReference myRef = FirebaseDatabase.getInstance().getReference().child("Ratings").child(userid);
+                    myRef.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            String rate = snapshot.child("rate").getValue().toString();
+                            String comment = snapshot.child("comment").getValue().toString();
+
+                            textView1.setText(rate);
+                            textView2.setText(comment);
+
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+                    button.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            alertDialog.dismiss();
+                        }
+                    });
                 }
                 else if(i==3){
 
@@ -180,22 +219,22 @@ public class Ratings extends AppCompatActivity {
         }else{
             dialog.setCancelable(false);
         }
+//
+//        EditText feedback = dialog.findViewById(R.id.et_feedback);
+//        Button btnNo = dialog.findViewById(R.id.btn_no);
+//        Button btnSend = dialog.findViewById(R.id.btn_send);
 
-        EditText feedback = dialog.findViewById(R.id.et_feedback);
-        Button btnNo = dialog.findViewById(R.id.btn_no);
-        Button btnSend = dialog.findViewById(R.id.btn_send);
-
-        btnNo.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-
-        btnSend.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Toast.makeText(Ratings.this,"Send feedback" , Toast.LENGTH_LONG).show();
-            }
-        });
+//        btnNo.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v) {
+//                dialog.dismiss();
+//            }
+//        });
+//
+//        btnSend.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                Toast.makeText(Ratings.this,"Send feedback" , Toast.LENGTH_LONG).show();
+//            }
+//        });
 
         dialog.show();
     }

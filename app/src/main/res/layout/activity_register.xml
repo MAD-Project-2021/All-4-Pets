@@ -124,7 +124,7 @@
         android:layout_marginEnd="16dp"
         android:background="#E4C0CC"
         android:text="Register"
-        android:textColor="#692575"
+        android:textColor="#0B0B0B"
         android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
