@@ -260,6 +260,7 @@
     <string name="petsitems">Pet Items</string>
     <string name="et_search2">"Enter the Veterinary name "</string>
     <string name="searchbar">Search</string>
+    <string name="add_your_address">Add Your Address</string>
 
     <!--    <String-array name="timeSlots">-->
     <!--        <item>06.00 AM - 10.00 AM </item>-->

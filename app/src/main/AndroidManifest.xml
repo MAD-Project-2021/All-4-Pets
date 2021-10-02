@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Category.ui.Payment"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.AddAddress"
+            android:exported="true" />
+        <activity
             android:name=".Category.ui.CAddress"
             android:exported="true" />
         <activity
@@ -65,18 +71,6 @@
             android:name=".Ratings.Add_Review"
             android:exported="true" />
         <activity
-            android:name=".Category.ui.UpdateDispute"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.DisputeList"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.OpenDispute"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.OrdersList"
-            android:exported="true" />
-        <activity
             android:name=".Daycares.Activities.Daycare_ShowMore"
             android:exported="true" />
         <activity
@@ -103,9 +97,7 @@
         <activity
             android:name=".Ratings.Ratings"
             android:exported="true" />
-        <activity
-            android:name=".Category.ui.Orders"
-            android:exported="true" />
+
         <activity
             android:name=".Doctors.Activities.Find_Veterinary"
             android:exported="true" />

@@ -74,7 +74,7 @@
         tools:listitem="@layout/cart_all"/>
 
      <androidx.appcompat.widget.AppCompatButton
-         android:id="@+id/buy_now"
+         android:id="@+id/btn_payment"
          android:layout_width="350dp"
          android:layout_height="wrap_content"
          android:text="Buy Now"
