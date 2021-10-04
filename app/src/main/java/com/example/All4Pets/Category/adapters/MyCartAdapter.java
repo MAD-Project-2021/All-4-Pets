@@ -71,6 +71,7 @@ public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.ViewHolder
                                     mycartModellist.remove(mycartModellist.get(position));
                                     notifyDataSetChanged();
                                     Toast.makeText(context, "Item Deleted", Toast.LENGTH_SHORT).show();
+
                                 }
                                 else{
                                     Toast.makeText(context, "Error"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();

@@ -41,7 +41,7 @@ public class DetailedPets extends AppCompatActivity {
         description = findViewById(R.id.detailed_desc1);
         price = findViewById(R.id.detailed_price1);
 
-        call = findViewById(R.id.call);
+        //call = findViewById(R.id.call);
 
         //new pets
 

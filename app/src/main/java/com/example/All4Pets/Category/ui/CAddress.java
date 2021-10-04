@@ -56,27 +56,27 @@ public class CAddress extends AppCompatActivity implements CAddressAdapter.Selec
         addAddress = findViewById(R.id.Add_CAddress);
         paymentBtn = findViewById(R.id.btn_payment);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        cAddressModelList = new ArrayList<>();
-        cAddressAdapter = new CAddressAdapter(getApplicationContext(),cAddressModelList,this);
-        recyclerView.setAdapter(cAddressAdapter);
-
-
-
-
-//auth.getCurrentUser().getUid()
-
-        firestore.collection("CurrentUser").document(auth.getCurrentUser().getUid())
-                .collection("Address").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-               for (DocumentSnapshot doc : task.getResult().getDocuments()){
-                   CAddressModel cAddressModel = doc.toObject(CAddressModel.class);
-                   cAddressModelList.add(cAddressModel);
-                   cAddressAdapter.notifyDataSetChanged();
-               }
-            }
-        });
+//        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+//        cAddressModelList = new ArrayList<>();
+//        cAddressAdapter = new CAddressAdapter(getApplicationContext(),cAddressModelList,this);
+//        recyclerView.setAdapter(cAddressAdapter);
+//
+//
+//
+//
+////auth.getCurrentUser().getUid()
+//
+//        firestore.collection("CurrentUser").document(auth.getCurrentUser().getUid())
+//                .collection("Address").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+//               for (DocumentSnapshot doc : task.getResult().getDocuments()){
+//                   CAddressModel cAddressModel = doc.toObject(CAddressModel.class);
+//                   cAddressModelList.add(cAddressModel);
+//                   cAddressAdapter.notifyDataSetChanged();
+//               }
+//            }
+//        });
 
 
         paymentBtn.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +103,8 @@ public class CAddress extends AppCompatActivity implements CAddressAdapter.Selec
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(CAddress.this,AddAddress.class));
+
+
             }
         });
     }
@@ -111,5 +113,33 @@ public class CAddress extends AppCompatActivity implements CAddressAdapter.Selec
     public void setAddress(String address) {
         mAddress = address;
 
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        cAddressModelList = new ArrayList<>();
+        cAddressAdapter = new CAddressAdapter(getApplicationContext(),cAddressModelList,this);
+        recyclerView.setAdapter(cAddressAdapter);
+
+
+
+
+//auth.getCurrentUser().getUid()
+
+        firestore.collection("AddCurrentUserAddress").document(auth.getCurrentUser().getUid())
+                .collection("Address").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                for (DocumentSnapshot doc : task.getResult().getDocuments()){
+                    CAddressModel cAddressModel = doc.toObject(CAddressModel.class);
+                    cAddressModelList.add(cAddressModel);
+                    cAddressAdapter.notifyDataSetChanged();
+                }
+            }
+        });
     }
 }

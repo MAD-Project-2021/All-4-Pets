@@ -3,6 +3,7 @@ package com.example.All4Pets.Category.ui;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -54,6 +55,11 @@ public class AddAddress extends AppCompatActivity {
                 String userPostCode = postCode.getText().toString();
                 String userPhoneNumber = phoneNumber.getText().toString();
 
+                if(userPhoneNumber.length() != 10) {
+                    phoneNumber.setError("Phone number is not valid");
+                    return;
+                }
+
                 String final_address = "";
 
                 if (!userName.isEmpty()){
@@ -76,13 +82,14 @@ public class AddAddress extends AppCompatActivity {
                     map.put("userAddress",final_address);
                     //auth.getCurrentUser().getUid()
 
-                    firestore.collection("CurrentUser").document(auth.getCurrentUser().getUid())
+                    firestore.collection("AddCurrentUserAddress").document(auth.getCurrentUser().getUid())
                             .collection("Address").add(map).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
                         @Override
                         public void onComplete(@NonNull Task<DocumentReference> task) {
                             if (task.isSuccessful()) {
                                 Toast.makeText(AddAddress.this, "Address Added", Toast.LENGTH_SHORT).show();
                                 finish();
+
                             }
                         }
                     });

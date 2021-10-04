@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/category"
     tools:context=".Category.ui.Cart">
 
 
@@ -54,7 +55,7 @@
         android:fontFamily="@font/amaranth"
         android:gravity="center"
         android:padding="8dp"
-        android:text="Total Price : Rs 100"
+        android:text="Total Price : Rs 0"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
