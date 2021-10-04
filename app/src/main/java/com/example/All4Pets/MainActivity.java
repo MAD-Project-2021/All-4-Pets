@@ -6,7 +6,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import com.example.All4Pets.Category.ui.petShop;
 import com.example.All4Pets.Daycares.Activities.Find_Daycare;
 import com.example.All4Pets.Doctors.Activities.Vet_Results;
@@ -47,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void gotofinddaycarepage(View view){
         Intent intent = new Intent(MainActivity.this, Find_Daycare.class);
+        startActivity(intent);
+    }
+
+
+    public void gotoprofile(View view){
+        Intent intent = new Intent(MainActivity.this, View_Profile.class);
         startActivity(intent);
     }
 

@@ -15,7 +15,6 @@
         android:layout_marginBottom="102dp"
         android:contentDescription="@string/back_icon"
         android:onClick="gotodaycareresultback"
-        app:layout_constraintBottom_toTopOf="@+id/tv_daycareinfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,12 +29,11 @@
         android:layout_marginBottom="102dp"
         android:contentDescription="@string/back_icon"
         android:onClick="gotodaycareresultback"
-        app:layout_constraintBottom_toTopOf="@+id/tv_daycareinfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/backarrow"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView35"
@@ -48,37 +46,16 @@
         tools:layout_editor_absoluteX="0dp" />
 
 
-    <TextView
-        android:id="@+id/tv_count"
-        android:layout_width="258dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="16dp"
-        android:background="#8ff7fd"
-        android:fontFamily="@font/amaranth"
-        android:gravity="center"
-
-
-        android:padding="10dp"
-        android:text="Count : 10"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.653"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView35"
-        app:layout_constraintWidth_percent=".9" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/fvlist"
-        android:layout_width="412dp"
-        android:layout_height="395dp"
-        android:layout_marginBottom="164dp"
+        android:layout_width="363dp"
+        android:layout_height="421dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_count"
-        tools:listitem="@layout/favday_item"
-        />
+        tools:listitem="@layout/favday_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

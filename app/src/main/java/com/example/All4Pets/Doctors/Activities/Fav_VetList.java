@@ -1,15 +1,12 @@
 package com.example.All4Pets.Doctors.Activities;
 
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.annotation.SuppressLint;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.All4Pets.Doctors.Adapters.FavAdapter;
 import com.example.All4Pets.Doctors.models.FavouriteModel;
@@ -20,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,8 +28,7 @@ public class Fav_VetList extends AppCompatActivity {
         RecyclerView recyclerView;
         List<FavouriteModel> favouriteModelList  ;
         FavAdapter favAdapter;
-        TextView calc;
-        int count = 0;
+
 
 
         FirebaseAuth auth;    //authentication
@@ -51,7 +48,7 @@ public class Fav_VetList extends AppCompatActivity {
             recyclerView.setAdapter(favAdapter);
 
 
-            db.collection("AddToFavouriteDoctor").document("igQGhaJi1ScjxpCRsWksV4SUgPb2")
+            db.collection("AddToFavouriteDoctor").document(auth.getCurrentUser().getUid())
                     .collection("user").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -71,11 +68,7 @@ public class Fav_VetList extends AppCompatActivity {
             });
 
 
-            //Calculation  part
-            calc = (TextView) findViewById(R.id.calc);
+
         }
-        public void increment(View v){
-            count++;
-            calc.setText(count);
-        }
+
 }

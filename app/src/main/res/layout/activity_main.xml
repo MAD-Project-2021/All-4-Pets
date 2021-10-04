@@ -15,8 +15,8 @@
         android:layout_marginBottom="12dp"
         android:backgroundTint="#9F601D6C"
         android:onClick="gotofirstpage"
-        android:text="@string/btn_category"
-        android:textColor="@android:color/black"
+        android:text="PET SHOP"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_order"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +33,7 @@
         android:backgroundTint="#9F601D6C"
         android:onClick="gotofinddaycarepage"
         android:text="@string/btn_order"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_services"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,6 +42,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
 
+
     <Button
         android:id="@+id/btn_services"
         android:layout_width="348dp"
@@ -49,44 +50,45 @@
         android:backgroundTint="#9F601D6C"
         android:onClick="gotofindvet"
         android:text="@string/btn_services"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573"
+        app:layout_constraintVertical_bias="0.567"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_ratings"
-        android:layout_width="289dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="136dp"
+        android:layout_width="348dp"
+        android:layout_height="86dp"
+        android:backgroundTint="#9F601D6C"
         android:onClick="gotoratingspage"
         android:text="@string/btn_ratings"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_services"
-        app:layout_constraintVertical_bias="1.0" />
-
-
+        app:layout_constraintVertical_bias="0.121" />
 
     <TextView
         android:id="@+id/txt_topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="224dp"
+        android:layout_height="39dp"
         android:text="@string/txt_topic"
-        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btn_category"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.542" />
 
     <Button
         android:id="@+id/btn_profile"

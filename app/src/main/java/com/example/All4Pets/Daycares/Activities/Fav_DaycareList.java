@@ -1,13 +1,13 @@
 package com.example.All4Pets.Daycares.Activities;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 
 import com.example.All4Pets.Daycares.Adapters.FavdAdapter;
 import com.example.All4Pets.Daycares.models.FavdModel;
@@ -47,8 +47,8 @@ public class Fav_DaycareList extends AppCompatActivity {
         favdAdapter = new FavdAdapter(this, favdModelList);
 
         recyclerView.setAdapter(favdAdapter);
-                                                            //auth.getCurrentUser().getUid()
-        db.collection("AddToFavourite").document("TKEJdIxOPFc3LqR6T1xtxkDLIbF3")
+
+        db.collection("AddToFavourite").document(auth.getCurrentUser().getUid())
                 .collection("user").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
