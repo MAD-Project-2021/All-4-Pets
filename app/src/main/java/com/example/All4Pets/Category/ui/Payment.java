@@ -17,13 +17,21 @@ public class Payment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
+        double deliverFee = 150;
+        double atotal = 0.0;
+
+
         double amount = 0.0;
         amount = getIntent().getDoubleExtra("amount",  0.0);
+        atotal = amount + deliverFee;
 
         subTotal = findViewById(R.id.sub_total);
         shipping = findViewById(R.id.shipping);
         total = findViewById(R.id.total_fee);
 
         subTotal.setText("Rs" +amount);
+        shipping.setText("Rs" +deliverFee);
+        total.setText("Rs" +atotal);
+
     }
 }
