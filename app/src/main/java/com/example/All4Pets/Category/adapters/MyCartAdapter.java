@@ -107,7 +107,7 @@ public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.ViewHolder
             date = itemView.findViewById(R.id.current_date);
             quantity = itemView.findViewById(R.id.total_quantity);
             totalPrice = itemView.findViewById(R.id.total_price);
-            deleteItem = itemView.findViewById(R.id.delete);
+            deleteItem = itemView.findViewById(R.id.btn_delete1);
         }
     }
 }

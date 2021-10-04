@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.All4Pets.Category.ui.Orders;
 import com.example.All4Pets.Category.ui.petShop;
 import com.example.All4Pets.Daycares.Activities.Find_Daycare;
-import com.example.All4Pets.Doctors.Activities.Find_Veterinary;
+import com.example.All4Pets.Doctors.Activities.Vet_Results;
 import com.example.All4Pets.Ratings.Ratings;
 
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotofindvet(View view){
-        Intent intent = new Intent(MainActivity.this, Find_Veterinary.class);
+        Intent intent = new Intent(MainActivity.this, Vet_Results.class);
         startActivity(intent);
     }
 

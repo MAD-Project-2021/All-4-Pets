@@ -1,5 +1,3 @@
-
-
 package com.example.All4Pets.Doctors.Adapters;
 
 
@@ -26,19 +24,16 @@ import com.example.All4Pets.R;
 import java.util.List;
 
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
     Context context;
     List<MainModel> list;
-
-
 
 
     public MyAdapter(Context context, List<MainModel> list) {
         this.context = context;
         this.list = list;
     }
-
 
 
     @NonNull
@@ -49,6 +44,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
+
+
+        //Load the data
 
         Glide.with(context).load(list.get(position).getImg_url()).into(holder.img);
         holder.name.setText(list.get(position).getName());
@@ -63,7 +61,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (context, Vet_ShowMore.class);
-                intent.putExtra("vet_show_more", (Parcelable) list.get(position));
+                intent.putExtra("vet_show_more", (Parcelable) list.get(position));  //send an Intents to the Android system which starts another Activity .
                 context.startActivity(intent);
             }
         });
@@ -89,7 +87,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return list.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
 
         ImageView img, arrow;
@@ -106,8 +104,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             price = itemView.findViewById(R.id.price);
             rate = itemView.findViewById(R.id.rate);
 
-            edit = (Button)itemView.findViewById(R.id.edit);
-            delete = (Button)itemView.findViewById(R.id.delete);
+            edit = (Button)itemView.findViewById(R.id.btn_edit);
+            delete = (Button)itemView.findViewById(R.id.btn_delete1);
         }
     }
 }

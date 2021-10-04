@@ -3,75 +3,77 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/pet7"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <Button
 
         android:id="@+id/btn_category"
-        android:layout_width="299dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginBottom="52dp"
+        android:layout_width="353dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#9F601D6C"
         android:onClick="gotofirstpage"
         android:text="@string/btn_category"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_order"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
 
     <Button
         android:id="@+id/btn_order"
-        android:layout_width="297dp"
-        android:layout_height="73dp"
+        android:layout_width="353dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#9F601D6C"
         android:onClick="gotofinddaycarepage"
         android:text="@string/btn_order"
+        android:textColor="#000000"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_services"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_category" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
 
     <Button
         android:id="@+id/btn_services"
-        android:layout_width="292dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginBottom="43dp"
-        android:text="@string/btn_services"
+        android:layout_width="348dp"
+        android:layout_height="86dp"
+        android:backgroundTint="#9F601D6C"
         android:onClick="gotofindvet"
-        app:layout_constraintBottom_toTopOf="@+id/btn_ratings"
+        android:text="@string/btn_services"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_order" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_ratings"
-        android:layout_width="289dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="136dp"
-        android:text="@string/btn_ratings"
+        android:layout_width="353dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#9F601D6C"
+
         android:onClick="gotoratingspage"
+        android:text="@string/btn_ratings"
+        android:textColor="#000000"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_services"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_topic"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_category"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,29 +16,43 @@ import com.example.All4Pets.Doctors.models.ViewShowMoreModel;
 import com.example.All4Pets.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
+
 public class Vet_ShowMore extends AppCompatActivity {
 
-      ImageView img;
+
+    //Declare variables
+
+      ImageView img,addfavourite;
       TextView name,speciality,description,price,exp,ratings,location;
       Button appointment;
-
+      FirebaseAuth auth;
       ViewShowMoreModel viewShowMoreModel = null;
       private FirebaseFirestore db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vet_show_more);
+
         db = FirebaseFirestore.getInstance();
+        auth = FirebaseAuth.getInstance();
 
         final Object object = getIntent().getSerializableExtra("vet_show_more");
         if(object instanceof ViewShowMoreModel){
             viewShowMoreModel = (ViewShowMoreModel) object;
         }
 
+
+        //connects database (backend code) with the Id
 
         img = findViewById(R.id.img1);
         name = findViewById(R.id.name);
@@ -49,6 +63,7 @@ public class Vet_ShowMore extends AppCompatActivity {
         ratings = findViewById(R.id.ratings);
         location = findViewById(R.id.location);
         appointment = findViewById(R.id.appointment);
+        addfavourite = findViewById(R.id.addfavourite);
 
 
         if(viewShowMoreModel != null){
@@ -84,6 +99,46 @@ public class Vet_ShowMore extends AppCompatActivity {
             }
         });
 
+
+        // Add to favourite list
+
+        addfavourite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addfavourite();
+            }
+        });
+    }
+
+    private void addfavourite() {
+
+        String saveCurrentTime,saveCurrentDate;
+        Calendar calForDate = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("MM/dd/yyyy");   //set the formats
+        saveCurrentDate = currentDate.format(calForDate.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a");
+        saveCurrentTime = currentTime.format(calForDate.getTime());
+
+        final HashMap<String,Object> favMap = new HashMap<>();
+
+        favMap.put("Doctor_name",name.getText().toString());      //store data in database
+        favMap.put("Doctor_speciality",speciality.getText().toString());
+        favMap.put("Doctor_price",price.getText().toString());
+        favMap.put("CurrentTime",saveCurrentTime);
+        favMap.put("CurrentDate",saveCurrentDate);
+
+
+        //auth.getCurrentUser().getUid()
+        db.collection("AddToFavouriteDoctor").document("igQGhaJi1ScjxpCRsWksV4SUgPb2")
+                .collection("user").add(favMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentReference> task) {
+                Toast.makeText(Vet_ShowMore.this, "Added To Favourite list", Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
 
 
@@ -92,11 +147,11 @@ public class Vet_ShowMore extends AppCompatActivity {
         startActivity(intent);
 
     }
-//    public void gotodetailedpage (View view){
-//        Intent intent = new Intent(Vet_ShowMore.this, DetailedCustomer.class);
-//        startActivity(intent);
-//
-//    }
+    public void gotodetailedpage (View view){
+        Intent intent = new Intent(Vet_ShowMore.this, CusDetailed.class);
+        startActivity(intent);
+
+    }
 
 
 }

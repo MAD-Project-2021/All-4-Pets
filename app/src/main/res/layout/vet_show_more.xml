@@ -5,7 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Doctors.Activities.Vet_ShowMore"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/color3">
+
+
+    <ImageView
+        android:id="@+id/addfavourite"
+        android:layout_width="259dp"
+        android:layout_height="91dp"
+        android:onClick="increment"
+        android:contentDescription="@string/add_afv_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/addfav" />
 
     <TextView
         android:id="@+id/tv_descrip2"
@@ -132,14 +147,15 @@
         android:id="@+id/appointment"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="28dp"
         android:onClick="gotodetailedpage"
         android:text="@string/btn_appointment"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:backgroundTint="#7B6EB8"
+        app:backgroundTint="#79700483"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView

@@ -2,18 +2,18 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="7dp"
-    android:elevation="5dp"
-    android:layout_margin="5dp">
+    android:layout_height="160dp"
+    android:layout_margin="5dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="5dp"
+>
 
     <LinearLayout
-
-        android:padding="8dp"
-        android:background="@color/purple_200"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="#B245228C"
+        android:orientation="vertical"
+        android:padding="7dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,20 +23,20 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Current Date:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Current Date: "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/current_date"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Current Date:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Current Date: "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -50,20 +50,20 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Current Time:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Current Time: "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/current_time"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Current Time:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Current Time: "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -77,20 +77,20 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Product Name:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Doctor Name: "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/product_name"
+                android:id="@+id/Doctor_name"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Product Name:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Doctor Name: "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -104,20 +104,20 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Product Price:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Doctor speciality: "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/product_price"
+                android:id="@+id/Doctor_speciality"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Product Price:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Doctor speciality: "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -131,20 +131,20 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Total Price:"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text="Doctor price "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/total_price"
+                android:id="@+id/Doctor_price"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Total price"
+                android:fontFamily="@font/averia_serif_libre"
+                android:text=" Doctor price "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -156,34 +156,8 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Total Quantity"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/total_quantity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/amaranth"
-                android:text="Total Quantity"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/btn_delete1"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_baseline_delete_24"/>
-
-
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

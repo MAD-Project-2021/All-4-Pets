@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#80B870C5"
-    tools:context=".Doctors.Activities.DetailedCustomer">
+    android:background="@drawable/color3"
+    tools:context=".Doctors.Activities.Booking">
 
 
     <ImageView
@@ -49,8 +49,9 @@
             android:id="@+id/et_name"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:background="#CC1A8B9D"
+            android:background="#86601D6C"
             android:ems="10"
+            android:textAlignment="center"
             android:hint="Enter the Name"
             android:inputType="textPersonName" />
 
@@ -67,8 +68,9 @@
             android:id="@+id/et_address"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:background="#CC1A8B9D"
+            android:background="#87601D6C"
             android:ems="10"
+            android:textAlignment="center"
             android:hint="Enter the Address"
             android:inputType="textPersonName" />
 
@@ -85,8 +87,9 @@
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:background="#CC1A8B9D"
+            android:background="#87601D6C"
             android:ems="10"
+            android:textAlignment="center"
             android:hint="Enter the Email"
             android:inputType="textPersonName" />
 
@@ -95,42 +98,40 @@
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:layout_marginTop="30dp"
-            android:ems="10"
+            android:background="#87601D6C"
+            android:textAlignment="center"
             android:hint="Select the Date"
-            android:background="#CC1A8B9D"
-            android:inputType="textPersonName" />
+            android:src="@drawable/ic_baseline_calendar" />
 
         <EditText
             android:id="@+id/et_time"
             android:layout_width="match_parent"
             android:layout_height="58dp"
-            android:ems="10"
-            android:hint="Select the Time"
-            android:background="#CC1A8B9D"
             android:layout_marginTop="20dp"
-            android:inputType="textPersonName" />
+            android:textAlignment="center"
+            android:background="#87601D6C"
+            android:hint="Select the Time" />
 
 
     </LinearLayout>
 
+
     <Button
         android:id="@+id/btn_save"
-        android:layout_width="361dp"
-        android:layout_height="59dp"
+        android:layout_width="244dp"
+        android:layout_height="58dp"
         android:layout_marginStart="29dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="69dp"
-        android:backgroundTint="#80BB86FC"
-        android:onClick="gotobookpage"
-        android:text="Save and Proceed"
+        android:backgroundTint="#6B700483"
+        android:text="Save "
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.352"
-        tools:ignore="OnClick" />
+        app:layout_constraintVertical_bias="0.32" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

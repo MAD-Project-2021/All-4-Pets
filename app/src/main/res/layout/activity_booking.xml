@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Doctors.Activities.Book_Appointment"
-    android:background="@drawable/gradient_background">
+    tools:context=".Doctors.Activities.Booking"
+    android:background="@drawable/color3">
 
     <ImageView
         android:id="@+id/imageView8"
@@ -30,7 +30,8 @@
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:srcCompat="@drawable/backarrow" />
+        app:srcCompat="@drawable/backarrow"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/tv_background"
@@ -44,25 +45,26 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
         app:layout_constraintVertical_bias="0.941" />
 
+    <!--    app:srcCompat="@drawable/ic_launcher_background"-->
+
     <ImageView
         android:id="@+id/img_vet8"
-        android:layout_width="188dp"
-        android:layout_height="143dp"
-        android:contentDescription="@string/vet_image_3"
+        android:layout_width="173dp"
+        android:layout_height="141dp"
+        android:contentDescription="@string/vet_image6"
+        android:src="@drawable/doc2"
         app:layout_constraintBottom_toBottomOf="@+id/tv_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.133"
-        android:src="@drawable/vet6"/>
-        //app:srcCompat="@drawable/ic_launcher_background"
+        app:layout_constraintVertical_bias="0.133" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="name of doc"
+        android:text="Dr.(Ms.)P.N.C.Fernando"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_spec3"
@@ -77,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
-        android:text="speciality"
+        android:text="Veterinary Neurosurgery"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +93,7 @@
         android:layout_height="42dp"
         android:layout_marginBottom="408dp"
         android:text="@string/tv_patient"
-        android:textSize="16sp"
+        android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,11 +102,11 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/confirm"
-        android:layout_width="300dp"
-        android:layout_height="53dp"
+        android:id="@+id/btn_confirm"
+        android:layout_width="324dp"
+        android:layout_height="59dp"
         android:text="@string/btn_confirm"
-        app:backgroundTint="#9e579d"
+        app:backgroundTint="#80700483"
         app:layout_constraintBottom_toBottomOf="@+id/tv_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.441"
@@ -113,77 +115,137 @@
         app:layout_constraintVertical_bias="0.948"
         tools:ignore="TextContrastCheck" />
 
+
     <Button
-        android:id="@+id/edit"
-        android:layout_width="150dp"
-        android:layout_height="51dp"
+        android:id="@+id/btn_edit"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:onClick="detailed"
         android:text="Edit"
-        android:onClick="gotodetailed"
-        app:backgroundTint="#9e579d"
+        app:backgroundTint="#80700483"
         app:layout_constraintBottom_toBottomOf="@+id/tv_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_patient"
-        app:layout_constraintVertical_bias="0.797"
-       />
-
+        app:layout_constraintVertical_bias="0.793"
+        tools:ignore="OnClick" />
 
     <Button
-        android:id="@+id/delete"
-        android:layout_width="151dp"
-        android:layout_height="52dp"
+        android:id="@+id/btn_delete1"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
         android:text="Delete"
-        app:backgroundTint="#9e579d"
+        app:backgroundTint="#80700483"
         app:layout_constraintBottom_toBottomOf="@+id/tv_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_patient"
-        app:layout_constraintVertical_bias="0.797"
+        app:layout_constraintVertical_bias="0.783"
         tools:ignore="TextContrastCheck" />
 
     <LinearLayout
 
-        android:layout_width="322dp"
-        android:layout_height="239dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="262dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="68dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_background">
 
         <TextView
-            android:id="@+id/cus_name"
+            android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Name of the customer" />
+            android:text="Name of the customer"
+            android:textSize="19dp" />
 
         <TextView
-            android:id="@+id/cus_address"
+            android:id="@+id/tv_address"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Address of the customer" />
+            android:text="Address of the customer"
+            android:textSize="19dp" />
 
         <TextView
-            android:id="@+id/cus_email"
+            android:id="@+id/tv_email"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Email of the customer" />
+            android:text="Email of the customer"
+            android:textSize="19dp" />
 
         <TextView
-            android:id="@+id/cus_date"
+            android:id="@+id/tv_date"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Date of the customer" />
+            android:text="Date of the customer"
+            android:textSize="19dp" />
 
         <TextView
-            android:id="@+id/cus_time"
+            android:id="@+id/tv_time"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Time of the customer" />
+            android:text="Time of the customer"
+            android:textSize="19dp" />
 
     </LinearLayout>
 
+    <LinearLayout
+
+        android:layout_width="101dp"
+        android:layout_height="234dp"
+
+        android:layout_marginTop="68dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_background">
+
+        <TextView
+            android:id="@+id/tv_cus_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Name  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+        <TextView
+            android:id="@+id/tv_cus_address"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Address  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_cus_email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Email  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_cus_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Date  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_cus_time"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Time  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

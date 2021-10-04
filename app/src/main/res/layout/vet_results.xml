@@ -4,9 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#43DAA2B5"
+    android:background="@drawable/color3"
     tools:context=".Doctors.Activities.Vet_Results">
 
+<!--    <AutoCompleteTextView-->
+<!--        android:id="@+id/textSearch"-->
+<!--        android:layout_width="400dp"-->
+<!--        android:layout_height="52dp"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:drawableLeft="@drawable/ic_search_24"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/imageView11"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.454"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/image_View2"-->
+<!--        app:layout_constraintVertical_bias="0.102" />-->
 
     <ImageView
         android:id="@+id/image_View2"
@@ -21,10 +33,11 @@
 
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/btn_watchfav"
         android:layout_width="305dp"
         android:layout_height="92dp"
         android:layout_marginStart="117dp"
+        android:onClick="gotofavlist"
         android:contentDescription="@string/watch_favorite_list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,14 +64,16 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
-        android:layout_width="407dp"
-        android:layout_height="493dp"
+        android:layout_width="406dp"
+        android:layout_height="481dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_View2"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
