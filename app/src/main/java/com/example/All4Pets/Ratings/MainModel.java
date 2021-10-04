@@ -4,7 +4,7 @@ public class MainModel {
     Integer gallery;
     String description;
 
-    public MainModel(Integer gallery, String description){
+    public MainModel(Integer gallery){
         this.gallery = gallery;
         this.description = description;
     }

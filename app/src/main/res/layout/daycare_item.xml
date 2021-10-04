@@ -31,15 +31,25 @@
             app:civ_border_width="2dp" />
 
 
-
         <ImageView
             android:id="@+id/tv_arrow"
             android:layout_width="238dp"
             android:layout_height="27dp"
-            android:layout_marginLeft="200dp"
-            android:onClick="gotoshowmore"
+            android:layout_marginLeft="235dp"
             app:srcCompat="@drawable/forwardarrow"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_favadd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="-100dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#E49EB6"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 
         <!--        <com.google.android.material.imageview.ShapeableImageView-->
@@ -75,6 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginTop="25dp"
+        android:layout_marginRight="-5dp"
         android:fontFamily="@font/averia_gruesa_libre"
         android:text="Location"
         android:textColor="@color/black"
@@ -87,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginTop="50dp"
+        android:layout_marginRight="-5dp"
         android:fontFamily="@font/averia_gruesa_libre"
         android:text="Price"
         android:textColor="@color/black"
@@ -99,11 +111,15 @@
         android:layout_height="40dp"
         android:layout_gravity="end"
         android:layout_marginTop="75dp"
+        android:layout_marginRight="58dp"
         android:fontFamily="@font/averia_gruesa_libre"
         android:text="Rate"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
         android:textColor="@color/black"
         android:textSize="18dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 

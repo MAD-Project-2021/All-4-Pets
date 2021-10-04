@@ -66,7 +66,7 @@ public class Register extends AppCompatActivity {
         btn_registerBtn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            //retrieve components
+            //retrieve values
             String email = et_Email.getText().toString().trim();
             String password = et_password.getText().toString().trim();
             String fullName = et_fullName.getText().toString();
@@ -89,7 +89,6 @@ public class Register extends AppCompatActivity {
                 et_password.setError("Password must be >=6 characters");
                 return;
             }
-
 
 
             //if all the conditions are satisfied progress bar will be visible to the user

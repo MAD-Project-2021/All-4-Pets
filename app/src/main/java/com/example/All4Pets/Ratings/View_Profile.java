@@ -1,25 +1,36 @@
 package com.example.All4Pets.Ratings;
 
-import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.All4Pets.Login;
 import com.example.All4Pets.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 public class View_Profile extends AppCompatActivity {
     TextView fullName,email,phone;
@@ -27,7 +38,12 @@ public class View_Profile extends AppCompatActivity {
     FirebaseFirestore fStore;
     String userId;
     ImageView profileImage;
-    Button changeProfileImage;
+    Button changeProfileImage , changeProfilePhoto;
+
+    private Uri imageUri;
+    private static final int IMAGE_REQUEST = 2;
+    private int requestCode;
+    private int resultCode;
 
 
     @Override
@@ -38,8 +54,8 @@ public class View_Profile extends AppCompatActivity {
         email = findViewById(R.id.et_email);
         fullName = findViewById(R.id.et_fullname);
         phone = findViewById(R.id.et_phone);
-        profileImage = findViewById(R.id.profile_photo);
-        changeProfileImage=findViewById(R.id.btn_editprofile);
+        changeProfileImage= findViewById(R.id.btn_editprofile);//temporary image
+        changeProfilePhoto=findViewById(R.id.btn_add);
 
 
         //instantiate firebase firestore and fAuth
@@ -60,32 +76,89 @@ public class View_Profile extends AppCompatActivity {
             }
         });
 
+        changeProfilePhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openImage();
+            }
+        });
+
         changeProfileImage.setOnClickListener((v)->{
 
-                //open gallery
-                //Intent openGalleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                //startActivityForResult(openGalleryIntent,1000);
-
-                Intent i = new Intent(v.getContext(),EditProfile.class);
-                i.putExtra("email", email.getText().toString());
-                i.putExtra("fullName", fullName.getText().toString());
-                i.putExtra("phone",phone.getText().toString());
-                startActivity(i);
+            Intent i = new Intent(v.getContext(),EditProfile.class);
+            i.putExtra("email", email.getText().toString());
+            i.putExtra("fullName", fullName.getText().toString());
+            i.putExtra("phone",phone.getText().toString());
+            startActivity(i);
 
         });
 
     }
-    protected void onActivityResult(int requestCode, int resultCode, @androidx.annotation.Nullable Intent data) {
+
+    private void openImage() {
+        Intent intent = new Intent();
+        intent.setType("Image/");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+
+        startActivityForResult(intent,IMAGE_REQUEST);
+    }
+
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        this.requestCode = requestCode;
+        this.resultCode = resultCode;
+        super.onActivityResult(requestCode,resultCode,data);
+        if(requestCode==IMAGE_REQUEST && resultCode ==RESULT_OK){
+            imageUri = data.getData();
+            uploadImage();
+        }
+
+    }
+
+    private String getFileExtension(Uri uri){
+        ContentResolver contentResolver = getContentResolver();
+        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
+    }
+
+    private void uploadImage() {
+        final ProgressDialog pd = new ProgressDialog(this);
+        pd.setMessage("uploading");
+        pd.show();
+
+        if(imageUri != null){
+            StorageReference fileRef = FirebaseStorage.getInstance().getReference().child("uploads").child(System.currentTimeMillis()+"."+ getFileExtension(imageUri));
+            fileRef.putFile(imageUri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                    fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            String url = uri.toString();
+
+                            Log.d("DownloadUrl" , url);
+                            pd.dismiss();
+                            Toast.makeText(View_Profile.this,"Image upload successful",Toast.LENGTH_LONG).show();
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    /*protected void onActivityResult(int requestCode, int resultCode, @androidx.annotation.Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         //gallery is invoking onActivity result
-       if(requestCode ==1000){
-           if(resultCode== Activity.RESULT_OK){
-               //get the uri of image from gallery
-               Uri imageUri = data.getData();
-               profileImage.setImageURI(imageUri);
-           }
-       }
-    }
+        if(requestCode ==1000){
+            if(resultCode== Activity.RESULT_OK){
+                //get the uri of image from gallery
+                Uri imageUri = data.getData();
+                profileImage.setImageURI(imageUri);
+            }
+        }
+    }*/
 
     public void profileBack(View view){
         //log out from application

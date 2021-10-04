@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/category"
     tools:context=".Category.ui.CAddress">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,10 +54,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView" />
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
+        tools:listitem="@layout/select_address"/>
 
     <Button
-        android:id="@+id/Add_Address"
+        android:id="@+id/Add_CAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"

@@ -19,6 +19,24 @@
             android:name=".Doctors.Activities.CusDetailed"
             android:exported="true" />
         <activity
+            android:name=".Category.ui.Payment"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.AddAddress"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Daycare_ShowMoreNew"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.BookingFormDC"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.ChangeBookingd"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Daycare_Booking_Form"
+            android:exported="true" />
+        <activity
             android:name=".Category.ui.CAddress"
             android:exported="true" />
         <activity
@@ -50,7 +68,14 @@
             android:exported="true" />
         <activity
             android:name=".Login"
-            android:exported="true" />
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Ratings.FAQ"
             android:exported="true" />
@@ -59,18 +84,6 @@
             android:exported="true" />
         <activity
             android:name=".Ratings.Add_Review"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.UpdateDispute"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.DisputeList"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.OpenDispute"
-            android:exported="true" />
-        <activity
-            android:name=".Category.ui.OrdersList"
             android:exported="true" />
         <activity
             android:name=".Daycares.Activities.Daycare_ShowMore"
@@ -96,9 +109,7 @@
         <activity
             android:name=".Ratings.Ratings"
             android:exported="true" />
-        <activity
-            android:name=".Category.ui.Orders"
-            android:exported="true" />
+
         <activity
             android:name=".Category.ui.petShop"
             android:exported="true" />
@@ -110,13 +121,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

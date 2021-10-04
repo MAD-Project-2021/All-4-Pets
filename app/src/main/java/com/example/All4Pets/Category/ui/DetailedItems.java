@@ -3,6 +3,7 @@ package com.example.All4Pets.Category.ui;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -98,6 +99,23 @@ public class DetailedItems extends AppCompatActivity {
             totalPrice = supplementsModel.getPrice() * totalQuantity;
         }
 
+        buyNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailedItems.this,CAddress.class);
+
+
+                if (petItemsModel != null){
+                    intent.putExtra("item",petItemsModel);
+                }
+                if (supplementsModel != null){
+                    intent.putExtra("item",supplementsModel);
+                }
+                startActivity(intent);
+
+            }
+        });
+
 
         addToCart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,6 +147,12 @@ public class DetailedItems extends AppCompatActivity {
                     if(totalQuantity>1){
                         totalQuantity--;
                         quantity.setText(String.valueOf(totalQuantity));
+                        if(petItemsModel != null){
+                            totalPrice = petItemsModel.getPrice() * totalQuantity;
+                        }
+                        if (supplementsModel != null){
+                            totalPrice = supplementsModel.getPrice() * totalQuantity;
+                        }
                     }
                 }
         });
@@ -157,7 +181,7 @@ public class DetailedItems extends AppCompatActivity {
         cartMap.put("totalPrice",totalPrice);
 
 //auth.getCurrentUser().getUid()
-        firestore.collection("AddToCart").document("9XAfykklEvZAMsYDn392rPaqtgv2")
+        firestore.collection("AddToCart").document(auth.getCurrentUser().getUid())
                 .collection("User").add(cartMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
             @Override
             public void onComplete(@NonNull Task<DocumentReference> task) {

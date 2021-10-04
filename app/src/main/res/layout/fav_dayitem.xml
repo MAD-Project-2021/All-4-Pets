@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="16dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+
+
+        android:layout_width="379dp"
+        android:layout_height="144dp"
+        android:layout_gravity="end"
+        android:layout_marginLeft="16dp"
+        android:background="#E49EB6"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_dayc"
+            android:layout_width="104dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+        <ImageView
+            android:id="@+id/tv_arrow"
+            android:layout_width="238dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="235dp"
+            app:srcCompat="@drawable/forwardarrow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_favadd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="-100dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#E49EB6"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+        <!--        <com.google.android.material.imageview.ShapeableImageView-->
+        <!--            android:id="@+id/img1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="88dp"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_marginTop="6dp"-->
+        <!--            android:layout_marginLeft="19dp"-->
+        <!--            android:adjustViewBounds="true"-->
+        <!--            android:scaleType="center"-->
+        <!--            android:src="@mipmap/ic_launcher"-->
+
+        <!--            />-->
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_dname"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:text="Daycare Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dlocation"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="-5dp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:text="Location"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="-5dp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+</androidx.cardview.widget.CardView>

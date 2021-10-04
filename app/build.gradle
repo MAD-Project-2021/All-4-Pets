@@ -105,6 +105,3 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.orhanobut:dialogplus:1.11@aar'
 }
-
-apply plugin : 'com.google.gms.google-services'
-apply plugin : 'com.android.application'

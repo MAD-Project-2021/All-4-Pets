@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#846CAF"
+    tools:context=".Daycares.Activities.Daycare_Booking_Form">
+
+    <ImageView
+        android:id="@+id/et_booking5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/book_daycare_bar"
+        app:layout_constraintBottom_toTopOf="@+id/et_cname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/daycarebook"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_cname"
+        android:layout_width="329dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="351dp"
+        android:background="#80F8F7FA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/et_chkdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_booking5" />
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:background="#80F8F7FA"
+        android:ems="10"
+        android:hint="@string/et_contact"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/et_cemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cname" />
+
+    <EditText
+        android:id="@+id/et_cemail"
+        android:layout_width="320dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="48dp"
+        android:background="#80F8F7FA"
+        android:ems="10"
+        android:hint="abc@gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/et_chkdate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_chkdate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="153dp"
+        android:background="#80F8F7FA"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_chkdate2"
+        app:layout_constraintStart_toStartOf="@+id/et_chkdate2"
+        app:layout_constraintTop_toBottomOf="@+id/et_cname"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_chkdate2"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="40dp"
+        android:background="#80F8F7FA"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/et_chkdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_sve"
+        android:layout_width="302dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/btn_sve"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_chkdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

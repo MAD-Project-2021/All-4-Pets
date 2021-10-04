@@ -28,7 +28,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
 
     TextView createAccount,tv_forgotPassword;
-    ImageView viewprofile;
+    ImageView viewProfile;
     EditText et_Email, et_password;
     Button btn_loginBtn;
     ProgressBar pb_progressBar;
@@ -45,7 +45,7 @@ public class Login extends AppCompatActivity {
         et_Email = findViewById(R.id.Email);
         et_password = findViewById(R.id.password);
         btn_loginBtn = findViewById(R.id.loginBtn);
-        viewprofile = findViewById(R.id.btn_gotoprofile);
+        viewProfile = findViewById(R.id.img_profile);
         fAuth = FirebaseAuth.getInstance();
         createAccount = findViewById(R.id.createText);
         tv_forgotPassword=findViewById(R.id.forgotPassword);
@@ -91,7 +91,7 @@ public class Login extends AppCompatActivity {
                         //check whether login is successful or not
                         if(task.isSuccessful()){
                             Toast.makeText(Login.this,"Logged In Successfully",Toast.LENGTH_LONG).show();
-                            startActivity(new Intent(getApplicationContext(), View_Profile.class));
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }else{
                             Toast.makeText(Login.this, "You've not previously registered!", Toast.LENGTH_SHORT).show();
                             pb_progressBar.setVisibility(View.GONE);
@@ -156,6 +156,11 @@ public class Login extends AppCompatActivity {
 
         startActivity(new Intent(this, Register.class));
 
+    }
+
+    public void onviewProfile(View view){
+        Intent intent = new Intent(Login.this, View_Profile.class);
+        startActivity(intent);
     }
 
 

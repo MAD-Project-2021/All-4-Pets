@@ -8,16 +8,18 @@ public class PetsModel implements Serializable {
     int price;
     String description;
     String type;
+    String phone;
     String img_url;
 
     public PetsModel() {
     }
 
-    public PetsModel(String name, int price, String description, String type, String img_url) {
+    public PetsModel(String name, int price, String description, String type,String phone, String img_url) {
         this.name = name;
         this.price = price;
         this.description = description;
         this.type = type;
+        this.phone = phone;
         this.img_url = img_url;
     }
 
@@ -59,5 +61,13 @@ public class PetsModel implements Serializable {
 
     public void setImg_url(String img_url) {
         this.img_url = img_url;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

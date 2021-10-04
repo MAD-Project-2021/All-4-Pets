@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Category.ui.DetailedItems"
-    android:background="@color/purple_200">
+    android:background="@drawable/category">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomNavigationView"
         android:layout_width="409dp"
