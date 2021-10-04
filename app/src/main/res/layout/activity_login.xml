@@ -136,17 +136,17 @@
         app:layout_constraintVertical_bias="0.19999999" />
 
     <ImageView
-        android:id="@+id/img_profile"
-        android:layout_width="43dp"
-        android:layout_height="42dp"
+        android:id="@+id/imageView13"
+        android:layout_width="61dp"
+        android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
-        app:layout_constraintVertical_bias="0.194"
-        app:srcCompat="@drawable/gotoprofile" />
-
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.555"
+        android:onClick="onviewProfile"
+        app:srcCompat="@drawable/toprofile" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

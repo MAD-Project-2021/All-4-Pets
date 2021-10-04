@@ -45,7 +45,6 @@ public class Login extends AppCompatActivity {
         et_Email = findViewById(R.id.Email);
         et_password = findViewById(R.id.password);
         btn_loginBtn = findViewById(R.id.loginBtn);
-        viewProfile = findViewById(R.id.img_profile);
         fAuth = FirebaseAuth.getInstance();
         createAccount = findViewById(R.id.createText);
         tv_forgotPassword=findViewById(R.id.forgotPassword);
@@ -137,6 +136,8 @@ public class Login extends AppCompatActivity {
                         });
                     }
                 });
+
+
 
                 passwordResetDialog.setNegativeButton("No",new DialogInterface.OnClickListener(){
                     @Override

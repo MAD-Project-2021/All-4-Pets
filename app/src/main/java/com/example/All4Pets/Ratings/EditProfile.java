@@ -73,7 +73,7 @@ public class EditProfile extends AppCompatActivity {
 
                 }
 
-                //updating email
+                //updating details
                 String email = profileEmail.getText().toString();
                 user.updateEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -93,7 +93,7 @@ public class EditProfile extends AppCompatActivity {
                         });
 
 
-                        Toast.makeText(EditProfile.this, "Email is changed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EditProfile.this, "Details updated", Toast.LENGTH_SHORT).show();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

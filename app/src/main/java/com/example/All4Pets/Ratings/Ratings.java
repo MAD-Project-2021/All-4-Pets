@@ -76,43 +76,19 @@ public class Ratings extends AppCompatActivity {
         ratingsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                //add review
                 if(i==1){
 
                     startActivity(new Intent(Ratings.this, Add_Review.class));
-//                    AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Ratings.this);
-//
-//                    View view1 = LayoutInflater.from(Ratings.this).inflate(R.layout.activity_add_review,null);
-//                    dialogBuilder.setView(view1);
-//
-//
-//                    final AlertDialog alertDialog = dialogBuilder.create();
-//
-//                    EditText feedback = view1.findViewById(R.id.et_feedback);
-//                    Button btnNo = view1.findViewById(R.id.btn_no);
-//                    Button btnSend = view1.findViewById(R.id.btn_send);
-//
-//                    btnNo.setOnClickListener(new View.OnClickListener(){
-//                        public void onClick(View v) {
-//                            alertDialog.dismiss();
-//                        }
-//                    });
-//
-//                    btnSend.setOnClickListener(new View.OnClickListener(){
-//                        public void onClick(View v){
-//                            Toast.makeText(Ratings.this,"Send feedback" , Toast.LENGTH_LONG).show();
-//                            alertDialog.dismiss();
-//                        }
-//                    });
-//
-//                    alertDialog.show();
 
                 }
 
+                //view feedback
                 else if(i==2){
 
-//                    startActivity(new Intent(Ratings.this, View_Feedback.class));
                     AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Ratings.this);
-                    View view1 = getLayoutInflater().inflate(R.layout.privious_ratings, null);
+                    View view1 = getLayoutInflater().inflate(R.layout.previous_ratings, null);
                     dialogBuilder.setView(view1);
 
                     final TextView textView1 = (TextView) view1.findViewById(R.id.showRating);
@@ -124,6 +100,9 @@ public class Ratings extends AppCompatActivity {
 
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                     final String userid = user.getUid();
+
+                    //view the ratings and feedback added by the user through database
+                    //data snapshot get a snap for the  location at relative specified path
 
                     DatabaseReference myRef = FirebaseDatabase.getInstance().getReference().child("Ratings").child(userid);
                     myRef.addValueEventListener(new ValueEventListener() {
@@ -150,6 +129,8 @@ public class Ratings extends AppCompatActivity {
                         }
                     });
                 }
+
+                //faq page
                 else if(i==3){
 
                     startActivity(new Intent(Ratings.this, FAQ.class));
@@ -219,22 +200,7 @@ public class Ratings extends AppCompatActivity {
         }else{
             dialog.setCancelable(false);
         }
-//
-//        EditText feedback = dialog.findViewById(R.id.et_feedback);
-//        Button btnNo = dialog.findViewById(R.id.btn_no);
-//        Button btnSend = dialog.findViewById(R.id.btn_send);
 
-//        btnNo.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View v) {
-//                dialog.dismiss();
-//            }
-//        });
-//
-//        btnSend.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View v){
-//                Toast.makeText(Ratings.this,"Send feedback" , Toast.LENGTH_LONG).show();
-//            }
-//        });
 
         dialog.show();
     }
