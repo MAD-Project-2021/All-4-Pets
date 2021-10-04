@@ -62,7 +62,7 @@ public class Book_Daycare extends AppCompatActivity {
     }
 
     public void gotoshowmorepg (View view){
-        Intent intent = new Intent(Book_Daycare.this, Daycare_ShowMore.class);
+        Intent intent = new Intent(Book_Daycare.this, Daycare_ShowMoreNew.class);
         startActivity(intent);
 
     }

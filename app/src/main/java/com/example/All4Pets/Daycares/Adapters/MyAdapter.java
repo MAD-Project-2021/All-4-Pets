@@ -1,7 +1,9 @@
 package com.example.All4Pets.Daycares.Adapters;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.All4Pets.Daycares.Activities.Daycare_ShowMoreNew;
 import com.example.All4Pets.Daycares.models.MainModel;
 import com.example.All4Pets.R;
 
@@ -37,13 +40,24 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
-        Glide.with(context).load(list.get(position).getImg_url()).into((ImageView) holder.ImageView);
+        Glide.with(context).load(list.get(position).getImg_url()).into((ImageView) holder.imageView);
         holder.name.setText(list.get(position).getName());
         holder.location.setText(list.get(position).getLocation());
         holder.price.setText(list.get(position).getPrice());
         holder.rate.setRating(list.get(position).getRate());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Daycare_ShowMoreNew.class);
+                intent.putExtra("daycare_show_more_new", list.get(position));
+                v.getContext().startActivity(intent);
+            }
+        });
+
+
 
     }
 
@@ -61,14 +75,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 */
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private final Object ImageView;
-        ImageView imageView;
+
+    public View edit;
+    ImageView imageView;
         TextView name, location, price;
         RatingBar rate;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            ImageView = itemView.findViewById((R.id.iv_dayc));
+            imageView = itemView.findViewById((R.id.iv_dayc));
             name = itemView.findViewById(R.id.tv_dname);
             location = itemView.findViewById(R.id.tv_dlocation);
             price = itemView.findViewById(R.id.tv_price);
@@ -76,5 +91,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
 
         }
-    }
+
+
+}
 }

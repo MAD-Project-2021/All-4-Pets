@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Daycares.Activities.Daycare_ShowMoreNew"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.BookingFormDC"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.ChangeBookingd"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Daycare_Booking_Form"
+            android:exported="true" />
+        <activity
             android:name=".Category.ui.CAddress"
             android:exported="true" />
         <activity
@@ -114,7 +126,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

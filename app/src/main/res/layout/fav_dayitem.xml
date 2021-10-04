@@ -105,22 +105,5 @@
         android:textSize="18dp"
         android:textStyle="bold" />
 
-    <RatingBar
-        android:id="@+id/tv_rate"
-        android:layout_width="238dp"
-        android:layout_height="40dp"
-        android:layout_gravity="end"
-        android:layout_marginTop="75dp"
-        android:layout_marginRight="58dp"
-        android:fontFamily="@font/averia_gruesa_libre"
-        android:text="Rate"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-
 
 </androidx.cardview.widget.CardView>

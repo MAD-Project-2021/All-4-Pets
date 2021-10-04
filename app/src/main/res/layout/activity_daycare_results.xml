@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Daycares.Activities.Daycare_Results"
-    >
+    android:background="@drawable/bk"
+
+    tools:context=".Daycares.Activities.Daycare_Results">
 
     <ImageView
         android:id="@+id/imageView34"
@@ -15,24 +16,24 @@
         android:contentDescription="@string/back_icon"
         android:onClick="gotodaycareresultback"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView25"
+        app:layout_constraintEnd_toStartOf="@+id/watch_fav_list"
         app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/backarrow"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="OnClick,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/et_booking2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        android:onClick="gotofinddaycarepage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.002"
         app:srcCompat="@drawable/daycarebook"
-        tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints"
-        android:contentDescription="TODO"
-        android:onClick="gotofinddaycarepage"/>
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/tv_search"
@@ -49,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/watch_fav_list"
         android:layout_width="295dp"
         android:layout_height="88dp"
         android:contentDescription="@string/watch_favourite_list2"
@@ -64,7 +65,7 @@
         android:id="@+id/rv_daycare_items"
         android:layout_width="385dp"
         android:layout_height="449dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView25"
+        app:layout_constraintBottom_toTopOf="@+id/watch_fav_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
