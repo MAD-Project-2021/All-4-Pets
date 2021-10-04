@@ -38,120 +38,6 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="411dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/descrip3"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView28"
-        app:srcCompat="@drawable/favbutton"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView30"
-        android:layout_width="411dp"
-        android:layout_height="155dp"
-        android:layout_marginBottom="156dp"
-        android:contentDescription="@string/decrip2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/favbutton3"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="411dp"
-        android:layout_height="155dp"
-        android:layout_marginBottom="312dp"
-        android:contentDescription="@string/decrip3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/favbutton4"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView33"
-        android:layout_width="411dp"
-        android:layout_height="155dp"
-        android:contentDescription="@string/rate1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView30"
-        app:layout_constraintVertical_bias="0.746"
-        app:srcCompat="@drawable/daycare10" />
-
-    <RatingBar
-        android:id="@+id/ratingBar3"
-        android:layout_width="189dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="56dp"
-        android:max="5"
-        android:rating="5"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.572"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView18"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <RatingBar
-        android:id="@+id/ratingBar4"
-        android:layout_width="183dp"
-        android:layout_height="47dp"
-        android:max="5"
-        android:rating="4.5"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        app:layout_constraintBottom_toTopOf="@+id/imageView33"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.685"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView32"
-        app:layout_constraintVertical_bias="0.175"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <RatingBar
-        android:id="@+id/ratingBar5"
-        android:layout_width="195dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="208dp"
-        android:max="5"
-        android:rating="3"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.629"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <RatingBar
-        android:id="@+id/ratingBar6"
-        android:layout_width="190dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="64dp"
-        android:max="5"
-        android:rating="2"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.726"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
         android:id="@+id/imageView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -160,5 +46,39 @@
         app:srcCompat="@drawable/favdaycare"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
+
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="258dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="#8ff7fd"
+        android:fontFamily="@font/amaranth"
+        android:gravity="center"
+
+
+        android:padding="10dp"
+        android:text="Count : 10"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35"
+        app:layout_constraintWidth_percent=".9" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fvlist"
+        android:layout_width="412dp"
+        android:layout_height="395dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_count"
+        tools:listitem="@layout/favday_item"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

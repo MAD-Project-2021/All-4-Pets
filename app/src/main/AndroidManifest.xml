@@ -19,6 +19,18 @@
             android:name=".Category.ui.AddAddress"
             android:exported="true" />
         <activity
+            android:name=".Daycares.Activities.Daycare_ShowMoreNew"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.BookingFormDC"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.ChangeBookingd"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Daycare_Booking_Form"
+            android:exported="true" />
+        <activity
             android:name=".Category.ui.CAddress"
             android:exported="true" />
         <activity

@@ -1,24 +1,31 @@
 package com.example.All4Pets.Daycares.models;
 
 
+import android.widget.TextView;
 
-public class MainModel {
+import java.io.Serializable;
+
+public class MainModel implements Serializable {
         String name;
         String location;
         String price;
         float rate;
         String img_url;
-
+        //
+        String description;
+        String contact;
         public MainModel() {
 
         }
 
-        public MainModel(String name, String location, String price, float rate, String img_url) {
+        public MainModel(String name, String location, String price, float rate, String img_url, String description, String contact) {
             this.name = name;
             this.location = location;
             this.price = price;
             this.rate = rate;
             this.img_url = img_url;
+            this.contact = contact;
+            this.description = description;
         }
 
         public String getName() {
@@ -60,6 +67,22 @@ public class MainModel {
         public void setImg_url(String img_url) {
             this.img_url = img_url;
         }
+
+    public String getDescription() {
+        return description;
     }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+}
 
 

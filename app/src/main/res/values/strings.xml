@@ -200,7 +200,7 @@
     <string name="search_2">search_2</string>
     <string name="check_in_date">check_in_date</string>
     <string name="check_out_date">check_out_date</string>
-    <string name="btn_find">Search</string>
+    <string name="btn_find">BROWSE FOR DAYCARES</string>
     <string name="img_vet">img_vet</string>
     <string name="img_vet2">img_vet2</string>
     <string name="next_arrow">next_arrow</string>
@@ -261,6 +261,24 @@
     <string name="et_search2">"Enter the Veterinary name "</string>
     <string name="searchbar">Search</string>
     <string name="add_your_address">Add Your Address</string>
+    <string name="tv_cusname">Customer Name</string>
+    <string name="et_contact">Ex : 0452225698</string>
+    <string name="et_cemail">abc@gmail.com</string>
+    <string name="btn_dbooking">BOOKING</string>
+    <string name="btn_edit">EDIT</string>
+    <string name="btn_del">DELETE</string>
+    <string name="btn_confirmbooking">CONFIRM BOOKING</string>
+    <string name="tv_dc_name">Doggie Care Center</string>
+    <string name="tv_locationd">Colombo</string>
+    <string name="btn_sve">SAVE AND PROCEED</string>
+    <string name="tv_custname">name of the customer</string>
+    <string name="tv_phn">name of the customer</string>
+    <string name="tv_cmail">customer email</string>
+    <string name="chk_date">checking date</string>
+    <string name="chkout_date">checkout date</string>
+    <string name="et_cname">Enter Name</string>
+    <string name="et_chkdate2">Enter Checkin Date</string>
+    <string name="et_chkdate">Enter Checkout Date</string>
 
     <!--    <String-array name="timeSlots">-->
     <!--        <item>06.00 AM - 10.00 AM </item>-->
