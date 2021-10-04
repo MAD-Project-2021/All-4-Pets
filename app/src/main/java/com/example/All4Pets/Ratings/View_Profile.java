@@ -110,6 +110,8 @@ public class View_Profile extends AppCompatActivity {
         this.requestCode = requestCode;
         this.resultCode = resultCode;
         super.onActivityResult(requestCode,resultCode,data);
+
+
         if(requestCode==IMAGE_REQUEST && resultCode ==RESULT_OK){
             imageUri = data.getData();
             uploadImage();
@@ -148,17 +150,6 @@ public class View_Profile extends AppCompatActivity {
         }
     }
 
-    /*protected void onActivityResult(int requestCode, int resultCode, @androidx.annotation.Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        //gallery is invoking onActivity result
-        if(requestCode ==1000){
-            if(resultCode== Activity.RESULT_OK){
-                //get the uri of image from gallery
-                Uri imageUri = data.getData();
-                profileImage.setImageURI(imageUri);
-            }
-        }
-    }*/
 
     public void profileBack(View view){
         //log out from application

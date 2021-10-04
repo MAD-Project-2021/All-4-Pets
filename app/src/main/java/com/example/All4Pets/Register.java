@@ -140,14 +140,6 @@ public class Register extends AppCompatActivity {
               });
 
 
-            /*Intent intent = new Intent(Register.this,Login.class);
-            startActivity(intent);
-            Toast toast = new Toast(getApplicationContext());
-            toast.makeText(Register.this, "Welcome to All 4 Pets", toast.LENGTH_LONG).show();*/
-
-
-
-
             };
         });
 

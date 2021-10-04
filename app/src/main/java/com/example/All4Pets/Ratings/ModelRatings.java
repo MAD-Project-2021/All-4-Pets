@@ -1,5 +1,6 @@
 package com.example.All4Pets.Ratings;
 
+//store and manage UI-related data in a lifecycle
 public class ModelRatings {
 
     String rate,comment;

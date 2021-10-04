@@ -75,12 +75,13 @@ public class Add_Review extends AppCompatActivity {
                 assert user != null;
                 String userid = user.getUid();
 
+                //adding data to real time database
                 ModelRatings ratings = new ModelRatings(temp, comment);
                 reference.child(userid).setValue(ratings);
 
                 System.out.println(ratings);
 
-                Toast.makeText(Add_Review.this, "Rate added successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Add_Review.this, "Ratings Added!!\nThank you for your feedback. We value it!!", Toast.LENGTH_SHORT).show();
             }
         });
 
