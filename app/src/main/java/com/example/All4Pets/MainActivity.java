@@ -11,6 +11,7 @@ import com.example.All4Pets.Category.ui.petShop;
 import com.example.All4Pets.Daycares.Activities.Find_Daycare;
 import com.example.All4Pets.Doctors.Activities.Vet_Results;
 import com.example.All4Pets.Ratings.Ratings;
+import com.example.All4Pets.Ratings.View_Profile;
 
 
 //import com.google.firebase.FirebaseApp;
@@ -48,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Find_Daycare.class);
         startActivity(intent);
     }
+
+
+
 
 
 
